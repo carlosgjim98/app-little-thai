@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { IonicStorageModule, Storage } from '@ionic/storage-angular';
+import { Stripe } from '@awesome-cordova-plugins/stripe/ngx';
 
 
 @NgModule({
@@ -19,7 +20,10 @@ import { IonicStorageModule, Storage } from '@ionic/storage-angular';
     HttpClientModule,
     IonicStorageModule.forRoot(),
   ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    Stripe
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

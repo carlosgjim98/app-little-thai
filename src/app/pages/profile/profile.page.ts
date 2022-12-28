@@ -5,7 +5,8 @@ import { ApiService } from 'src/app/services/api.service';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import { UtilitiesService } from 'src/app/services/utilities.service';
 import { codeErrors } from 'src/app/utils/utils';
-
+import { Camera, CameraResultType } from '@capacitor/camera';
+import { PushNotifications } from '@capacitor/push-notifications';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.page.html',
@@ -40,7 +41,11 @@ export class ProfilePage implements OnInit {
       this.utilities.showToast("Error obteniendo el usuario");
       this.isLoading = false;
     });
+
+
   }
+
+
 
   public submitForm(): void {
     this.apiService.updateUser(this.form.value).subscribe((user: User) => {
@@ -50,7 +55,39 @@ export class ProfilePage implements OnInit {
     });
   }
 
-  public adjuntarImagen(): void {
+  public async adjuntarImagen() {
+
+    const permissions = await Camera.requestPermissions();
+
+
+    if(permissions.photos === 'denied' || permissions.camera === 'denied') {
+      console.log("permiso camera " , permissions);
+      
+    }
+    const image = await Camera.getPhoto({
+      promptLabelHeader: 'Fotos',
+      promptLabelCancel: 'Cancelar',
+      promptLabelPhoto: 'Galería',
+      promptLabelPicture: 'Cámara',
+      quality: 90,
+      allowEditing: false,
+      resultType: CameraResultType.Base64
+    });
+  
+    console.log(image);
     
+    // image.webPath will contain a path that can be set as an image src.
+    // You can access the original file using image.path, which can be
+    // passed to the Filesystem API to read the raw data of the image,
+    // if desired (or pass resultType: CameraResultType.Base64 to getPhoto)
+    this.base64img = 'data:image/jpeg;base64,' + image.base64String;
+  
+    console.log("imagen " ,this.base64img);
+
+    this.form.patchValue({avatar : this.base64img})
+    this.user.avatar = this.base64img;
+
+    // Can be set to the src of an image now
+    //imageElement.src = imageUrl;
   }
 }

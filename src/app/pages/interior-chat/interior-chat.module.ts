@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { InteriorChatPageRoutingModule } from './interior-chat-routing.module';
 
 import { InteriorChatPage } from './interior-chat.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    InteriorChatPageRoutingModule
+    InteriorChatPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [InteriorChatPage]
 })

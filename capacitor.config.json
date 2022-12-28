@@ -1,6 +1,11 @@
 {
-	"appId": "my.app",
-	"appName": "my-app",
+	"appId": "com.xerintel.base",
+	"appName": "Xerintel",
 	"webDir": "www",
-	"bundledWebRuntime": false
+	"bundledWebRuntime": false,
+	"plugins" : {
+		"PushNotifications" : {
+			"presentationOptions" : ["badge", "sound", "alert"]
+		}
+	}
 }

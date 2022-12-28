@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "61654451682",
+    "project_id": "mercado-marisco",
+    "storage_bucket": "mercado-marisco.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61654451682:android:4031371709a3874b0525bb",
+        "android_client_info": {
+          "package_name": "com.xerintel.base"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61654451682-ob9jjsjp2n32tiht9u63uvc7a01r5mgn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOCjgl04j8EK4kvxfcXMMlV4enVng_cZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61654451682-ob9jjsjp2n32tiht9u63uvc7a01r5mgn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

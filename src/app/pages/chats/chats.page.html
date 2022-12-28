@@ -1,9 +1,13 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>chats</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content>
+<app-loading [text]="'Cargando chats...'" [color]="'primary'" *ngIf="isLoading"></app-loading>
 
+<ion-content *ngIf="!isLoading">
+  <!-- Item chat -->
+  <ion-list lines="none">
+    <app-chat-group *ngFor="let chat of chats" [icon]="chat?.urlImagen"
+      [redirection]="['/interior-chat', chat?.id,chat?.nombre,chat?.ultimo_mensaje]" [title]="chat?.nombre"
+      [subtitle]="chat?.descripcion" [lastMessage]="chat?.ultimo_mensaje" [newMessages]="chat?.mensajes_nuevos"
+      [slidingOptionsSide]="'end'" [slidingOptionsColor]="'primary'" [slidingOptionsIcon]="'trash'">
+    </app-chat-group>
+  </ion-list>
 </ion-content>

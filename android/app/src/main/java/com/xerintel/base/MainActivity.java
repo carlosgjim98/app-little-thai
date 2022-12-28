@@ -1,4 +1,4 @@
-package my.app;
+package com.xerintel.base;
 
 import com.getcapacitor.BridgeActivity;
 

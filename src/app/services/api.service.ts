@@ -100,9 +100,9 @@ export class ApiService {
    * Guardar el token del dispositivo en el servidor firebase
    * @param tokenRegistro 
    */
-/*   public guardarTokenDeRegistro(tokenRegistro) {
+  public guardarTokenDeRegistro(tokenRegistro) {
     return this.http.post(environment.apiUrl + 'guardar-token', { registerToken: tokenRegistro, platform: this.utilities.getPlatform() }, this.httpOptions);
-  } */
+  } 
 
   /**
  * Método para procesar el pago stripe

@@ -3,7 +3,7 @@
 
 export interface Chat{
     id?: number,
-    nombre?: string,
+    nombre?: any,
     urlImagen:string,
     descripcion:string,
     ultimo_mensaje:any,
