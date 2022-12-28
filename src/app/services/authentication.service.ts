@@ -12,12 +12,15 @@ export class AuthenticationService {
   public authenticationState = new BehaviorSubject('');
 
   constructor(private storage: Storage, private plt: Platform) {
+    
     this.checkToken();
   }
 
-  public checkToken() {
+  public async checkToken() {
+    await this.storage.create();
+
     this.storage.get(TOKEN_KEY).then(res => {
-      console.log(res);
+      console.log("TOKEN ",res);
       if (res) {
         this.authenticationState.next(res);
       }

@@ -57,7 +57,7 @@ export class ApiService {
    * @param user 
    */
   public register(user: User) {
-    return this.http.post(environment.apiUrl + 'signup', user);
+    return this.http.post<User>(environment.apiUrl + 'signup', user);
   }
 
   /**

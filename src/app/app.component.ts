@@ -48,9 +48,10 @@ export class AppComponent {
    * Nos suscribimos a los cambios dle perfil
    */
 public async ngOnInit() {
-  await this.storage.create();
   this.auth.authenticationState.subscribe(token => {
     if (token != 'logout' && token != '') {
+      console.log("CAMBIA TOKEN ", token);
+      
       //this.pushNotifications();
       //this.prepararStripe();
       //this.apiService.setTokenToHeaders(token);
@@ -65,6 +66,7 @@ public async ngOnInit() {
     } else {
       this.isLoading = false;
       console.log("primera vez");
+      
     }
 
     // IMPORTANTE: para comprobar si la app está o no suspendida, debe ponerse el dominio en la propiedad "domainUrl" del archivo "src/environments/environment.ts"
