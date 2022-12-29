@@ -22,5 +22,14 @@
       <ion-button expand="block" type="button" routerLink="/register">Registrarse</ion-button>
       <p class="title ion-text-center" routerLink="/forgot-password">¿Has olvidado tu contraseña?</p>
     </form>
+
+
+    <div id="socialLinks">
+      <ion-button id="facebook" expand="block" type="button" (click)="loginFacebook()"><ion-icon name="logo-facebook"></ion-icon></ion-button>
+      <ion-button id="google" expand="block" type="button" (click)="loginGoogle()"><ion-icon src="assets/icons/icon-google.svg"></ion-icon></ion-button>
+      <!--<ion-button *ngIf="platform.is('ios')" id="apple" (click)="loginApple()"><ion-icon style="margin-bottom: 4px;" name="logo-apple"></ion-icon></ion-button> -->
+      <ion-button *ngIf="platform.is('ios')" id="apple" (click)="loginApple()"><ion-icon style="margin-bottom: 4px;" name="logo-apple"></ion-icon></ion-button> 
+    </div>
+
   </div>
 </ion-content>
