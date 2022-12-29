@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "61654451682",
+    "firebase_url": "https://mercado-marisco-default-rtdb.firebaseio.com",
     "project_id": "mercado-marisco",
     "storage_bucket": "mercado-marisco.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "61654451682-1amglbqv7f9fi5eifs4bpkfnkgva91rl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.xerintel.base",
+            "certificate_hash": "65a4025bccb9875d7ca550e36f5447c32bde8a9d"
+          }
+        },
         {
           "client_id": "61654451682-ob9jjsjp2n32tiht9u63uvc7a01r5mgn.apps.googleusercontent.com",
           "client_type": 3
@@ -29,6 +38,13 @@
             {
               "client_id": "61654451682-ob9jjsjp2n32tiht9u63uvc7a01r5mgn.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "61654451682-60grk2dbfv7s2vq4mijg745vghmso7t7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.xerintel.base"
+              }
             }
           ]
         }

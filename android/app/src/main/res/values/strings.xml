@@ -4,4 +4,7 @@
     <string name="title_activity_main">Xerintel</string>
     <string name="package_name">my.app</string>
     <string name="custom_url_scheme">my.app</string>
+    <string name="facebook_app_id">748077676570420</string>
+    <string name="fb_login_protocol_scheme">fb748077676570420</string>
+    <string name="facebook_client_token">748077676570420</string>
 </resources>
