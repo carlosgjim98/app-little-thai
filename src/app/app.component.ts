@@ -14,7 +14,6 @@ import {
   } from '@capacitor/push-notifications';
 import { NotificacionesNuevasService } from './services/notificaciones-nuevas.service';
 import { environment } from 'src/environments/environment';
-import { Stripe } from '@awesome-cordova-plugins/stripe/ngx';
 
 @Component({
   selector: 'app-root',
@@ -50,7 +49,6 @@ export class AppComponent {
     private storage: Storage,
     private utilities: UtilitiesService,
     private notificationsService : NotificacionesNuevasService,
-    private stripe: Stripe
 
   ) {}
 
@@ -65,7 +63,7 @@ public async ngOnInit() {
       console.log("CAMBIA TOKEN ", token);
       
       this.pushNotifications();
-      this.prepararStripe();
+      //this.prepararStripe();
       this.apiService.setTokenToHeaders(token);
       this.navCtrl.navigateRoot('tabs').then(() => {
         this.isLoading = false;
@@ -166,22 +164,5 @@ public async ngOnInit() {
 
   }
 
-  public async prepararStripe(){
-    
-    const tokenStripe = await this.stripe.setPublishableKey(environment.stripePublishableKey);
-    
-    console.log("token stripe ", tokenStripe);
 
-
-    let card = {
-      number: '4242424242424242',
-      expMonth: 12,
-      expYear: 2024,
-      cvc: '220'
-    }
-
-this.stripe.createCardToken(card)
-   .then(token => console.log(token.id))
-   .catch(error => console.error(error));
-  }
 }

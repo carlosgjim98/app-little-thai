@@ -1,7 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
+    namespace "com.xerintel.base"
+    compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
         applicationId "com.xerintel.base"
         minSdkVersion rootProject.ext.minSdkVersion
