@@ -1,0 +1,65 @@
+<ion-header>
+  
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Prueba de plugins y funciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+
+
+  <ion-accordion-group>
+    <ion-accordion value="first">
+      <ion-item slot="header" color="light">
+        <ion-label>IMÁGENES, ARCHIVOS, CROPADO</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+
+
+        <ion-toggle mode="ios" [(ngModel)]="crop" [checked]="crop">Recorte foto</ion-toggle><br /><br />
+        <ion-toggle mode="ios" [(ngModel)]="multipleFiles" [checked]="multipleFiles">Archivos múltiples</ion-toggle><br /><br />
+
+        <ion-button mode="ios" expand="block" (click)="geFilesUtilities()">Obtener archivo/s</ion-button>
+        <ion-button mode="ios" expand="block" (click)="getVideoUtilities()">Obtener video</ion-button>
+        <ion-button mode="ios" expand="block" (click)="getImageFileUtilities()">Obtener imagen (ARCHIVOS)</ion-button>
+        <ion-button mode="ios" expand="block" (click)="getImageCameraUtilities()">Obtener imagen (CÁMARA)</ion-button>
+
+
+        <ion-button [disabled]="!fileImage" mode="ios" expand="block" (click)="openModalViewImage()">Visor imagen</ion-button>
+        <ion-button [disabled]="!fileVideo" mode="ios" expand="block" (click)="openModalViewVideo()">Visor vídeo</ion-button>
+
+
+        
+      </div>
+    </ion-accordion>
+    <ion-accordion value="second">
+      <ion-item slot="header" color="light">
+        <ion-label>PASARELAS DE PAGO</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-button  mode="ios" expand="block" routerLink="/test-plugins">PAGO UNICO STRIPE (APP)</ion-button>
+        <ion-button  mode="ios" expand="block" routerLink="/test-plugins">PAGO UNICO STRIPE (WEB)</ion-button>
+        <ion-button  mode="ios" expand="block" routerLink="/test-plugins">SUSCRIPCIONES STRIPE (APP)</ion-button>
+        <ion-button  mode="ios" expand="block" routerLink="/test-plugins">SUSCRIPCIONES STRIPE (WEB)</ion-button>
+        <ion-button  mode="ios" expand="block" routerLink="/test-plugins">PAGO UNICO PAYPAL</ion-button>
+        <ion-button  mode="ios" expand="block" routerLink="/test-plugins">SUSCRIPCIONES PAYPAL</ion-button>
+
+      </div>
+    </ion-accordion>
+    <ion-accordion value="third">
+      <ion-item slot="header" color="light">
+        <ion-label>FUNCIONALIDADES</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Third Content</div>
+    </ion-accordion>
+  </ion-accordion-group>
+
+
+
+
+
+</ion-content>

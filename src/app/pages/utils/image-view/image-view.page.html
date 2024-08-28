@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar style="--background: #171515;">
+    <ion-buttons slot="start">
+      <ion-back-button style="color: #ffffff;" text=""></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <pinch-zoom *ngIf="image && !video" [minScale]="0" [disablePan]="false" [limit-zoom]="10" [draggableImage]="true"
+   [limitPan]="false" [disableZoomControl]="'disable'" [transition-duration]="50" [overflow]="'visible'" [minPanScale]="0" #pinch style="height: 100%; background-color: transparent !important;">
+   <img  [src]="image" />
+
+   
+    <img class="no-download" *ngIf="image && !video" src="https://app.luxxuapp.com/devxerintel//storage/settings/default-nodownload.png" alt="Foto 1"  style="position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    bottom: 0; z-index: 99999;
+    filter: opacity(0);">
+  </pinch-zoom>
+
+  <img *ngIf="image && !video" class="image-back" [src]="image" />
+  
+
+
+  <video *ngIf="video && !image" [src]="video" controls controlsList="nodownload " disablePictureInPicture
+    autofullscreen="true"></video>
+</ion-content>

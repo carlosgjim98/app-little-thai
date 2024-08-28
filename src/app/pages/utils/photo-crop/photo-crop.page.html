@@ -1,0 +1,141 @@
+
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <p (click)="back()">Cancelar</p>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <p (click)="adjuntarImagen()">Guardar</p>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content scroll-x="false" scroll-y="false">
+  <div class="container" *ngIf="!aspectRatioUndefined">
+
+    <image-cropper 
+    *ngIf="!phone"
+    [imageFile]="imagen"
+    [imageChangedEvent]="imageChangedEvent"
+    [maintainAspectRatio]="true"
+    [containWithinAspectRatio]="containWithinAspectRatio"
+    [aspectRatio]="aspectRatio"
+    [cropperMinWidth]="128"
+    [roundCropper]="false"
+    [canvasRotation]="canvasRotation"
+    [transform]="transform"
+    [alignImage]="'center'"
+    backgroundColor="#171515"
+    [style.display]="showCropper ? null : 'none'"
+    format="jpeg"
+    output='blob'
+    [autoCrop]="false"
+    (imageCropped)="imageCropped($event)"
+    (imageLoaded)="imageLoaded()"
+    (cropperReady)="cropperReady($event)"
+    (loadImageFailed)="loadImageFailed()">
+    </image-cropper>
+
+    <image-cropper 
+    *ngIf="phone"
+    [imageBase64]="imagen"
+    [imageChangedEvent]="imageChangedEvent"
+    [maintainAspectRatio]="true"
+    [containWithinAspectRatio]="containWithinAspectRatio"
+    [aspectRatio]="aspectRatio"
+    [cropperMinWidth]="128"
+    [roundCropper]="false"
+    [canvasRotation]="canvasRotation"
+    [transform]="transform"
+    [alignImage]="'center'"
+    backgroundColor="#171515"
+    [style.display]="showCropper ? null : 'none'"
+    format="jpeg"
+    output='blob'
+    [autoCrop]="false"
+    (imageCropped)="imageCropped($event)"
+    (imageLoaded)="imageLoaded()"
+    (cropperReady)="cropperReady($event)"
+    (loadImageFailed)="loadImageFailed()">
+    </image-cropper>
+  </div>
+
+  <div class="container" *ngIf="aspectRatioUndefined">
+      
+    <image-cropper 
+      *ngIf="!phone"
+      [imageFile]="imagen"
+      [imageChangedEvent]="imageChangedEvent"
+      [maintainAspectRatio]="false"
+      [containWithinAspectRatio]="containWithinAspectRatio"
+      [cropperMinWidth]="128"
+      [roundCropper]="false"
+      [canvasRotation]="canvasRotation"
+      [transform]="transform"
+      [alignImage]="'center'"
+      backgroundColor="#171515"
+      [style.display]="showCropper ? null : 'none'"
+      format="jpeg"
+      output='blob'
+      [autoCrop]="false"
+      (imageCropped)="imageCropped($event)"
+      (imageLoaded)="imageLoaded()"
+      (cropperReady)="cropperReady($event)"
+      (loadImageFailed)="loadImageFailed()">
+    </image-cropper>
+
+    <image-cropper 
+      *ngIf="phone"
+      [imageBase64]="imagen"
+      [imageChangedEvent]="imageChangedEvent"
+      [maintainAspectRatio]="false"
+      [containWithinAspectRatio]="containWithinAspectRatio"
+      [cropperMinWidth]="128"
+      [roundCropper]="false"
+      [canvasRotation]="canvasRotation"
+      [transform]="transform"
+      [alignImage]="'center'"
+      backgroundColor="#171515"
+      [style.display]="showCropper ? null : 'none'"
+      format="jpeg"
+      output='blob'
+      [autoCrop]="false"
+      (imageCropped)="imageCropped($event)"
+      (imageLoaded)="imageLoaded()"
+      (cropperReady)="cropperReady($event)"
+      (loadImageFailed)="loadImageFailed()">
+    </image-cropper>
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="range" mode="ios">
+    <ion-item lines="none" style="--background:transparent;">
+      <p slot="start">-45º</p>
+      <ion-range mode="ios" aria-label="Range with ticks" [value]="rotation" (ionChange)="updateRotation($event)" [pin]="true" [min]="-45" [max]="45"></ion-range>
+      <p slot="end">45º</p>
+    </ion-item>
+  </ion-toolbar>
+
+  <ion-toolbar mode="ios">
+    
+    <ion-buttons slot="start">
+      <ion-icon [class.no-visible]="scale == 1" src="../../../assets/icons/zoom-out.svg" (click)="zoomOut()"></ion-icon>
+      <ion-icon src="../../../assets/icons/zoom-in.svg"  (click)="zoomIn()"></ion-icon>
+      <ion-icon src="../../../assets/icons/undo.svg" (click)="resetImage()"></ion-icon>
+    </ion-buttons>
+
+
+
+
+    <ion-buttons slot="end">
+      <ion-icon (click)="flipHorizontal()" src="../../../assets/icons/flip.svg"></ion-icon>
+      <ion-icon (click)="rotateLeft()" style="margin-right: 0;" src="../../../assets/icons/back-once.svg"></ion-icon>
+      <ion-icon (click)="rotateRight()" src="../../../assets/icons/forward.svg"></ion-icon>
+
+    </ion-buttons>
+
+    
+  </ion-toolbar>
+</ion-footer>

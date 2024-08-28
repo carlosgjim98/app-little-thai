@@ -53,7 +53,21 @@ const routes: Routes = [
   {
     path: 'register',
     loadChildren: () => import('./pages/register/register.module').then( m => m.RegisterPageModule)
-  }
+  },
+  {
+    path: 'test-plugins',
+    loadChildren: () => import('./pages/test-plugins/test-plugins.module').then( m => m.TestPluginsPageModule)
+  },
+  {
+    path: 'photo-crop',
+    loadChildren: () => import('./pages/utils/photo-crop/photo-crop.module').then( m => m.PhotoCropPageModule)
+  },
+  {
+    path: 'image-view',
+    loadChildren: () => import('./pages/utils/image-view/image-view.module').then( m => m.ImageViewPageModule)
+  },
+  
+
 ];
 @NgModule({
   imports: [

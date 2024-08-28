@@ -8,15 +8,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { IonicStorageModule, Storage } from '@ionic/storage-angular';
+import { PinchZoomModule } from '@meddv/ngx-pinch-zoom';
 
-
-@NgModule({ declarations: [AppComponent],
-    bootstrap: [AppComponent], imports: [BrowserModule,
-        IonicModule.forRoot(),
-        AppRoutingModule,
-        IonicStorageModule.forRoot()], 
-        providers: [
-        { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-        provideHttpClient(withInterceptorsFromDi()),
-    ] })
+@NgModule({ 
+  declarations: [AppComponent],
+  bootstrap: [AppComponent], 
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    IonicStorageModule.forRoot(),
+    PinchZoomModule
+  ], 
+    
+    providers: [
+      { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+      provideHttpClient(withInterceptorsFromDi()),
+    ] 
+  })
 export class AppModule {}

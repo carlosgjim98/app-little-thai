@@ -1,5 +1,5 @@
 
-import { NgModule } from '@angular/core';
+import { NgModule, ɵisComponentDefPendingResolution } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AppChatItemComponent } from './app-chat-item/app-chat-item.component';
 import { AppChatGroupComponent } from './app-chat-group/app-chat-group.component';
@@ -19,7 +19,7 @@ const COMPONENTS = [
   AppChatHeaderComponent,
   AppLoadingComponent,
   AppRatingComponent,
-  AppNotificationItemComponent
+  AppNotificationItemComponent,
 ];
 
 @NgModule({
@@ -27,7 +27,7 @@ const COMPONENTS = [
     CommonModule,
     IonicModule.forRoot(),
     RouterModule,
-    FormsModule
+    FormsModule,
   ],
   declarations: [COMPONENTS],
   exports: [COMPONENTS]
