@@ -8,6 +8,7 @@ import { PhotoCropPage } from '../pages/utils/photo-crop/photo-crop.page';
 import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
 import { FileOpener, FileOpenerOptions } from '@capacitor-community/file-opener';
 import { Filesystem, Directory, Encoding } from '@capacitor/filesystem';
+import { ImageViewPage } from '../pages/utils/image-view/image-view.page';
 
 @Injectable({
   providedIn: 'root'
@@ -150,37 +151,7 @@ export class UtilitiesService {
   }
 
   
-  /*async selectFile() {
 
-    const actionSheet = await this.actionsheetCtrl.create({
-      header: 'Seleccionar archivo',
-      mode: 'ios',
-      buttons: [
-        {
-          text: 'Vídeo',
-
-          handler: () => {
-            this.adjuntarVideo();
-          }
-        },
-        {
-          text: 'Imagen',
-          handler: () => {
-            this.adjuntarImagen();
-          }
-        },
-        {
-          text: 'Cancelar',
-          role: 'cancel',
-          data: {
-            action: 'cancel',
-          },
-        },
-      ],
-    });
-
-    await actionSheet.present();
-  }*/
 
 
   /**
@@ -496,20 +467,31 @@ export class UtilitiesService {
 
 
 
-  public openImageUrl(image){
-    this.navCtrl.navigateForward('/image-view', {
-      state: {
-        image: image
+  public async openImageUrl(image){
+    const modal = await this.modalCtrl.create({
+      component: ImageViewPage,
+      cssClass: "modal-crop",
+      id: 'modal-view',
+      componentProps: {
+        image: image,
       }
     });
+
+    await modal.present();
   }
 
-  public openVideoUrl(video){
-    this.navCtrl.navigateForward('/image-view', {
-      state: {
-        video: video
+  public async openVideoUrl(video){
+
+    const modal = await this.modalCtrl.create({
+      component: ImageViewPage,
+      cssClass: "modal-crop",
+      id: 'modal-view',
+      componentProps: {
+        video: video,
       }
     });
+
+    await modal.present();
   }
 
 }

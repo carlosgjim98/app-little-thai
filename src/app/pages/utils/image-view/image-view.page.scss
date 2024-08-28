@@ -3,6 +3,11 @@ ion-toolbar {
     --padding-bottom: 8px;
     --padding-end: 16px;
     --padding-start: 16px;
+
+    ion-icon{
+        color: white;
+        font-size: 32px;
+    }
 }
 
 ion-content {

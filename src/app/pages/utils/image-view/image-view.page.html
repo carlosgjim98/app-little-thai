@@ -1,12 +1,12 @@
 <ion-header>
   <ion-toolbar style="--background: #171515;">
-    <ion-buttons slot="start">
-      <ion-back-button style="color: #ffffff;" text=""></ion-back-button>
+    <ion-buttons slot="end">
+      <ion-icon name="close-circle-outline" (click)="closeModal()"></ion-icon>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content #ionContent>
   <pinch-zoom *ngIf="image && !video" [minScale]="0" [disablePan]="false" [limit-zoom]="10" [draggableImage]="true"
    [limitPan]="false" [disableZoomControl]="'disable'" [transition-duration]="50" [overflow]="'visible'" [minPanScale]="0" #pinch style="height: 100%; background-color: transparent !important;">
    <img  [src]="image" />

@@ -38,6 +38,10 @@ const routes: Routes = [
     path: 'interior-chat',
     loadChildren: () => import('./pages/interior-chat/interior-chat.module').then( m => m.InteriorChatPageModule)
   },
+  {
+    path: 'interior-chat/:chat_id',
+    loadChildren: () => import('./pages/interior-chat/interior-chat.module').then( m => m.InteriorChatPageModule)
+  },
   { 
     path: 'interior-chat/:id_chat/:nombre_chat/:ultimo_mensaje', 
     //canActivate: [AuthGuard], 
@@ -65,7 +69,11 @@ const routes: Routes = [
   {
     path: 'image-view',
     loadChildren: () => import('./pages/utils/image-view/image-view.module').then( m => m.ImageViewPageModule)
+  },  {
+    path: 'calendar',
+    loadChildren: () => import('./pages/calendar/calendar.module').then( m => m.CalendarPageModule)
   },
+
   
 
 ];

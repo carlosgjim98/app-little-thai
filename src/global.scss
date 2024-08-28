@@ -24,3 +24,109 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
+// ESTILOS FULLCALENDAR
+
+
+full-calendar{
+    padding: 16px !important;
+    margin: 0px !important;
+    border-radius: 12px !important;
+    background: var(--ion-color-calendar);
+}
+
+
+.fc .fc-daygrid-day-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    width: 100%;
+    height: 48px;
+    position: relative;
+    z-index: 999999;
+}
+
+.fc-theme-standard td, .fc-theme-standard th{
+    border: none;
+    border-radius: 100px;
+    &.selected{
+        background: var(--ion-color-calendar-shade) !important;
+    }
+}
+
+.fc .fc-col-header-cell-cushion{
+    text-transform: uppercase;
+    color:  var(--ion-color-calendar-contrast)
+}
+
+.fc .fc-button-primary{
+    background: transparent;
+    border: none;
+}
+
+  
+.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events{
+    display: flex !important;
+    flex-flow: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    position: absolute !important;
+    height: 12px !important;
+    min-height: 12px !important;
+    left: 2px;
+    right: 0;
+    bottom: 2px;
+    width: 100%;
+}
+   
+.fc-direction-ltr .fc-daygrid-event.fc-event-end, .fc-direction-rtl .fc-daygrid-event.fc-event-start{
+    margin: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: flex-end;
+    background: transparent;
+    border: none;
+    width: 6px;
+    height: 6px;
+    border-radius: 100px;
+    margin: 1px !important;
+}
+  
+.fc .fc-scrollgrid-liquid{
+    border: none;
+}
+
+.fc .fc-today-button{
+    display: none;
+}
+
+.fc .fc-daygrid-day.fc-day-today{
+    background-color: var(--ion-color-calendar-shade);
+}
+  
+.fc .fc-toolbar-title{
+    font-size: 1.5em !important;
+}
+  
+.fc .fc-daygrid-day-number{
+    color: var(--ion-color-calendar-contrast);
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+// LIST CALENDAR
+
+.fc .fc-list-table tbody > tr:first-child th , .fc-theme-standard .fc-list-day-cushion, .fc .fc-list-sticky .fc-list-day > *{
+    background: #404040 !important;
+    border-radius: 12px;
+}
+
+.fc-theme-standard .fc-list{
+    border: none;
+}

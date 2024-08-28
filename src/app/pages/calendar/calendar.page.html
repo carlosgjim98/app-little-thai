@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Calendario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <full-calendar #calendar [options]="calendarOptions">
+    
+    <ng-template #eventContent let-arg>
+      <a class="fc-event fc-event-draggable fc-event-resizable fc-event-start fc-event-end fc-event-future fc-daygrid-event fc-daygrid-dot-event">
+        <div class="fc-daygrid-event-dot" style="border-color: transparent;">
+        </div>
+      </a>
+    </ng-template>
+  </full-calendar>
+
+
+
+</ion-content>

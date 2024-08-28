@@ -20,6 +20,15 @@ const routes: Routes = [
         loadChildren: () => import('../chats/chats.module').then(m => m.ChatsPageModule)
       },
       {
+        path: 'calendar',
+        loadChildren: () => import('../calendar/calendar.module').then(m => m.CalendarPageModule)
+      },
+
+      {
+        path: 'test-plugins',
+        loadChildren: () => import('../test-plugins/test-plugins.module').then(m => m.TestPluginsPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/home',
         pathMatch: 'full'

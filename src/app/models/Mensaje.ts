@@ -9,5 +9,7 @@ export interface Mensaje{
     imagen?:string,
     avatar?:string,
     urlImagen?:string,
+    file?: any,
     visto?:boolean
+
 }

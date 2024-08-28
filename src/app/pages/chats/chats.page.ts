@@ -49,18 +49,16 @@ export class ChatsPage implements OnInit {
   public getChats(): void {
     this.isLoading = true;
 
-    this.apiService.getSubEntity('chats', 1, 'mensajes').subscribe((mensajes: Mensaje[]) => {
+    /*this.apiService.getSubEntity('chats', 1, 'mensajes').subscribe((mensajes: Mensaje[]) => {
       console.log("Mensajes",mensajes);
     },error=>{
       console.log(error);
-    });
-
-
-
-
+    });*/
 
     this.apiService.getEntity('chats').subscribe((chats: Chat[]) => {
       this.isLoading = false;
+
+
       this.chats = chats.map(x => {
 
         if (x.ultimo_mensaje)
@@ -74,6 +72,9 @@ export class ChatsPage implements OnInit {
         return x;
       }
       );
+
+      console.log("Chats",this.chats);
+
     }, error => {
       console.log(error);
       this.isLoading = false;

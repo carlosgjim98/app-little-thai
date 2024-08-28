@@ -53,8 +53,8 @@ ion-footer{
 
 
     ion-range{
-        --bar-background: var(--ion-color-primary);
-        --bar-background-active: transparent;
+        --bar-background: rgb(168, 168, 168);
+        --bar-background-active: rgb(116, 116, 116);
         padding: 12px;
         padding-top: 32px;
     }

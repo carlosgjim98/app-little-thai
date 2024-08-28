@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { Chat } from 'src/app/models/Chat';
 
 @Component({
   selector: 'app-chat-group',
@@ -7,17 +9,25 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class AppChatGroupComponent implements OnInit {
 
-  @Input() icon: string;
-  @Input() redirection: string [];
-  @Input() title?: string;
-  @Input() subtitle: string;
-  @Input() lastMessage: string;
-  @Input() newMessages: number;
+  @Input() chat: Chat;
   @Input() slidingOptionsSide: string;
   @Input() slidingOptionsColor: string;
   @Input() slidingOptionsIcon: string;
-  constructor() { }
+  constructor(
+    private navController: NavController
+  ) { }
 
   ngOnInit() {}
+
+
+  public navigateChat(){
+    this.navController.navigateForward(['/interior-chat', this.chat.id], 
+      {
+        state: {
+          chat : this.chat
+        }
+      }
+    )
+  }
 
 }

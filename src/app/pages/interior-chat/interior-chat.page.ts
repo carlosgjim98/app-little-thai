@@ -1,5 +1,6 @@
 import { Component, NgZone, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Chat } from 'src/app/models/Chat';
 import { Mensaje } from 'src/app/models/Mensaje';
 import { ApiService } from 'src/app/services/api.service';
 import { NotificacionesNuevasService } from 'src/app/services/notificaciones-nuevas.service';
@@ -15,9 +16,8 @@ export class InteriorChatPage implements OnInit {
   @ViewChild('content', {static: true}) private content: any;
 
   public messages: Mensaje[];
-  public idChat: number;
-  public chatName: string;
-  public lastMessage;
+  public chat_id: number;
+  public chat: Chat;
   public isLoading: boolean = true;
 
   constructor(
@@ -28,10 +28,12 @@ export class InteriorChatPage implements OnInit {
     private notificacionesService: NotificacionesNuevasService
   ) { 
     this.route.params.subscribe((params: any)=> {
-      this.idChat = params.id_chat;
-      this.chatName = params.nombre_chat;
-      this.lastMessage = params.ultimo_mensaje;
-    })
+      this.chat_id = params.chat_id;
+      //this.chatName = params.nombre_chat;
+      //this.lastMessage = params.ultimo_mensaje;
+    });
+
+    this.chat = history.state.chat;
   }
 
   public ionViewDidEnter():void{
@@ -47,12 +49,12 @@ export class InteriorChatPage implements OnInit {
           texto: mensaje.texto,
           user_name: mensaje.user_name,
           created_at: mensaje.created_at,
-          urlImagen: mensaje.urlImagen,
+          imagen: mensaje.imagen,
           avatar: mensaje.avatar,
         }
         console.log("mensaje", m);
         setTimeout(() => {
-          this.lastMessage = m.created_at;
+          this.chat.ultimo_mensaje = m.created_at;
           this.messages.push(m);
           this.content.scrollToBottom(300);
         }, 1000);
@@ -66,7 +68,7 @@ export class InteriorChatPage implements OnInit {
 
   public getMensajes(): void {
     this.isLoading = true;
-    this.apiService.getSubEntity('chats', this.idChat, 'mensajes').subscribe((messages: Mensaje[]) => {
+    this.apiService.getSubEntity('chats', this.chat_id, 'mensajes').subscribe((messages: Mensaje[]) => {
       this.isLoading = false;
       this.messages = messages;
       setTimeout(() => {
@@ -77,7 +79,7 @@ export class InteriorChatPage implements OnInit {
       console.log(error);
       this.utilities.showToast("No se pueden obtener los mensajes");
     });
-    this.apiService.deleteEntity('mensajesNuevos', this.idChat).subscribe(res => {
+    this.apiService.deleteEntity('mensajesNuevos', this.chat_id).subscribe(res => {
       console.log(res);
     }, error => {
       console.log(error);
@@ -92,15 +94,15 @@ export class InteriorChatPage implements OnInit {
       let msj: Mensaje = {
         texto: message.texto,
         created_at: Date.now(),
-        chat_id: this.idChat,
+        chat_id: this.chat_id,
         imagen: message.imagen,
       }
       console.log(message);
 
 
-      this.apiService.addSubEntity('chats', this.idChat, 'mensajes', msj).subscribe((mensaje: Mensaje) => {
+      this.apiService.addSubEntity('chats', this.chat_id, 'mensajes', msj).subscribe((mensaje: Mensaje) => {
         this.messages.push(msj);
-        this.lastMessage = msj.created_at;
+        this.chat.ultimo_mensaje = msj.created_at;
         this.content.scrollToBottom(300);
       }, error => {
         this.utilities.showToast("No se ha podido enviar el mensaje");
