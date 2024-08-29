@@ -14,6 +14,7 @@ import {
   } from '@capacitor/push-notifications';
 import { NotificacionesNuevasService } from './services/notificaciones-nuevas.service';
 import { environment } from 'src/environments/environment';
+import { AppUpdate, AppUpdateAvailability, AppUpdateInfo } from '@capawesome/capacitor-app-update';
 
 @Component({
   selector: 'app-root',
@@ -58,6 +59,11 @@ export class AppComponent {
    * Nos suscribimos a los cambios dle perfil
    */
 public async ngOnInit() {
+
+  setTimeout(() => {
+    this.checkAppUpdate();
+  }, 10000);
+
   this.auth.authenticationState.subscribe(token => {
     if (token != 'logout' && token != '') {
       console.log("CAMBIA TOKEN ", token);
@@ -93,6 +99,27 @@ public async ngOnInit() {
     this.user = user;
   });
 }
+
+
+  public checkAppUpdate(){
+    if(this.platform.is('android') || this.platform.is('ios')){
+      AppUpdate.getAppUpdateInfo().then((appUpdateInfo: AppUpdateInfo)=>{
+      console.log("APP UPDATE INFO", appUpdateInfo);
+
+        if(appUpdateInfo.updateAvailability == AppUpdateAvailability.UPDATE_AVAILABLE ){
+          this.utilities.showAlert("App no actualizada","No tienes la versión más reciente de esta app");
+
+          setTimeout(() => {
+            AppUpdate.openAppStore();
+          }, 3000);
+        }
+      }, (error)=>{
+        console.log("No es posible buscar info de la app");
+        
+      })
+    }
+
+  }
 
 
   public checkIfAppIsSuspended() {

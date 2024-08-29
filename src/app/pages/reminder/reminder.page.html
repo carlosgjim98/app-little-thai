@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="cancel()">Cancelar</ion-button>
+    </ion-buttons>
+    <ion-title>Añadir recordatorio</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="submitForm()" [disabled]="!text">Guardar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-label for="date">Fecha</ion-label>
+  <ion-item class="inputs">
+    <ion-input type="date" placeholder="Selecciona una fecha" id="date" name="date"  [(ngModel)]="date"></ion-input>
+  </ion-item>
+
+
+  <ion-label for="time">Hora</ion-label>
+
+  <div class="datetime">
+
+    <ion-modal [keepContentsMounted]="true"  [cssClass]="'bottom-end'">
+      <ng-template>
+          <ion-datetime class="modalDatetime" id="time" mode="ios"  [(ngModel)]="time" 
+              presentation="time" [showDefaultButtons]="true" (ionChange)="timeChange($event)"></ion-datetime>
+      </ng-template>
+    </ion-modal>
+
+
+    <ion-item class="inputs"  style="--padding-start: 8px;">
+      <ion-datetime-button datetime="time" ></ion-datetime-button>
+      <ion-icon name="time-outline" class="last-icon" slot="end"></ion-icon>
+    </ion-item>
+    
+  </div>
+  
+  <ion-label for="text">Recordatorio</ion-label>
+
+  <ion-item lines="none" class="inputs">
+    <ion-textarea class="texto" [(ngModel)]="text"
+      placeholder="Introduce tu recordatorio aquí..."
+      [autoGrow]="true">
+    </ion-textarea>
+  </ion-item>    
+  
+
+</ion-content>

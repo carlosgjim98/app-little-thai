@@ -8,6 +8,7 @@ import { ApiService } from 'src/app/services/api.service';
 import { ModalController, NavController } from '@ionic/angular';
 import { format, parse, parseISO } from 'date-fns';
 import { es } from 'date-fns/locale';
+import { ReminderPage } from '../reminder/reminder.page';
 
 @Component({
   selector: 'app-calendar',
@@ -17,7 +18,6 @@ import { es } from 'date-fns/locale';
 export class CalendarPage implements OnInit {
 
   @ViewChild('calendar') calendarComponent: FullCalendarComponent;
-  @ViewChild('calendar2') calendarComponent2: FullCalendarComponent;
 
   calendarOptions: CalendarOptions = {
     plugins: [dayGridPlugin, interactionPlugin],
@@ -48,8 +48,6 @@ export class CalendarPage implements OnInit {
   public dateSelected: any;
 
   constructor(
-    private apiService: ApiService,
-    private navController: NavController,
     private modalController: ModalController,
   ) { }
 
@@ -57,56 +55,71 @@ export class CalendarPage implements OnInit {
 
     let dateToday = new Date();
     dateToday.setDate(dateToday.getDate() - 7);
-
     let index = 0;
-
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 50; i++) {
       // Creamos una nueva fecha basada en `dateToday`.
       let newDate = new Date(dateToday);
-      
       // Sumamos `i` días a la fecha original.
       newDate.setDate(dateToday.getDate() + i);
-      
       // Convertimos la fecha a formato YYYY-MM-DD.
       let formattedDate = newDate.toISOString().split('T')[0];
       
+      // Generamos una hora aleatoria.
+      let randomHours = Math.floor(Math.random() * 24);
+      let randomMinutes = Math.floor(Math.random() * 60);
+      let randomSeconds = Math.floor(Math.random() * 60);
+      let formattedTime = `${String(randomHours).padStart(2, '0')}:${String(randomMinutes).padStart(2, '0')}:${String(randomSeconds).padStart(2, '0')}`;
+
+
+
       // Definimos un color arbitrario para cada fecha.
       let color = `#${Math.floor(Math.random()*16777215).toString(16)}`;
-    
       // Añadimos el objeto con la fecha (como string) y color al array.
       
-      
-      this.allEvents.push({ id: index, date: formattedDate, color: color });
+      this.allEvents.push({ id: index, title: 'Prueba', date: formattedDate , time: formattedTime, color: color, class: 'color2' });
       index++;
       if(Math.random() < 0.5){
+
+        let randomHours = Math.floor(Math.random() * 24);
+        let randomMinutes = Math.floor(Math.random() * 60);
+        let randomSeconds = Math.floor(Math.random() * 60);
+        let formattedTime = `${String(randomHours).padStart(2, '0')}:${String(randomMinutes).padStart(2, '0')}:${String(randomSeconds).padStart(2, '0')}`;
+
         let color = `#${Math.floor(Math.random()*16777215).toString(16)}`;
-        this.allEvents.push({ id: index, date: formattedDate, color: color });
+        this.allEvents.push({ id: index, title: 'Prueba', date: formattedDate , time: formattedTime, color: color , class: 'color2'});
         index++;
       }
 
       if(Math.random() < 0.5){
+        let randomHours = Math.floor(Math.random() * 24);
+        let randomMinutes = Math.floor(Math.random() * 60);
+        let randomSeconds = Math.floor(Math.random() * 60);
+        let formattedTime = `${String(randomHours).padStart(2, '0')}:${String(randomMinutes).padStart(2, '0')}:${String(randomSeconds).padStart(2, '0')}`;
+
         let color = `#${Math.floor(Math.random()*16777215).toString(16)}`;
-        this.allEvents.push({ id: index, date: formattedDate, color: color });
+        this.allEvents.push({ id: index, title: 'Prueba', date: formattedDate , time: formattedTime, color: color ,class: 'color1'});
         index++;
       }
 
       if(Math.random() < 0.5){
+        let randomHours = Math.floor(Math.random() * 24);
+        let randomMinutes = Math.floor(Math.random() * 60);
+        let randomSeconds = Math.floor(Math.random() * 60);
+        let formattedTime = `${String(randomHours).padStart(2, '0')}:${String(randomMinutes).padStart(2, '0')}:${String(randomSeconds).padStart(2, '0')}`;
+
         let color = `#${Math.floor(Math.random()*16777215).toString(16)}`;
-        this.allEvents.push({ id: index, date: formattedDate, color: color });
+        this.allEvents.push({ id: index, title: 'Prueba', date: formattedDate , time: formattedTime, color: color, class: 'reminder' });
         index++;
       }
     }
-    
 
-    console.log("LOG EVENTS", this.allEvents);
+    console.log("LOG EVENTS EXAMPLES", this.allEvents);
     
 
   }
 
 
   ionViewDidEnter(): void {
-     
-      
       this.eventsCalendar = [];
 
       this.allEvents.forEach(eventDate => {
@@ -122,15 +135,19 @@ export class CalendarPage implements OnInit {
 
 
 
-      // Selecciona todos los elementos td con las clases específicas
-      let td = document.querySelector('.fc .fc-daygrid-day.fc-day-today');
+      setTimeout(() => {
+        // Selecciona todos los elementos td con las clases específicas
+        let td = document.querySelector('.fc .fc-daygrid-day.fc-day-today');
 
-      // Añade la clase 'selected' a cada uno de esos elementos
-      this.elementSelected = td;
+        // Añade la clase 'selected' a cada uno de esos elementos
+        this.elementSelected = td;
 
-      td.classList.add('selected');
-     
-      this.selectEventsToday();
+        td.classList.add('selected');
+      
+        this.selectEventsToday();
+      }, 500);
+
+ 
 
   }
 
@@ -142,32 +159,24 @@ export class CalendarPage implements OnInit {
     
     console.log("DATE CLICK",arg.dateStr);
 
-
     this.dateSelected = arg.dateStr;
 
     if(this.elementSelected){
       this.elementSelected.classList.remove('selected');
-
     }
   
     this.elementSelected = arg.dayEl;
 
     arg.dayEl.classList.add('selected');
 
-
-    // FILTRAR EVENTOS DE ABAJO
-
     let events = this.allEvents.filter(element => element.date == arg.dateStr);
-
-    console.log("event filter", events);
+       
+    console.log("events filters this date", events);
     
-    if(events.length > 0){
-      this.eventsSelectedDate = events[0];
-    }else{
-      this.eventsSelectedDate = {
-        'date' : arg.dateStr,
-        'allEvents' : [],
-      };
+
+    this.eventsSelectedDate = {
+      date: this.dateSelected,
+      allEvents: events
     }
     console.log("EVENTS SELECTED DATE", this.eventsSelectedDate);
     
@@ -186,14 +195,11 @@ export class CalendarPage implements OnInit {
 
     console.log("event filter", events);
     
-    if(events.length > 0){
-      this.eventsSelectedDate = events[0];
-    }else{
-      this.eventsSelectedDate = {
-        'date' : formattedDate,
-        'allEvents' : [],
-      };
+    this.eventsSelectedDate = {
+      date: this.dateSelected,
+      allEvents: events
     }
+
     console.log("EVENTS SELECTED DATE", this.eventsSelectedDate);
   }
 
@@ -201,6 +207,75 @@ export class CalendarPage implements OnInit {
     let fechaParseada = parseISO(date);
     let formattedDate = format(fechaParseada, "EEEE, d MMM", { locale: es });
     return formattedDate;
+  }
+
+  getTime(timeString: string){
+
+    if(timeString.length == 8){
+
+      return timeString.substring(0,6);
+
+    }
+
+    // Parse the time string into a Date object
+    let date = parse(timeString, 'HH:mm:ss', new Date());
+
+    // Format the Date object to the desired format
+    let formattedTime = format(date, 'H:mm a', { locale: es });
+
+    // Replace 'AM'/'PM' with 'h'
+    let finalFormattedTime = formattedTime.replace('AM', 'h').replace('PM', 'h');
+
+    // Output the formatted time
+    return finalFormattedTime; 
+  }
+
+
+  public async addReminder(){
+    const modal = await this.modalController.create({
+      component: ReminderPage,
+      backdropDismiss: false,
+      presentingElement: await this.modalController.getTop(),
+      mode: 'ios',
+      componentProps: {
+        date: this.dateSelected,
+      }
+    });
+
+
+    modal.onDidDismiss().then(dataReturned => {
+
+      console.log("REMINDER AÑADIDO", dataReturned.data);
+
+      if(dataReturned.role == 'reminder'){
+        let color = `#${Math.floor(Math.random()*16777215).toString(16)}`;
+        
+        this.eventsCalendar.push(
+          { title: 'RECORDATORIO', start: dataReturned.data.date , color:color},
+        )
+
+        this.allEvents.push(
+          { id: String(Math.random()*9999) ,title: 'RECORDATORIO', date: dataReturned.data.date , color:color, class: 'reminder'},
+        )
+
+        this.calendarOptions.events = [];
+        this.calendarComponent.options = this.calendarOptions;
+        this.calendarComponent.getApi().refetchEvents();
+
+        setTimeout(() => {
+          this.calendarOptions.events = this.eventsCalendar;
+          this.calendarComponent.options = this.calendarOptions;
+          this.calendarComponent.getApi().refetchEvents();
+        }, 200);
+
+  
+
+      }
+      
+
+    });
+
+    return await modal.present();
   }
 
 

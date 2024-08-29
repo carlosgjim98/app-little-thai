@@ -1,38 +1,6 @@
-ion-datetime{
-    color: #ffffff;
-    margin-top: 2%;
-    margin-left: auto;
-    margin-right:auto;
-    // --padding-end: 20px !important;
-    border-radius: 5px;
-    background: rgb(33, 33, 33);
-    max-width: 95%;
-}
-
-.list-container{
-    padding: 5px;
-    padding-top: 0%;
-}
-
-ion-list{
-    padding-top: 0%;
-}
-
-.intervalo{
-    font-size: 12px;
-    opacity: 0.7;
-    max-height: 3px !important;
-}
 
 
 ion-item {
-    /*
-    height: auto;
-    width: 100%;
-    border-radius: 5px;
-    
-    position: relative;
-    overflow: hidden; */
     margin: 0px;
     margin-top: 8px;
     margin-bottom: 8px;
@@ -54,36 +22,25 @@ ion-item {
         //margin-left: 16px;
         background: #5F5959;
 
-        &.call{
+        &.color1{
             background: #B441A5 !important;
         }
     
-        &.date{
+        &.color2{
             background: #872FC2 !important;
         }
 
     }
 
-    &.call{
+    &.color1{
         --background: #88227A !important;
     }
 
-    &.date{
+    &.color2{
         --background: #51127C !important;
     }
 }
 
-/*ion-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.2); 
-    z-index: 9999;
-    margin-left: 60px;
-}*/
 
 ion-label {
     color: white !important;
@@ -115,9 +72,7 @@ img {
     align-items: center;
     padding-left: 4px !important;
     margin: 0;
-    margin-right: 16px;
-
-   
+    margin-right: 16px; 
 }
 
 .campana{
@@ -126,11 +81,6 @@ img {
 
 ion-item ion-icon {
     font-size: 20px; 
-    /*position: absolute;
-    top: 50%;
-    right: 10px; 
-    transform: translateY(-50%);
-    z-index: 2;*/
 }
 
 

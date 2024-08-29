@@ -26,6 +26,28 @@
 @import "@ionic/angular/css/flex-utils.css";
 
 
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/*@import "@ionic/angular/css/palettes/dark.always.css";
+@import "@ionic/angular/css/palettes/dark.class.css";*/
+@import "@ionic/angular/css/palettes/dark.system.css";
+
+
+// ESTILOS PARA TODOS LOS ION TOOLBAR
+
+ion-toolbar{
+    --border-width: 0;
+    --border-color: transparent;
+    --background: transparent;
+}
+
+
+
 // ESTILOS FULLCALENDAR
 
 
@@ -33,7 +55,7 @@ full-calendar{
     padding: 16px !important;
     margin: 0px !important;
     border-radius: 12px !important;
-    background: var(--ion-color-calendar);
+    background: var(--fc-page-bg-color);
 }
 
 
@@ -53,17 +75,17 @@ full-calendar{
     border: none;
     border-radius: 100px;
     &.selected{
-        background: var(--ion-color-calendar-shade) !important;
+        background: var(--fc-highlight-color) !important;
     }
 }
 
 .fc .fc-col-header-cell-cushion{
     text-transform: uppercase;
-    color:  var(--ion-color-calendar-contrast)
+    //color:  var(--ion-color-calendar-contrast)
 }
 
 .fc .fc-button-primary{
-    background: transparent;
+    //background: transparent;
     border: none;
 }
 
@@ -105,7 +127,7 @@ full-calendar{
 }
 
 .fc .fc-daygrid-day.fc-day-today{
-    background-color: var(--ion-color-calendar-shade);
+    background-color: var(--ion-color-primary-shade);
 }
   
 .fc .fc-toolbar-title{
@@ -113,7 +135,7 @@ full-calendar{
 }
   
 .fc .fc-daygrid-day-number{
-    color: var(--ion-color-calendar-contrast);
+    //color: var(--ion-color-calendar-contrast);
     width: 100%;
     display: flex;
     flex-flow: row;
@@ -123,7 +145,7 @@ full-calendar{
 // LIST CALENDAR
 
 .fc .fc-list-table tbody > tr:first-child th , .fc-theme-standard .fc-list-day-cushion, .fc .fc-list-sticky .fc-list-day > *{
-    background: #404040 !important;
+    //background: #404040 !important;
     border-radius: 12px;
 }
 

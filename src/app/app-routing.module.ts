@@ -69,10 +69,16 @@ const routes: Routes = [
   {
     path: 'image-view',
     loadChildren: () => import('./pages/utils/image-view/image-view.module').then( m => m.ImageViewPageModule)
-  },  {
+  },
+  {
     path: 'calendar',
     loadChildren: () => import('./pages/calendar/calendar.module').then( m => m.CalendarPageModule)
   },
+  {
+    path: 'reminder',
+    loadChildren: () => import('./pages/reminder/reminder.module').then( m => m.ReminderPageModule)
+  }
+
 
   
 
