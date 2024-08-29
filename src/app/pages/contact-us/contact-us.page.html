@@ -1,0 +1,30 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Contacta con nosotros</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form *ngIf="form" [formGroup]="form" (ngSubmit)="submitForm()" >
+    <p class="ion-text-center">¿Tienes alguna sugerencia para mejorar la app?</p>
+    <p class="ion-text-center">¿¡Estamos deseando escucharte!</p>
+    <div>
+      <p>Nombre del usuario</p>
+      <ion-input formControlName="name" type="text"  placeholder="Escribe aqui" required></ion-input>
+      <p>Email</p>
+      <ion-input formControlName="email" type="text"  placeholder="Escribe aqui" required></ion-input>
+      <p>Teléfono</p>
+      <ion-input formControlName="phone" type="text"  placeholder="Escribe aqui" required></ion-input>
+    </div>
+    <div>
+    <p>Mensaje</p>
+    <ion-textarea formControlName="text" placeholder="Escribe aqui"></ion-textarea>
+  </div>
+
+  <ion-button [disabled]="!this.form.valid" expand="full" type="submit">Enviar mensaje</ion-button>    
+
+  </form>
+</ion-content>

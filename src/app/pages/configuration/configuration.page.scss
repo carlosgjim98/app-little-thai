@@ -1,0 +1,46 @@
+ion-header{
+    ion-toolbar{
+        ion-title{
+            font-size: 16px; 
+            padding: 0;
+        }
+    }
+}
+
+
+p.titles{
+    color: #838080;
+    margin-bottom: 16px;
+    margin-top: 32px;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+ion-item{
+    --background:#dddddd ;
+    color: rgb(35, 35, 35);
+    margin-bottom: 16px;
+    --border-radius: 4px;
+    --padding-start: 16px;
+
+    ion-label{
+        span{
+            font-size: 14px;
+        }
+    }
+    
+    ion-icon{
+        color: white;
+    }
+}
+
+.delete-account{
+    color:red; 
+    text-align: center;
+}
+
+.version{
+    color:rgb(120, 120, 120); 
+    text-align: center; 
+    font-size: 12px;
+}

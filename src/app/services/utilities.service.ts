@@ -266,7 +266,7 @@ export class UtilitiesService {
   }
 
 
-  public async adjuntarImagenCamera(crop: boolean = false, aspectRatio?: number): Promise<{ url: string, blob: Blob | null }> {
+  public async adjuntarImagenCamera(crop: boolean = false, aspectRatio?: number): Promise<{ url: string, blob: Blob | null } | any> {
     try {
 
       const file = await Camera.getPhoto({
@@ -297,7 +297,9 @@ export class UtilitiesService {
 
     } catch (error) {
       console.error("Error en adjuntarImagenCamera:", error);
-      return { url: '', blob: null };
+      return error;
+
+      
     }
   }
 

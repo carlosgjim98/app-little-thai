@@ -44,7 +44,48 @@ ion-toolbar{
     --border-width: 0;
     --border-color: transparent;
     --background: transparent;
+    --padding-start: 16px;
+    --padding-end: 16px;
+    --padding-top: 16px;
+    --padding-bottom: 16px;
+    --background: white;
+
+    ion-buttons{
+        ion-icon{
+            font-size: 32px;
+        }
+    }
+
+    ion-title{
+        font-size: 16px; 
+        padding: 0;
+        font-family: var(--ion-font-family-headers);
+    }
 }
+
+
+// ESTILOS PARA TODOS LOS BOTONES "EN PRINCIPIO" -- PARA CAMBIAR ESTILOS, CAMBIARLO EN UNO EN CONCRETO CON ALGUNA CLASE
+
+ion-button{
+    --border-radius: var(--app-border-radius);
+    height: 48px;
+    text-transform: none;
+}
+
+// ESTILOS PARA ITEMS Y INPUTS
+
+ion-item{
+    --padding-start: 8px;
+    --padding-end: 8px;
+}
+
+ion-input{
+    
+    ion-input-password-toggle{
+        margin: 0 !important;
+    }
+}
+
 
 
 

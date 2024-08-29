@@ -7,6 +7,65 @@
   src: url('/assets/fonts/Lato-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'DMSans-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/DMSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'DMSans-ExtraBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/DMSans-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'DMSans-ExtraLight';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/DMSans-ExtraLight.ttf');
+}
+
+@font-face {
+  font-family: 'DMSans-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/DMSans-Light.ttf');
+}
+
+@font-face {
+  font-family: 'DMSans-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/DMSans-Medium.ttf');
+}
+
+
+@font-face {
+  font-family: 'DMSans-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/DMSans-Regular.ttf');
+}
+
+
+@font-face {
+  font-family: 'DMSans-SemiBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/DMSans-SemiBold.ttf');
+}
+
+
+@font-face {
+  font-family: 'DMSans-Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/DMSans-Thin.ttf');
+}
+
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
@@ -118,8 +177,15 @@
   --fc-today-bg-color: var(--ion-color-primary-tint) !important;
   --fc-now-indicator-color: red;
 
-  --ion-font-family: 'Lato';
+  --ion-font-family: 'DMSans-Regular';
+  --ion-font-family-headers: 'DMSans-Bold';
+
+  // BORDERS PARA TODA LA APP
+  --app-border-radius: 12px;
 }
+
+
+
 
 @media (prefers-color-scheme: dark) {
   /*

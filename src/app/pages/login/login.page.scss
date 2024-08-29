@@ -1,58 +1,56 @@
 ion-content{
-    background-size: cover;
-    --background:url('/assets/imgs/base-background.jpg');
-    
+    //background-size: cover;
+    //--background:url('/assets/imgs/base-background.jpg');
 
-    ion-item{
-        padding-left: 0 !important;
-    }
     .title{
-        color:#fff;
-        margin-top:20px;
-        margin-bottom: 30px;
+        margin-top:16px;
+        margin-bottom: 32px;
     }
     ion-button{
         text-transform: none;
     }
     .logo{
+        margin:0 auto;
+        z-index: 2;
+        margin-top:10vh;
         img{
             width: 130px;
             height: 130px; 
         }
-        margin:0 auto;
-        //position: absolute;
-        z-index: 2;
-        width: 100vw;
-        margin-top:10vh;
+        
     }
 
     #socialLinks{
         display: flex;
         justify-content: space-evenly;
         margin: 2vh 8vw 2vh 8vw;
-        width: 85vw;
+        //width: 85vw;
+
+        ion-icon{
+            font-size: 32px;
+        }
         #facebook{
             --color: white;
-            //--color: #307EFA;
             --background: #3b5998;
             --background-activated: #4567b0;
             --background-focused: #3b5998;
 
-            --border-radius: 30px;
-            height: 6vh;
-            width: 6vh;
+            --border-radius: 50%;
+            height: 64px;
+            width: 64px;
             margin : 0;
-
+            
+            
         }
         #google{
             --background: white;
             --background-activated: rgb(235, 235, 235);
             --background-focused: white;
-            --border-radius: 30px;
-            border-radius: 30px;
+            --border-radius: 50%;
+            border-radius: 50%;
             box-shadow: 0px 0px 10px 3px #0000000a;
-            height: 6vh;
-            width: 6vh;
+            height: 64px;
+            width: 64px;
             margin : 0;
 
 
@@ -70,9 +68,9 @@ ion-content{
             --background-activated: #909090;
             --background-focused: #868686;
             --color: white;
-            --border-radius: 30px;
-            height: 6vh;
-            width: 6vh;
+            --border-radius: 50%;
+            height: 64px;
+            width: 64px;
             margin : 0;
 
         }

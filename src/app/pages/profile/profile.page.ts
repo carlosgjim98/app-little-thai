@@ -7,6 +7,7 @@ import { UtilitiesService } from 'src/app/services/utilities.service';
 import { codeErrors } from 'src/app/utils/utils';
 import { Camera, CameraResultType } from '@capacitor/camera';
 import { PushNotifications } from '@capacitor/push-notifications';
+import { ActionSheetController } from '@ionic/angular';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.page.html',
@@ -16,14 +17,14 @@ export class ProfilePage implements OnInit {
 
   public user: User;
   public form: FormGroup;
-  public base64img: string;
+  public base64img: any;
   public isLoading: boolean = true;
 
   constructor(
     private apiService: ApiService,
     private utilities: UtilitiesService,
-    //private camera: Camera,
-    public auth: AuthenticationService
+    public auth: AuthenticationService,
+    public actionsheetCtrl: ActionSheetController
   ) { }
 
   ngOnInit() {
@@ -55,39 +56,49 @@ export class ProfilePage implements OnInit {
     });
   }
 
-  public async adjuntarImagen() {
+  async adjuntarImagen() {
 
-    const permissions = await Camera.requestPermissions();
+    const actionSheet = await this.actionsheetCtrl.create({
+      header: 'Seleccionar archivo',
+      mode: 'ios',
+      buttons: [
+        {
+          text: 'Galería',
 
+          handler: () => {
+            this.utilities.adjuntarImagen(true).then((response)=>{
+              console.log("RESPONSE ADD IMAGE CHAT", response);
 
-    if(permissions.photos === 'denied' || permissions.camera === 'denied') {
-      console.log("permiso camera " , permissions);
-      
-    }
-    const image = await Camera.getPhoto({
-      promptLabelHeader: 'Fotos',
-      promptLabelCancel: 'Cancelar',
-      promptLabelPhoto: 'Galería',
-      promptLabelPicture: 'Cámara',
-      quality: 90,
-      allowEditing: false,
-      resultType: CameraResultType.Base64
+              this.user.avatar = response.url;
+              this.base64img = response.blob;
+              
+            }, (error) =>{
+
+            });
+          }
+        },
+        {
+          text: 'Cámara',
+          handler: () => {
+            this.utilities.adjuntarImagenCamera(true).then((response)=>{
+              console.log("RESPONSE ADD IMAGE CAMERA CHAT", response);
+              this.user.avatar = response.url;
+              this.base64img = response.blob;
+            }, (error) =>{
+              
+            });
+          }
+        },
+        {
+          text: 'Cancelar',
+          role: 'cancel',
+          data: {
+            action: 'cancel',
+          },
+        },
+      ],
     });
-  
-    console.log(image);
-    
-    // image.webPath will contain a path that can be set as an image src.
-    // You can access the original file using image.path, which can be
-    // passed to the Filesystem API to read the raw data of the image,
-    // if desired (or pass resultType: CameraResultType.Base64 to getPhoto)
-    this.base64img = 'data:image/jpeg;base64,' + image.base64String;
-  
-    console.log("imagen " ,this.base64img);
 
-    this.form.patchValue({avatar : this.base64img})
-    this.user.avatar = this.base64img;
-
-    // Can be set to the src of an image now
-    //imageElement.src = imageUrl;
+    await actionSheet.present();
   }
 }

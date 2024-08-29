@@ -1,9 +1,46 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>idiomas</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Idiomas</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding ion-text-center ion-justify-content-between">
 
+  <p class="subtitle">Selecciona en que idioma utilizarás la app</p>
+
+  <ion-radio-group mode="ios">
+
+    <ion-item lines="none">
+      <img slot="start" src="assets/icons/spain.svg" alt="">
+      <div class="text ion-text-center">
+        <p class="medium">Español (España)</p>
+        <p class="regular">Español (España)</p>
+      </div>
+      <ion-radio slot="end" value="es"></ion-radio>
+    </ion-item>
+
+    <ion-item lines="none">
+      <img slot="start" src="assets/icons/ingles.svg" alt="">
+      <div class="text ion-text-center">
+        <p class="medium">English</p>
+        <p class="regular">Inglés</p>
+      </div>
+      <ion-radio slot="end" value="us"></ion-radio>
+    </ion-item>
+
+
+    <ion-item lines="none">
+      <img slot="start" src="assets/icons/frances.svg" alt="">
+      <div class="text ion-text-center">
+        <p class="medium">Français</p>
+        <p class="regular">Francés</p>
+      </div>
+      <ion-radio slot="end" value="fr"></ion-radio>
+    </ion-item>
+
+  </ion-radio-group>
+  <ion-button expand="block">Guardar y continuar</ion-button>
 </ion-content>

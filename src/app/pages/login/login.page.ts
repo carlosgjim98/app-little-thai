@@ -6,8 +6,8 @@ import { ApiService } from 'src/app/services/api.service';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import { UtilitiesService } from 'src/app/services/utilities.service';
 import { codeErrors } from 'src/app/utils/utils';
-//import { GoogleAuth } from '@codetrix-studio/capacitor-google-auth';
 import { FacebookLogin, FacebookLoginResponse } from '@capacitor-community/facebook-login';
+import { GoogleAuth } from '@codetrix-studio/capacitor-google-auth';
 
 const FACEBOOK_PERMISSIONS = ['public_profile', 'email'];
 
@@ -46,7 +46,7 @@ export class LoginPage implements OnInit {
   }
 
   async ionViewDidEnter(){
-    //GoogleAuth.initialize();
+    GoogleAuth.initialize();
     await FacebookLogin.initialize({ appId: '748077676570420' });
 
   }
@@ -97,9 +97,9 @@ export class LoginPage implements OnInit {
   */
 
   public async loginGoogle(){
-    /*const user = await GoogleAuth.signIn();
+    const user = await GoogleAuth.signIn();
     
-    console.log("user" , user);*/
+    console.log("user" , user);
     
   }
 

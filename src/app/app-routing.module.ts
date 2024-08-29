@@ -19,10 +19,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/chats/chats.module').then( m => m.ChatsPageModule)
   },
   {
-    path: 'details',
-    loadChildren: () => import('./pages/details/details.module').then( m => m.DetailsPageModule)
-  },
-  {
     path: 'forgot-password',
     loadChildren: () => import('./pages/forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
   },
@@ -77,7 +73,28 @@ const routes: Routes = [
   {
     path: 'reminder',
     loadChildren: () => import('./pages/reminder/reminder.module').then( m => m.ReminderPageModule)
+  },
+  {
+    path: 'configuration',
+    loadChildren: () => import('./pages/configuration/configuration.module').then( m => m.ConfigurationPageModule)
+  },
+  {
+    path: 'privacy-policy',
+    loadChildren: () => import('./pages/privacy-policy/privacy-policy.module').then( m => m.PrivacyPolicyPageModule)
+  },
+  {
+    path: 'eulas',
+    loadChildren: () => import('./pages/eulas/eulas.module').then( m => m.EulasPageModule)
+  },
+  {
+    path: 'terms',
+    loadChildren: () => import('./pages/terms/terms.module').then( m => m.TermsPageModule)
+  },
+  {
+    path: 'contact-us',
+    loadChildren: () => import('./pages/contact-us/contact-us.module').then( m => m.ContactUsPageModule)
   }
+
 
 
   

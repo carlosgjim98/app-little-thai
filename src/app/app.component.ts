@@ -1,5 +1,5 @@
 import { HttpErrorResponse } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, NgZone } from '@angular/core';
 import { NavController, Platform } from '@ionic/angular';
 import { Storage } from '@ionic/storage-angular';
 import { User } from './models/User';
@@ -15,6 +15,8 @@ import {
 import { NotificacionesNuevasService } from './services/notificaciones-nuevas.service';
 import { environment } from 'src/environments/environment';
 import { AppUpdate, AppUpdateAvailability, AppUpdateInfo } from '@capawesome/capacitor-app-update';
+import { App, URLOpenListenerEvent } from '@capacitor/app';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -50,6 +52,8 @@ export class AppComponent {
     private storage: Storage,
     private utilities: UtilitiesService,
     private notificationsService : NotificacionesNuevasService,
+    private router: Router, 
+    private zone: NgZone
 
   ) {}
 
@@ -59,6 +63,22 @@ export class AppComponent {
    * Nos suscribimos a los cambios dle perfil
    */
 public async ngOnInit() {
+
+  App.addListener('appUrlOpen', (event: URLOpenListenerEvent) => {
+    this.zone.run(() => {
+      console.log("APPURLOPEN",  event);
+
+      
+        // Example url: https://beerswift.app/tabs/tab2
+        // slug = /tabs/tab2
+        const slug = event.url.split(".app").pop();
+        if (slug) {
+            //this.router.navigateByUrl(slug);
+        }
+        // If no match, do nothing - let regular routing
+        // logic take over
+    });
+});
 
   setTimeout(() => {
     this.checkAppUpdate();
@@ -114,7 +134,7 @@ public async ngOnInit() {
           }, 3000);
         }
       }, (error)=>{
-        console.log("No es posible buscar info de la app");
+        console.error("checkAppUpdate : No es posible buscar info de la app -- Este plugin dará error hasta que no esté correctamente la app subida a Stores y sus correspondientes archivos de configuración.");
         
       })
     }
