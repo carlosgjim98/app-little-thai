@@ -1,0 +1,29 @@
+ion-header{
+    ion-toolbar{
+        ion-buttons{
+            ion-icon{
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+.error-container {
+    text-align: center;
+    padding: 2rem;
+    height: 90vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #e63946; /* Color de ejemplo para el código de error */
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #333; /* Color de ejemplo para el mensaje de error */
+  }

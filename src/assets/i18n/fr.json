@@ -1,0 +1,46 @@
+{
+    "LOGIN": {
+      "HEADER": "Connexion",
+      "TITLE": "Connectez-vous pour voir nos nouveautés!",
+      "USER": "Nom d'utilisateur",
+      "PASSWORD": "Mot de passe",
+      "LOGIN": "Connexion",
+      "SIGNUP": "Inscription",
+      "FORGOT_PASSWORD": "Vous avez oublié votre mot de passe?"
+    },
+    
+    "REGISTER": {
+      "HEADER": "Inscription",
+      "TITLE": "Créez un nouveau compte, c'est vraiment facile!",
+      "NAME": "Nom d'utilisateur",
+      "EMAIL": "Email",
+      "PASSWORD": "Mot de passe",
+      "CONFIRM_PASSWORD": "Confirmer le mot de passe",
+      "CREATE_ACCOUNT": "Créer un compte",
+      "HAVE_ACCOUNT": "Vous avez déjà un compte?"
+    },
+  
+    "FORGOT_PASSWORD": {
+      "HEADER": "Récupérer le mot de passe",
+      "TITLE": "Entrez votre email",
+      "EMAIL": "Email",
+      "SEND": "Envoyer"
+    },
+  
+    "CONFIGURATION": {
+      "HEADER": "Paramètres",
+      "EDIT_MY_PROFILE": "Modifier mon profil",
+      "LANGUAGES": "Langues",
+      "USERS": "Utilisateurs",
+      "BLOCKED_USERS": "Utilisateurs bloqués",
+      "OTHER": "Autres",
+      "POLICY": "Politique de confidentialité",
+      "TERMS": "Conditions générales",
+      "EULA": "CLUF",
+      "CONTACT_US": "Nous contacter",
+      "LOGOUT": "Déconnexion",
+      "DELETE_ACCOUNT": "Supprimer le compte",
+      "VERSION": "Version"
+    }
+  }
+  

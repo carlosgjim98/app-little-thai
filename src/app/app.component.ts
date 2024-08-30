@@ -17,6 +17,8 @@ import { environment } from 'src/environments/environment';
 import { AppUpdate, AppUpdateAvailability, AppUpdateInfo } from '@capawesome/capacitor-app-update';
 import { App, URLOpenListenerEvent } from '@capacitor/app';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+import { Device } from '@capacitor/device';
 
 @Component({
   selector: 'app-root',
@@ -53,7 +55,8 @@ export class AppComponent {
     private utilities: UtilitiesService,
     private notificationsService : NotificacionesNuevasService,
     private router: Router, 
-    private zone: NgZone
+    private zone: NgZone,
+    private translate: TranslateService
 
   ) {}
 
@@ -78,11 +81,23 @@ public async ngOnInit() {
         // If no match, do nothing - let regular routing
         // logic take over
     });
-});
+  });
 
   setTimeout(() => {
     this.checkAppUpdate();
   }, 10000);
+
+
+
+  this.utilities.getLangPreferences().then((result)=>{
+    console.log("IDIOMA GUARDADO EN PREFERENCES", result);
+
+    if(result.value){
+      this.translate.use(result.value);
+    }
+  }, (error)=>{
+    console.log("Error al obtener idioma guardado en preferences",error);
+  })
 
   this.auth.authenticationState.subscribe(token => {
     if (token != 'logout' && token != '') {
@@ -102,9 +117,13 @@ public async ngOnInit() {
     } else {
       this.isLoading = false;
       console.log("primera vez");
+      // this language will be used as a fallback when a translation isn't found in the current language
+      this.translate.setDefaultLang('es');
       
+      /*Device.getLanguageCode().then((response)=>{
+        this.translate.use(response.value);
+      });*/
     }
-
     // IMPORTANTE: para comprobar si la app está o no suspendida, debe ponerse el dominio en la propiedad "domainUrl" del archivo "src/environments/environment.ts"
     this.checkIfAppIsSuspended();
   });

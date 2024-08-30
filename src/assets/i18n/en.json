@@ -1,0 +1,46 @@
+{
+    "LOGIN": {
+      "HEADER": "Login",
+      "TITLE": "Log in to see our latest updates!",
+      "USER": "Username",
+      "PASSWORD": "Password",
+      "LOGIN": "Login",
+      "SIGNUP": "Sign Up",
+      "FORGOT_PASSWORD": "Forgot your password?"
+    },
+    
+    "REGISTER": {
+      "HEADER": "Register",
+      "TITLE": "Create a new account, it's really easy!",
+      "NAME": "Username",
+      "EMAIL": "Email",
+      "PASSWORD": "Password",
+      "CONFIRM_PASSWORD": "Confirm Password",
+      "CREATE_ACCOUNT": "Create Account",
+      "HAVE_ACCOUNT": "Already have an account?"
+    },
+  
+    "FORGOT_PASSWORD": {
+      "HEADER": "Recover Password",
+      "TITLE": "Enter your email",
+      "EMAIL": "Email",
+      "SEND": "Send"
+    },
+  
+    "CONFIGURATION": {
+      "HEADER": "Settings",
+      "EDIT_MY_PROFILE": "Edit my profile",
+      "LANGUAGES": "Languages",
+      "USERS": "Users",
+      "BLOCKED_USERS": "Blocked Users",
+      "OTHER": "Other",
+      "POLICY": "Privacy Policy",
+      "TERMS": "Terms and Conditions",
+      "EULA": "EULA",
+      "CONTACT_US": "Contact Us",
+      "LOGOUT": "Log Out",
+      "DELETE_ACCOUNT": "Delete Account",
+      "VERSION": "Version"
+    }
+  }
+  

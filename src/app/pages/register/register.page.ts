@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { NavController } from '@ionic/angular';
+import { TranslateService } from '@ngx-translate/core';
 import { User } from 'src/app/models/User';
 import { ApiService } from 'src/app/services/api.service';
 import { UtilitiesService } from 'src/app/services/utilities.service';
@@ -18,7 +19,9 @@ export class RegisterPage implements OnInit {
   constructor(
     private apiService: ApiService,
     private utilitiesService: UtilitiesService,
-    private navCtrl: NavController) { }
+    private navCtrl: NavController,
+    public translate: TranslateService
+  ) { }
 
   public ngOnInit(): void {
 

@@ -8,6 +8,7 @@ import { UtilitiesService } from 'src/app/services/utilities.service';
 import { codeErrors } from 'src/app/utils/utils';
 import { FacebookLogin, FacebookLoginResponse } from '@capacitor-community/facebook-login';
 import { GoogleAuth } from '@codetrix-studio/capacitor-google-auth';
+import { TranslateService } from '@ngx-translate/core';
 
 const FACEBOOK_PERMISSIONS = ['public_profile', 'email'];
 
@@ -23,14 +24,17 @@ export class LoginPage implements OnInit {
 
   public usuarioFacebook: User;
 
+  showError: boolean = false;
+  errorCode: string = '';
+  errorMessage: string = '';
+
   constructor(
-    private apiService: ApiService,
-    private utilitiesService: UtilitiesService,
-    private navCtrl: NavController,
-    private auth: AuthenticationService,
-    public platform: Platform
-    /*private fb: Facebook,
-    private googlePlus: GooglePlus*/
+    public apiService: ApiService,
+    public utilitiesService: UtilitiesService,
+    public navCtrl: NavController,
+    public auth: AuthenticationService,
+    public platform: Platform,
+    public translate: TranslateService,
   ) { }
 
   ngOnInit() {
@@ -53,32 +57,33 @@ export class LoginPage implements OnInit {
 
   public submitForm() {
 
-    console.log("hola");
-    console.log(this.form.valid);
-    
-   
-    console.log(this.form.value);
+    this.showError = false;
 
-    this.utilitiesService.showLoading("Entrando...");
-
+  
     this.apiService.login(this.form.value).subscribe((user: User) => {
 
-      this.utilitiesService.dismissLoading();
-      console.log(user);
-
-      //Ahora aplicamos la cabecera devuelta a las siguientes peticiones
       this.apiService.setTokenToHeaders(user.api_token);
-
-      //Emitimos el evento de login
-      //this.events.publish('user:login');
-
-      //Vamos a inicio
       this.auth.login(user.api_token);
-
+    
     }, (error) => {
-      this.utilitiesService.dismissLoading();
       this.utilitiesService.showToast(codeErrors(error));
+
+      // MOSTRAR MODAL CON SHOW ERROR DIRECTAMENTE, CON UNA PANTALLA DE ERROR COMOM LA QUE ESTOY HACIENDO, YA QUE SERÁ INCLUSO MÁS FACIL
+
+      // ENTONCES EN VEZ DE HACER EL SHOW TOAST DE CODE ERRORS, SERÁ UTILITIES SHOW ERROR -- ASI PODREMOS DEPENDIENDO DEL ERROR, MOSTRAR, UN TOAST, MOSTRAR UN ALERT, O MOSTRAR PANTALLA COMPLETA
+      this.errorCode = error.status;
+      this.errorMessage = error.error.message;
+      this.showError = true;
     });
+
+   
+
+  }
+
+  backPage(){
+    this.errorCode = '';
+    this.errorMessage = '';
+    this.showError = false;
   }
 
 

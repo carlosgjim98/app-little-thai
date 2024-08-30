@@ -3,62 +3,62 @@
     <ion-buttons slot="start">
       <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
     </ion-buttons>
-    <ion-title>Ajustes</ion-title>
+    <ion-title>{{'CONFIGURATION.HEADER' | translate }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
   <ion-list>
-    <p class="titles">Editar mi información</p>
+    <p class="titles">{{'CONFIGURATION.EDIT_MY_PROFILE' | translate }}</p>
     <ion-item button="true" detail="true" lines="none">
       <ion-label>
-        <span>Editar mi información</span>
+        <span>{{'CONFIGURATION.EDIT_MY_PROFILE' | translate }}</span>
       </ion-label>
     </ion-item>
     <ion-item button="true" detail="true" lines="none" routerLink="/idiomas">
       <ion-label>
-        <span>Idiomas</span>
+        <span>{{'CONFIGURATION.LANGUAGES' | translate }}</span>
       </ion-label>
     </ion-item>
 
-    <p class="titles">Usuarios</p>
+    <p class="titles">{{'CONFIGURATION.USERS' | translate }}</p>
     <ion-item button="true" detail="true" lines="none">
       <ion-label>
-        <span>Usuarios bloqueados</span>
+        <span>{{'CONFIGURATION.BLOCKED_USERS' | translate }}</span>
       </ion-label>
     </ion-item>
 
-    <p class="titles">Otros</p>
+    <p class="titles">{{'CONFIGURATION.OTHER' | translate }}</p>
     <ion-item button="true" detail="true" lines="none"  routerLink="/privacy-policy">
       <ion-label>
-        <span>Política de privacidad</span>
+        <span>{{'CONFIGURATION.POLICY' | translate }}</span>
       </ion-label>
     </ion-item>
     <ion-item button="true" detail="true" lines="none"  routerLink="/terms">
       <ion-label>
-        <span>Términos y condiciones</span>
+        <span>{{'CONFIGURATION.TERMS' | translate }}</span>
       </ion-label>
     </ion-item>
     <ion-item button="true" detail="true" lines="none"  routerLink="/eulas">
       <ion-label>
-        <span>EULA</span>
+        <span>{{'CONFIGURATION.EULA' | translate }}</span>
       </ion-label>
     </ion-item>
     
     <ion-item button="true" detail="true" lines="none"  routerLink="/contact-us">
       <ion-label>
-        <span>Contacta con nosotros</span>
+        <span>{{'CONFIGURATION.CONTACT_US' | translate }}</span>
       </ion-label>
     </ion-item>
     
     <ion-item button="true" detail="true" lines="none"   (click)="auth.logout()">
       <ion-label>
-        <span>Cerrar sesión</span>
+        <span>{{'CONFIGURATION.LOGOUT' | translate }}</span>
       </ion-label>
     </ion-item>
 
-    <p class="delete-account" (click)="deleteAccount()">Eliminar cuenta</p> 
+    <p class="delete-account" (click)="deleteAccount()">{{'CONFIGURATION.DELETE_ACCOUNT' | translate }}</p> 
 
-    <p class="version">Versión 0.0.1</p> 
+    <p class="version">{{'CONFIGURATION.VERSION' | translate }} 0.0.1</p> 
   </ion-list>
 </ion-content>

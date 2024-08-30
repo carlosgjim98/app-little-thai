@@ -9,6 +9,8 @@ import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
 import { FileOpener, FileOpenerOptions } from '@capacitor-community/file-opener';
 import { Filesystem, Directory, Encoding } from '@capacitor/filesystem';
 import { ImageViewPage } from '../pages/utils/image-view/image-view.page';
+import { Storage } from '@ionic/storage-angular';
+import { GetResult, Preferences } from '@capacitor/preferences';
 
 @Injectable({
   providedIn: 'root'
@@ -19,17 +21,11 @@ export class UtilitiesService {
 
   public base64img: any;
   public videoVisualizar: string;
-  public editable: boolean;
   public fileVideoToUpload: any;
   public fileToUpload: any;
-  public aspectRatioUndefined?: boolean = false;
-
-  public deleteImageOrVideoEvent = new EventEmitter<any>();
-  public addFormDataEvent = new EventEmitter<any>();
-
-  public aspectRatio = 1 / Math.sqrt(2);
   
-  constructor(private loadingCtrl: LoadingController,
+  constructor(
+    private loadingCtrl: LoadingController,
     private alertCtrl: AlertController,
     private platform: Platform,
     private toast: ToastController,
@@ -37,7 +33,7 @@ export class UtilitiesService {
     private sanetizer: DomSanitizer,
     private http: HttpClient,
     private modalCtrl: ModalController,
-    private navCtrl: NavController
+    private storage: Storage
     ) { }
 
   
@@ -116,6 +112,17 @@ export class UtilitiesService {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
 
+  public setLangPreferences(lang): Promise<void> {
+    return Preferences.set({
+      key: 'lang',
+      value: lang,
+    });
+  }
+
+  public getLangPreferences(): Promise<GetResult>{
+    return Preferences.get({ key: 'lang' });
+  }
+
 
 
   async selectFileImage() {
@@ -149,9 +156,6 @@ export class UtilitiesService {
 
     await actionSheet.present();
   }
-
-  
-
 
 
   /**
@@ -464,7 +468,6 @@ export class UtilitiesService {
     this.fileVideoToUpload = null;
     this.base64img = null;
     this.videoVisualizar = null;
-    this.deleteImageOrVideoEvent.emit(true);
   }
 
 

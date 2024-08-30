@@ -11,7 +11,7 @@
 
   <p class="subtitle">Selecciona en que idioma utilizarás la app</p>
 
-  <ion-radio-group mode="ios">
+  <ion-radio-group mode="ios" [(ngModel)]="lang">
 
     <ion-item lines="none">
       <img slot="start" src="assets/icons/spain.svg" alt="">
@@ -28,7 +28,7 @@
         <p class="medium">English</p>
         <p class="regular">Inglés</p>
       </div>
-      <ion-radio slot="end" value="us"></ion-radio>
+      <ion-radio slot="end" value="en"></ion-radio>
     </ion-item>
 
 
@@ -42,5 +42,5 @@
     </ion-item>
 
   </ion-radio-group>
-  <ion-button expand="block">Guardar y continuar</ion-button>
+  <ion-button expand="block" (click)="saveLanguage()">Guardar y continuar</ion-button>
 </ion-content>

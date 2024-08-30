@@ -1,3 +1,22 @@
-<p>
-  error-view works!
-</p>
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="onBack()">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<div class="error-container ion-padding ion-text-center" *ngIf="!isLoading; else loadingTemplate">
+  <h1>Error {{ errorCode }}</h1>
+  <p>{{ errorMessage }}</p>
+  <ion-button (click)="onRetry()" color="primary">Reintentar</ion-button>
+</div>
+
+<!-- Plantilla de carga -->
+<ng-template #loadingTemplate>
+  <div class="loading-container">
+    <ion-spinner name="crescent"></ion-spinner>
+    <p>Reintentando...</p>
+  </div>
+</ng-template>
