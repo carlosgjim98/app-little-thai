@@ -9,6 +9,7 @@ import { codeErrors } from 'src/app/utils/utils';
 import { FacebookLogin, FacebookLoginResponse } from '@capacitor-community/facebook-login';
 import { GoogleAuth } from '@codetrix-studio/capacitor-google-auth';
 import { TranslateService } from '@ngx-translate/core';
+import { PushNotifications } from '@capacitor/push-notifications';
 
 const FACEBOOK_PERMISSIONS = ['public_profile', 'email'];
 
@@ -47,6 +48,48 @@ export class LoginPage implements OnInit {
         {validators: [Validators.required, Validators.minLength(8)]}
       ),
     });
+
+
+    PushNotifications.createChannel({
+      id: 'hola',
+      name: 'hola',
+      description: 'hola',
+      visibility: 1,
+    }).then(()=>{
+      console.log('channel created');
+    }, (error)=>{
+      console.log("error create channel", error);
+      
+    })
+  
+  
+    PushNotifications.createChannel({
+      id: 'hola2',
+      name: 'hola2',
+      description: 'hola2',
+      visibility: 0,
+
+    }).then(()=>{
+      console.log('channel created');
+    })
+  
+  
+    PushNotifications.createChannel({
+      id: 'hola3',
+      name: 'hola3',
+      description: 'hola3',
+      visibility: -1,
+
+    }).then(()=>{
+      console.log('channel created');
+    })
+
+    PushNotifications.listChannels().then((result)=>{
+      console.log("CHANNELS", result);
+      
+    })
+
+    
   }
 
   async ionViewDidEnter(){

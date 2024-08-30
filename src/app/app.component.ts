@@ -203,8 +203,6 @@ public async ngOnInit() {
     );
 
 
-
-
   PushNotifications.addListener('registrationError', (error: any) => {
         alert('Error on registration: ' + JSON.stringify(error));
   });
