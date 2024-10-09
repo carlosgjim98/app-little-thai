@@ -5,8 +5,23 @@ ion-content{
         //background: #171515;
     
       }
+      .logo img {
+       width: 60%;   
+       height: 50%;   
+        
+      }
+      .texto p{
+        font-size: 1.5rem;
+        font-family: "MontserratAlternates-Medium.ttf";
+        text-align: center;
+        text-decoration-color: "warning";
+      }
+      .boton button{
+        background-color: #FAD149;
+        position: relative;
+      }
     
-      .swiper-slide {
+      .swiper-img {
         text-align: center;
         font-size: 18px;
         //background: #171515;
