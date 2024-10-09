@@ -1,0 +1,78 @@
+ion-content{
+    //<ion-back-button  src="../../../assets/icons/FlechaBoxAmr.svg" routerLink="/login"><p>Recordar contraseña</p></ion-back-button>
+/*<ion-buttons  slot="start">
+
+<ion-back-button  src="../../../assets/icons/FlechaBoxAmr.svg" routerLink="/login"></ion-back-button>
+</ion-buttons>*/
+
+
+    .encabezado{
+    background-color: black;
+    padding: 20px;
+    height: 15%;
+    width: 100%;
+
+    .icono{
+        align-items: left;
+        margin-top: 15%;
+    }
+
+    .recordar{
+        font-family: "MontserratAlternates-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 10pt;
+        text-align: left;
+        margin-top: 10%;
+        color: white;
+    }
+}
+
+    .cuerpo{
+        background-color: white;
+        height: 85%;
+        width: 100%;
+        position: relative;
+
+        .subtitulo{
+        font-family: "MontserratAlternates-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 12pt;
+        color: black;
+        text-align: center;
+        padding: 10%;
+        }
+        
+        .textocontraseña{
+            font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 11pt;
+            color:black;
+            text-align: center;
+        }
+
+        
+
+        .correo{
+            width: 90%;
+            margin-left: 5%;
+            --background: white;
+            color: black;
+            border: 1px solid black;
+            border-radius: 30px;
+            //margin-bottom: 5%;
+            //margin-top: 10%;
+            padding-left: 3%;
+            ion-input{
+                font-family: "MontserratAlternates-Regular",  Arial, "Helvetica Neue", Helvetica, sans-serif;
+                }
+            
+        }
+
+        .boton{
+            --border-radius: 50pt;
+            font-family: "MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-align: center;
+            color: black;
+            margin: 5%;
+            font-size: 11pt;
+
+        }
+    }
+}

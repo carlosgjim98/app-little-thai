@@ -1,92 +1,155 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 @font-face {
-  font-family: 'Lato';
+  font-family: 'MontserratAlternates-Black';
   font-style: normal;
   font-weight: normal;
-  src: url('/assets/fonts/Lato-Regular.ttf');
+  src: url('/assets/fonts/MontserratAlternates-Black.ttf');
 }
 
 @font-face {
-  font-family: 'DMSans-Bold';
+  font-family: 'MontserratAlternates-BlackItalic';
   font-style: normal;
   font-weight: normal;
-  src: url('/assets/fonts/DMSans-Bold.ttf');
+  src: url('/assets/fonts/MontserratAlternates-BlackItalic.ttf');
 }
 
 @font-face {
-  font-family: 'DMSans-ExtraBold';
+  font-family: 'MontserratAlternates-Bold';
   font-style: normal;
   font-weight: normal;
-  src: url('/assets/fonts/DMSans-ExtraBold.ttf');
+  src: url('/assets/fonts/MontserratAlternates-Bold.ttf');
 }
 
 @font-face {
-  font-family: 'DMSans-ExtraLight';
+  font-family: 'MontserratAlternates-BoldItalic';
   font-style: normal;
   font-weight: normal;
-  src: url('/assets/fonts/DMSans-ExtraLight.ttf');
+  src: url('/assets/fonts/MontserratAlternates-BoldItalic.ttf');
 }
 
 @font-face {
-  font-family: 'DMSans-Light';
+  font-family: 'MontserratAlternates-ExtraBold';
   font-style: normal;
   font-weight: normal;
-  src: url('/assets/fonts/DMSans-Light.ttf');
+  src: url('/assets/fonts/MontserratAlternates-ExtraBold.ttf');
 }
 
 @font-face {
-  font-family: 'DMSans-Medium';
+  font-family: 'MontserratAlternates-ExtraBoldItalic';
   font-style: normal;
   font-weight: normal;
-  src: url('/assets/fonts/DMSans-Medium.ttf');
-}
-
-
-@font-face {
-  font-family: 'DMSans-Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/DMSans-Regular.ttf');
+  src: url('/assets/fonts/MontserratAlternates-ExtraBoldItalic.ttf');
 }
 
 
 @font-face {
-  font-family: 'DMSans-SemiBold';
+  font-family: 'MontserratAlternates-ExtraLight';
   font-style: normal;
   font-weight: normal;
-  src: url('/assets/fonts/DMSans-SemiBold.ttf');
+  src: url('/assets/fonts/MontserratAlternates-ExtraLight.ttf');
 }
 
 
 @font-face {
-  font-family: 'DMSans-Thin';
+  font-family: 'MontserratAlternates-ExtraLightItalic';
   font-style: normal;
   font-weight: normal;
-  src: url('/assets/fonts/DMSans-Thin.ttf');
+  src: url('/assets/fonts/MontserratAlternates-ExtraLightItalic.ttf');
+}
+
+
+@font-face {
+  font-family: 'MontserratAlternates-Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/MontserratAlternates-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'MontserratAlternates-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/MontserratAlternates-Light.ttf');
+}
+
+@font-face {
+  font-family: 'MontserratAlternates-LightItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/MontserratAlternates-LightItalic.ttf');
+}
+
+@font-face {
+  font-family: 'MontserratAlternates-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/MontserratAlternates-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'MontserratAlternates-MediumItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/MontserratAlternates-Mediumtalic.ttf');
+}
+
+@font-face {
+  font-family: 'MontserratAlternates-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/MontserratAlternates-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'MontserratAlternates-SemiBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/MontserratAlternates-SemiBold');
+}
+
+@font-face {
+  font-family: 'MontserratAlternates-SemiBoldItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/MontserratAlternates-SemiBoldItalic');
+}
+
+@font-face {
+  font-family: 'MontserratAlternates-Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/MontserratAlternates-Thin');
+}
+
+@font-face {
+  font-family: 'MontserratAlternates-ThinItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/MontserratAlternates-ThinItalic');
 }
 
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #0054e9 !important;
-  --ion-color-primary-rgb: 56, 128, 255 !important;
+  --ion-color-primary: #FAD149 !important;
+  --ion-color-primary-rgb: 250,209, 73 !important;
   --ion-color-primary-contrast: #ffffff !important;
   --ion-color-primary-contrast-rgb: 255, 255, 255 !important;
   --ion-color-primary-shade: #3171e01f !important;
   --ion-color-primary-tint: #4c8eff34 !important;
 
   /** secondary **/
-  --ion-color-secondary: #3dc2ff !important;
-  --ion-color-secondary-rgb: 61, 194, 255 !important;
+  --ion-color-secondary: #1B1B1B !important;
+  --ion-color-secondary-rgb: 27, 27, 27 !important;
   --ion-color-secondary-contrast: #ffffff !important;
   --ion-color-secondary-contrast-rgb: 255, 255, 255 !important;
   --ion-color-secondary-shade: #36abe0 !important;
   --ion-color-secondary-tint: #50c8ff !important;
 
   /** tertiary **/
-  --ion-color-tertiary: #5260ff !important;
-  --ion-color-tertiary-rgb: 82, 96, 255 !important;
+  --ion-color-tertiary: #FFFFFF !important;
+  --ion-color-tertiary-rgb: 255, 255, 255 !important;
   --ion-color-tertiary-contrast: #ffffff !important;
   --ion-color-tertiary-contrast-rgb: 255, 255, 255 !important;
   --ion-color-tertiary-shade: #4854e0 !important;
@@ -195,24 +258,24 @@
 
   body {
   /** primary **/
-  --ion-color-primary: #0054e9 !important;
-  --ion-color-primary-rgb: 56, 128, 255 !important;
+  --ion-color-primary: #FAD149 !important;
+  --ion-color-primary-rgb: 250, 209, 73 !important;
   --ion-color-primary-contrast: #ffffff !important;
   --ion-color-primary-contrast-rgb: 255, 255, 255 !important;
   --ion-color-primary-shade: #3171e01f !important;
   --ion-color-primary-tint: #4c8eff34 !important;
 
   /** secondary **/
-  --ion-color-secondary: #3dc2ff !important;
-  --ion-color-secondary-rgb: 61, 194, 255 !important;
+  --ion-color-secondary: #1B1B1B !important;
+  --ion-color-secondary-rgb: 27, 27, 27 !important;
   --ion-color-secondary-contrast: #ffffff !important;
   --ion-color-secondary-contrast-rgb: 255, 255, 255 !important;
   --ion-color-secondary-shade: #36abe0 !important;
   --ion-color-secondary-tint: #50c8ff !important;
 
   /** tertiary **/
-  --ion-color-tertiary: #5260ff !important;
-  --ion-color-tertiary-rgb: 82, 96, 255 !important;
+  --ion-color-tertiary: #FFFFFF !important;
+  --ion-color-tertiary-rgb: 255, 255, 255 !important;
   --ion-color-tertiary-contrast: #ffffff !important;
   --ion-color-tertiary-contrast-rgb: 255, 255, 255 !important;
   --ion-color-tertiary-shade: #4854e0 !important;

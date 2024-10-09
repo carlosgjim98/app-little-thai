@@ -1,46 +1,26 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
-    </ion-buttons>
-    <ion-title>{{'REGISTER.HEADER' | translate }}</ion-title>
-  </ion-toolbar>
-  <ion-buttons slot="end" routerLink="/idiomas">
-    <ion-icon *ngIf="this.translate.currentLang == 'es'" src="assets/icons/spain.svg"></ion-icon>
-    <ion-icon *ngIf="this.translate.currentLang == 'en'" src="assets/icons/ingles.svg"></ion-icon>
-    <ion-icon *ngIf="this.translate.currentLang == 'fr'" src="assets/icons/frances.svg"></ion-icon>
-  </ion-buttons>
-</ion-header>
+<ion-content >
+  <div class="encabezado">
+    <ion-icon class="icono" src="../../../assets/icons/FlechaBoxAmr.svg" routerLink="/login"></ion-icon>
+    <p class="recordar">Recordar contraseña</p>
+  </div>
+  
+  <div class="cuerpo">
+    <p class="subtitulo">¿No recuerdas tu contraseña?</p>
 
-<ion-content class="ion-padding">
+  
+    <p class="textocontraseña">Escribe tu email </p>
+    <p class="textocontraseña">y te enviaremos una nueva clave</p>
+ 
+
     <form *ngIf="form" [formGroup]="form" (ngSubmit)="submitForm()">
-      <p class="ion-text-center">{{'REGISTER.TITLE' | translate }}</p>
-      <ion-item>
-        <ion-input clearInput type="text" placeholder="{{'REGISTER.NAME' | translate }}" formControlName="name" required>
-          <ion-icon slot="start" name="person-outline"></ion-icon>
-        </ion-input>
-      </ion-item>
 
-      <ion-item>
-        <ion-input clearInput type="email" placeholder="{{'REGISTER.EMAIL' | translate }}" formControlName="email" required>
-          <ion-icon slot="start" name="mail-outline"></ion-icon>
-        </ion-input>
-      </ion-item>
+    <ion-item class="correo" lines="none">
+      <ion-input clearInput type="text" placeholder="{{'LOGIN.USER' | translate }}" formControlName="email">
+        <ion-icon slot="start" src="../../../assets/icons/email.svg"></ion-icon>
+      </ion-input>
+    </ion-item>
 
-      <ion-item>
-        <ion-input clearInput type="password" placeholder="{{'REGISTER.PASSWORD' | translate }}" formControlName="password" required>
-          <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
-        </ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-input clearInput type="password" placeholder="{{'REGISTER.CONFIRM_PASSWORD' | translate }}"
-          formControlName="password_confirmation" required>
-          <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
-        </ion-input>
-      </ion-item>
-
-      <ion-button expand="block" type="submit" [disabled]="!form.valid" color="tertiary">{{'REGISTER.CREATE_ACCOUNT' | translate }}</ion-button>
-      <ion-button expand="block" type="button" routerLink="/login">{{'REGISTER.HAVE_ACCOUNT' | translate }}</ion-button>
-    </form>
+    <ion-button class="boton" expand="block" type="button" >Enviar</ion-button>
+  </form>
+  </div>
 </ion-content>

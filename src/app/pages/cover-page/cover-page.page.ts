@@ -8,7 +8,7 @@ import Swiper from 'swiper';
 })
 export class CoverPagePage implements OnInit {
 
-  private swiper: Swiper;
+  private swiper: Swiper; 
 
   constructor() { }
 

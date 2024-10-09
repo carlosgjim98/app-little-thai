@@ -1,79 +1,94 @@
 ion-content{
     //background-size: cover;
     //--background:url('/assets/imgs/base-background.jpg');
+    
+.titulo{
 
-    .title{
-        margin-top:16px;
-        margin-bottom: 32px;
+  margin-top: 15%;
+  margin-left: 35%;
+  height: 30%;
+
+}
+
+.fondo2{
+    background-color: white;
+    border-radius: 30pt 30pt 0pt 0pt;
+    height: 70%;
+    margin-top: 10%;
+    position: relative;
+
+    .login{
+        font-family: "MontserratAlternates-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        text-align: center;
+        color: black;
+        //margin-top: 20%;
+        padding-top: 8%;
+        font-size: 27px;
     }
-    ion-button{
-        text-transform: none;
-    }
-    .logo{
-        margin:0 auto;
-        z-index: 2;
-        margin-top:10vh;
-        img{
-            width: 130px;
-            height: 130px; 
+
+    
+
+    .correo{
+        width: 90%;
+        margin-left: 5%;
+        --background: white;
+        color: black;
+        border: 1px solid black;
+        border-radius: 30px;
+        margin-bottom: 5%;
+        //margin-top: 10%;
+        padding-left: 3%;
+        ion-input{
+        font-family: "MontserratAlternates-Regular",  Arial, "Helvetica Neue", Helvetica, sans-serif;
         }
+    }
+
+    .contraseña{
+        width: 90%;
+        margin-left: 5%;
+        --background: white;
+        color: black;
+        border: 1px solid black;
+        border-radius: 30px;
+        padding-left: 3%;
         
     }
 
-    #socialLinks{
-        display: flex;
-        justify-content: space-evenly;
-        margin: 2vh 8vw 2vh 8vw;
-        //width: 85vw;
+    .recordarpass{
+        font-family: "MontserratAlternates-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        text-align: center;
+        color: black;
+        //margin-top: 10%;
+        padding-top: 2%;
+        font-size: 10pt;
+    }
 
-        ion-icon{
-            font-size: 32px;
-        }
-        #facebook{
-            --color: white;
-            --background: #3b5998;
-            --background-activated: #4567b0;
-            --background-focused: #3b5998;
+    .boton{
+        --border-radius: 50pt;
+        font-family: "MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        text-align: center;
+        color: black;
+        margin: 5%;
+        font-size: 11pt;
 
-            --border-radius: 50%;
-            height: 64px;
-            width: 64px;
-            margin : 0;
-            
-            
-        }
-        #google{
-            --background: white;
-            --background-activated: rgb(235, 235, 235);
-            --background-focused: white;
-            --border-radius: 50%;
-            border-radius: 50%;
-            box-shadow: 0px 0px 10px 3px #0000000a;
-            height: 64px;
-            width: 64px;
-            margin : 0;
+    }
 
+    .pie{
+        font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        margin-left: 20%;
+        color: black;
+        //margin-top: 65%;
+        position:absolute;
+        bottom: 5%;
+        font-size: 10pt;
 
-        }
-
-        .fa-google {
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            -webkit-text-fill-color: transparent;
-          }
-
-        #apple{
-            --background: #868686;
-            --background-activated: #909090;
-            --background-focused: #868686;
-            --color: white;
-            --border-radius: 50%;
-            height: 64px;
-            width: 64px;
-            margin : 0;
-
-        }
+        
+       
     }
 }
 
+
+
+
+
+}
