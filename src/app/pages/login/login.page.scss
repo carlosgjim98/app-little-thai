@@ -4,16 +4,29 @@ ion-content{
     
 .titulo{
 
-  margin-top: 15%;
-  margin-left: 35%;
-  height: 30%;
+    background-color: black;
+    padding: 20px;
+    height: 15%;
+    width: 100%;
+
+    .img-logo{
+        align-items: center;
+        width: 90px;
+        height: 90px;
+        margin-left: 35%;
+        margin-top: 8%;
+    }
+
+  //margin-top: 15%;
+  //margin-left: 35%;
+  //height: 30%;
 
 }
 
 .fondo2{
     background-color: white;
     border-radius: 30pt 30pt 0pt 0pt;
-    height: 70%;
+    height: 85%;
     margin-top: 10%;
     position: relative;
 

@@ -1,26 +1,86 @@
-<ion-content >
-  <div class="encabezado">
-    <ion-icon class="icono" src="../../../assets/icons/FlechaBoxAmr.svg" routerLink="/login"></ion-icon>
-    <p class="recordar">Recordar contraseña</p>
+<ion-content  >
+  <div class="titulo">
+  <img class="img-logo" src="assets/imgs/LitlleThai.png" alt="">
   </div>
   
-  <div class="cuerpo">
-    <p class="subtitulo">¿No recuerdas tu contraseña?</p>
 
-  
-    <p class="textocontraseña">Escribe tu email </p>
-    <p class="textocontraseña">y te enviaremos una nueva clave</p>
- 
+  <div class="fondo2">
+    <p class="login">Registro</p>
 
     <form *ngIf="form" [formGroup]="form" (ngSubmit)="submitForm()">
+      
+      <ion-item class="telefono" lines="none">
+        <ion-input clearInput type="text" placeholder="Teléfono" >
+          <ion-icon slot="start" src="../../../assets/icons/telefono.svg"></ion-icon>
+        </ion-input>
+      </ion-item>
 
-    <ion-item class="correo" lines="none">
-      <ion-input clearInput type="text" placeholder="{{'LOGIN.USER' | translate }}" formControlName="email">
-        <ion-icon slot="start" src="../../../assets/icons/email.svg"></ion-icon>
-      </ion-input>
-    </ion-item>
+      <ion-item class="nombre" lines="none">
+        <ion-input clearInput type="text" placeholder="Nombre" >
+          <ion-icon slot="start" src="../../../assets/icons/user.svg"></ion-icon>
+        </ion-input>
+      </ion-item>
 
-    <ion-button class="boton" expand="block" type="button" >Enviar</ion-button>
-  </form>
+      <ion-item class="apellidos" lines="none">
+        <ion-input  clearInput type="text" placeholder="Apellidos" >
+          <ion-icon slot="start" src="../../../assets/icons/user.svg"></ion-icon>
+        </ion-input>
+      </ion-item>
+
+
+
+
+      <ion-item class="correo" lines="none">
+        <ion-input clearInput type="text" placeholder="{{'LOGIN.USER' | translate }}" formControlName="email">
+          <ion-icon slot="start" src="../../../assets/icons/email2.svg"></ion-icon>
+        </ion-input>
+      </ion-item>
+
+
+      <ion-item  class="contraseña" lines="none">
+        <ion-input clearInput type="password" placeholder="Contraseña" formControlName="password">
+          <ion-icon slot="start" src="../../../assets/icons/password.svg"></ion-icon>
+          <ion-input-password-toggle ></ion-input-password-toggle>
+        </ion-input>
+      </ion-item>
+
+      <ion-item  class="repetircontraseña" lines="none">
+        <ion-input clearInput type="password" placeholder="Repetir contraseña" formControlName="password">
+          <ion-icon slot="start" src="../../../assets/icons/password.svg"></ion-icon>
+          <ion-input-password-toggle ></ion-input-password-toggle>
+        </ion-input>
+      </ion-item>
+
+      <ion-item class="cajoncheck" lines="none">
+        <ion-checkbox slot="start" class="check" aria-checked="false">
+          
+        </ion-checkbox>
+        <div>
+        <p>He leido y acepto la <u routerLink="/privacy-policy">Política de Privacidad</u></p>
+        <p>y <u routerLink="/terms">los Términos y Condiciones de Venta</u></p>
+        </div>
+      </ion-item>
+
+      <ion-button class="boton" shape="round" expand="block" type="button" routerLink="/verificacion">Registrarme</ion-button>
+      <!--{{'LOGIN.SIGNUP' | translate }}-->
+      
+
+
+      <p class="pie">¿Ya tienes una cuenta? <span style="font-family: MontserratAlternates-Bold;" routerLink="/login">Acceder</span>
+
+      </p>
+
+
+
+    </form>
+
+
+
+
+
   </div>
+  
+  
+  
+      
 </ion-content>

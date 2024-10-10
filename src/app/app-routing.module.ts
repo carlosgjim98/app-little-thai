@@ -93,7 +93,19 @@ const routes: Routes = [
   {
     path: 'contact-us',
     loadChildren: () => import('./pages/contact-us/contact-us.module').then( m => m.ContactUsPageModule)
+  },  {
+    path: 'verificacion',
+    loadChildren: () => import('./pages/verificacion/verificacion.module').then( m => m.VerificacionPageModule)
+  },
+  {
+    path: 'bienvenida',
+    loadChildren: () => import('./pages/bienvenida/bienvenida.module').then( m => m.BienvenidaPageModule)
+  },
+  {
+    path: 'inicio',
+    loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
   }
+
 
 
 

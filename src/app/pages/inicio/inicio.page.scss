@@ -1,0 +1,75 @@
+
+
+.cabecera{
+    font-family: "MontserratAlternates-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    height: 32%;
+    width: 100%;
+    padding-left: 5%;
+    
+    p{
+        margin-bottom: -5%;
+    }
+    .añade{
+        color: #FAD149;
+        font-size: 10pt;
+        margin-top: 10%;
+    }
+
+    ion-button{
+        font-family:"MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif ;
+        font-size: 8pt;
+        --border-radius: 29pt;
+        width: 80pt;
+        height: 25pt;
+        padding-top: 2%;
+        ion-icon{
+            color: black;
+            font-size: 8pt;
+        }
+    }
+
+}
+
+.lupa{
+    width: 250pt;
+    --background: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-top: 10%;
+    ion-input{
+        font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 10pt;
+        margin-left: 3%;
+        ion-icon{
+            size: 15pt;
+            
+        }
+    }
+
+    
+    
+   } 
+
+
+.cuerpo{
+
+    background-color: white;
+      border-radius: 20pt 20pt 0pt 0pt;
+      height: 68%;
+      width: 100%;
+      position: relative;
+
+    .contenedor1{
+        padding-top: 5%;
+
+        img{
+            width: 92%;
+            margin-left: 4%;
+            border-radius: 10pt 10pt 0pt 0pt;
+
+        }
+    }
+
+
+}

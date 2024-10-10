@@ -6,73 +6,195 @@ ion-content{
 </ion-buttons>*/
 
 
-    .encabezado{
+.titulo{
     background-color: black;
     padding: 20px;
     height: 15%;
     width: 100%;
-
-    .icono{
-        align-items: left;
-        margin-top: 15%;
+    //margin-top: 15%;
+    //margin-left: 35%;
+    //height: 30%;
+    .img-logo{
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        margin-left: 40%;
+        margin-top: 20%;
     }
+    
+  
+  }
+  
+  .fondo2{
+      background-color: white;
+      border-radius: 30pt 30pt 0pt 0pt;
+      height: 85%;
+      width: 100%;
+      margin-top: 10%;
+      position: relative;
 
-    .recordar{
-        font-family: "MontserratAlternates-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
-        font-size: 10pt;
-        text-align: left;
-        margin-top: 10%;
-        color: white;
-    }
-}
-
-    .cuerpo{
-        background-color: white;
-        height: 85%;
-        width: 100%;
-        position: relative;
-
-        .subtitulo{
-        font-family: "MontserratAlternates-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
-        font-size: 12pt;
-        color: black;
-        text-align: center;
-        padding: 10%;
-        }
-        
-        .textocontraseña{
-            font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
-            font-size: 11pt;
-            color:black;
-            text-align: center;
-        }
-
-        
-
-        .correo{
-            width: 90%;
-            margin-left: 5%;
-            --background: white;
-            color: black;
-            border: 1px solid black;
-            border-radius: 30px;
-            //margin-bottom: 5%;
-            //margin-top: 10%;
-            padding-left: 3%;
-            ion-input{
-                font-family: "MontserratAlternates-Regular",  Arial, "Helvetica Neue", Helvetica, sans-serif;
-                }
+      form{
+        ion-item{
             
-        }
+            ion-input{
+                font-size: 10pt;
+                font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif ;
+                
+                
+            }
+            
 
-        .boton{
-            --border-radius: 50pt;
-            font-family: "MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif;
-            text-align: center;
-            color: black;
-            margin: 5%;
-            font-size: 11pt;
-
+            p{
+                font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-size: 8pt;
+                color: black;
+                margin-top: 2%;
+                margin-bottom: 2%;
+                
+                
+                u{
+                    font-family: "MontserratAlternates-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+                }
+            }
         }
+      }
+     
+
+      .login{
+        font-family: "MontserratAlternates-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        text-align: center;
+        color: black;
+        //margin-top: 20%;
+        padding-top: 8%;
+        font-size: 27px;
     }
-}
+  
+       .telefono{
+        width: 90%;
+        margin-left: 5%;
+        --background: white;
+        color: black;
+        border: 1px solid black;
+        border-radius: 30px;
+        padding-left: 3%;
+        margin-bottom: 5%;
+        
+       } 
+
+       .nombre{
+        width: 90%;
+        margin-left: 5%;
+        --background: white;
+        color: black;
+        border: 1px solid black;
+        border-radius: 30px;
+        padding-left: 3%;
+        margin-bottom: 5%;
+        
+       }
+
+       .apellidos{
+        width: 90%;
+        margin-left: 5%;
+        --background: white;
+        color: black;
+        border: 1px solid black;
+        border-radius: 30px;
+        padding-left: 3%;
+        margin-bottom: 5%;
+        font-family: "MontserratAlternates-Regular",  Arial, "Helvetica Neue", Helvetica, sans-serif;
+       }
+
+
+      
+  
+      
+  
+      .correo{
+          width: 90%;
+          margin-left: 5%;
+          --background: white;
+          color: black;
+          border: 1px solid black;
+          border-radius: 30px;
+          margin-bottom: 5%;
+          //margin-top: 10%;
+          padding-left: 3%;
+          ion-input{
+          font-family:"MontserratAlternates-Regular",  Arial, "Helvetica Neue", Helvetica, sans-serif;
+          }
+      }
+  
+      .contraseña{       
+          width: 90%;
+          margin-left: 5%;
+          --background: white;
+          color: black;
+          border: 1px solid black;
+          border-radius: 30px;
+          padding-left: 3%;
+          margin-bottom: 5%;
+          
+          
+          
+      }
+  
+      .repetircontraseña{
+        width: 90%;
+        margin-left: 5%;
+        --background: white;
+        color: black;
+        border: 1px solid black;
+        border-radius: 30px;
+        padding-left: 3%;
+        font-family: "MontserratAlternates-Bold",  Arial, "Helvetica Neue", Helvetica, sans-serif;
+      }
+
+      .cajoncheck{
+        --background: white;
+        margin-left: 12%;
+        margin-top: 5%;
+
+
+      .check{
+        --checkbox-background-checked: black;
+        --checboox-border-ckecked: black;
+        --border-radius: 0pt;
+        margin-right: 2%;
+        --size: 12pt;
+        
+        
+        
+      }
+
+      
+    }
+      .boton{
+          --border-radius: 50pt;
+          font-family: "MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif;
+          text-align: center;
+          color: black;
+          margin: 5%;
+          font-size: 11pt;
+  
+      }
+  
+      .pie{
+          font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+          margin-left: 20%;
+          color: black;
+          //margin-top: 65%;
+          position:absolute;
+          bottom: 5%;
+          font-size: 10pt;
+  
+          
+         
+      }
+  }
+  
+  
+  
+  
+  
+  }
