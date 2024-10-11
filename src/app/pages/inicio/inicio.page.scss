@@ -1,3 +1,5 @@
+ion-content{
+
 
 
 .cabecera{
@@ -8,11 +10,32 @@
     
     p{
         margin-bottom: -5%;
+
+        ion-button{
+            
+                font-family:"MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif ;
+                font-size: 8pt;
+                --border-radius: 5pt;
+                width: 25pt;
+                height: 25pt;
+                padding-top: 2%;
+                margin-left: 20%;
+                margin-top: -8%;
+                ion-icon{
+                    color: black;
+                    font-size: 10pt;
+                    align-items: center;
+                    margin-left: 10%;
+                }
+        
     }
     .añade{
         color: #FAD149;
         font-size: 10pt;
         margin-top: 10%;
+    }
+
+    
     }
 
     ion-button{
@@ -61,15 +84,37 @@
       position: relative;
 
     .contenedor1{
-        padding-top: 5%;
 
+
+    padding-top: 5%;
+        
         img{
             width: 92%;
             margin-left: 4%;
-            border-radius: 10pt 10pt 0pt 0pt;
-
+            margin-bottom: -4%;
+            
         }
+        
+
+           
+        
+
+
+        
+        
+       
+        
+        
+        
+
+        
+        
+        
+
+        
+        
     }
 
 
+}
 }

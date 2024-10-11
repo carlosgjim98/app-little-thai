@@ -104,6 +104,26 @@ const routes: Routes = [
   {
     path: 'inicio',
     loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
+  },
+  {
+    path: 'cart',
+    loadChildren: () => import('./pages/cart/cart.module').then( m => m.CartPageModule)
+  },
+  {
+    path: 'to-home',
+    loadChildren: () => import('./pages/to-home/to-home.module').then( m => m.ToHomePageModule)
+  },
+  {
+    path: 'add-address',
+    loadChildren: () => import('./pages/add-address/add-address.module').then( m => m.AddAddressPageModule)
+  },
+  {
+    path: 'confirm-address',
+    loadChildren: () => import('./pages/confirm-address/confirm-address.module').then( m => m.ConfirmAddressPageModule)
+  },
+  {
+    path: 'qr-scanner',
+    loadChildren: () => import('./pages/qr-scanner/qr-scanner.module').then( m => m.QrScannerPageModule)
   }
 
 

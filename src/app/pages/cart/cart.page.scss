@@ -1,0 +1,98 @@
+ion-content{
+.encabezado{
+    background-color: black;
+    padding: 20px;
+    height: 14%;
+    width: 100%;
+
+.carrito{
+    font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 10pt;
+    text-align: left;
+    margin-top: 12%;
+    color: white;
+    
+
+    .icono{
+        align-items: left;
+        width: 32px;
+        height: 32px;
+        margin-left: -3%;
+        
+        
+
+    }
+
+}
+}
+
+.cuerpo{
+    background-color: white;
+    height: 86%;
+    width: 100%;
+    position: relative;
+
+
+    ion-list{
+        
+        .plato{
+            font-family: "MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 12pt;
+            padding-top: 15%;
+            margin-left: -10%;
+        }
+        .extra{
+            font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 8pt;
+            padding-top: 5%;
+            margin-left: -10%;
+        }
+
+
+
+        ion-item{
+            --background:white;
+
+            ion-label{
+                margin-left: 10%;
+            
+                
+            
+
+            ion-icon{
+                margin-top: 5%;
+            }
+            ion-text{
+                font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-size: 8pt;
+                color: black;
+                margin-left: 5%;
+                margin-right: 5%;
+               
+            }
+            .precio{
+                margin-left: 40%;
+            }
+        
+        }
+        }
+    }
+
+    
+    .boton {
+        --border-radius: 50pt;
+        font-family: "MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        text-align: center;
+        color: black;
+        font-size: 12pt;
+        margin-top: 100%;
+        margin: 100% 5% 0% 5%;
+        img{
+            padding-right: 5%;
+        }
+    }
+
+
+
+}
+}
