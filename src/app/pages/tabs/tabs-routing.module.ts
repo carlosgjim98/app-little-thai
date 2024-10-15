@@ -8,16 +8,13 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'home',
-        loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
+        path: 'inicio',
+        loadChildren: () => import('../inicio/inicio.module').then(m => m.InicioPageModule)
       },
+      
       {
-        path: 'profile',
-        loadChildren: () => import('../profile/profile.module').then(m => m.ProfilePageModule)
-      },
-      {
-        path: 'chats',
-        loadChildren: () => import('../chats/chats.module').then(m => m.ChatsPageModule)
+        path: 'carta',
+        loadChildren: () => import('../carta/carta.module').then(m => m.CartaPageModule)
       },
       {
         path: 'calendar',
@@ -29,15 +26,19 @@ const routes: Routes = [
         loadChildren: () => import('../test-plugins/test-plugins.module').then(m => m.TestPluginsPageModule)
       },
       {
+        path: 'profile',
+        loadChildren: () => import('../profile/profile.module').then(m => m.ProfilePageModule)
+      },
+      {
         path: '',
-        redirectTo: '/tabs/home',
+        redirectTo: '/tabs/inicio',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/home',
+    redirectTo: '/tabs/inicio',
     pathMatch: 'full'
   }
 ];
