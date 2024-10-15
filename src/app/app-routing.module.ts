@@ -124,6 +124,18 @@ const routes: Routes = [
   {
     path: 'qr-scanner',
     loadChildren: () => import('./pages/qr-scanner/qr-scanner.module').then( m => m.QrScannerPageModule)
+  },
+  {
+    path: 'menu-on-table',
+    loadChildren: () => import('./pages/menu-on-table/menu-on-table.module').then( m => m.MenuOnTablePageModule)
+  },
+  {
+    path: 'splash',
+    loadChildren: () => import('./pages/splash/splash.module').then( m => m.SplashPageModule)
+  },
+  {
+    path: 'current-address',
+    loadChildren: () => import('./pages/current-address/current-address.module').then( m => m.CurrentAddressPageModule)
   }
 
 

@@ -29,21 +29,15 @@ ion-content{
 
       
       .boton{ 
-        font-family: MontserratAlternates-Medium;
-        font-size: 16pt;
-        margin-top: 20%;
-        margin-left: 10;
-        margin-right: 25%;
-        z-index: 0;
-        border-radius: round;
-        display: block;
-        width: 100%;
+        
         ion-button{
-            width: 80%;
+            width: 90%;
+            height: 10%;
             --border-radius: 29pt;
-            margin-left: 10%;
+            margin-left: 5%;
             font-family: MontserratAlternates-Medium;
-            font-size: 16pt;
+            font-size: 12pt;
+            margin-top: 7%;
           }
       }
     

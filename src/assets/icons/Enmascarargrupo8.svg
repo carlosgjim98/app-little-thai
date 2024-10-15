@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_19496" data-name="Rectángulo 19496" width="32" height="32" transform="translate(800 -181)" fill="#b7b7b7"/>
+    </clipPath>
+  </defs>
+  <g id="Enmascarar_grupo_8" data-name="Enmascarar grupo 8" transform="translate(-800 181)" clip-path="url(#clip-path)">
+    <g id="XMLID_1_" transform="translate(800 -181)">
+      <path id="XMLID_46_" d="M32,25.4H0v1.882H2.242l1.882,3.765H27.876l1.882-3.765H32Z"/>
+      <path id="XMLID_45_" d="M14.118,10.343V6.578H11.045l-.251,3.765Z"/>
+      <path id="XMLID_44_" d="M9.159,6.578H2.824v3.765H8.908Z"/>
+      <path id="XMLID_43_" d="M3.765,23.519h9.412V19.755l.941-1.882V12.225H10.669l-.318,4.769-1.878-.125.31-4.643H2.824v5.647l.941,1.882Z"/>
+      <path id="XMLID_6_" d="M11.245,3.587,15,2.793,14.613.951,9.461,2.04l-.3,4.538h1.886Z"/>
+      <path id="XMLID_5_" d="M29.176,10.343V6.578H26.1l-.251,3.765Z"/>
+      <path id="XMLID_4_" d="M24.218,6.578H17.882v3.765h6.084Z"/>
+      <path id="XMLID_3_" d="M18.824,23.519h9.412V19.755l.941-1.882V12.225H25.728l-.318,4.769-1.878-.125.31-4.643H17.882v5.647l.941,1.882Z"/>
+      <path id="XMLID_2_" d="M26.3,3.587l3.758-.794L29.672.951,24.52,2.04l-.3,4.538H26.1Z"/>
+    </g>
+  </g>
+</svg>
