@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { CartaPageRoutingModule } from './carta-routing.module';
-
+import { RouterModule } from '@angular/router';
 import { CartaPage } from './carta.page';
 
 @NgModule({
@@ -13,6 +13,7 @@ import { CartaPage } from './carta.page';
     CommonModule,
     FormsModule,
     IonicModule,
+    RouterModule,
     CartaPageRoutingModule
   ],
   declarations: [CartaPage]

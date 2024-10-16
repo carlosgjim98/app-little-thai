@@ -196,7 +196,11 @@ const routes: Routes = [
 
     path: 'alergenos',
     loadChildren: () => import('./pages/alergenos/alergenos.module').then( m => m.AlergenosPageModule)
-  }
+  },
+  {
+  path: 'carta',
+  loadChildren: () => import('./pages/carta/carta.module').then( m => m.CartaPageModule)
+}
 
 
 
