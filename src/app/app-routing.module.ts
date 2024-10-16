@@ -93,7 +93,8 @@ const routes: Routes = [
   {
     path: 'contact-us',
     loadChildren: () => import('./pages/contact-us/contact-us.module').then( m => m.ContactUsPageModule)
-  },  {
+  },
+  {
     path: 'verificacion',
     loadChildren: () => import('./pages/verificacion/verificacion.module').then( m => m.VerificacionPageModule)
   },
@@ -126,8 +127,18 @@ const routes: Routes = [
     loadChildren: () => import('./pages/qr-scanner/qr-scanner.module').then( m => m.QrScannerPageModule)
   },
   {
-    path: 'carta',
-    loadChildren: () => import('./pages/carta/carta.module').then( m => m.CartaPageModule)
+
+    path: 'menu-on-table',
+    loadChildren: () => import('./pages/menu-on-table/menu-on-table.module').then( m => m.MenuOnTablePageModule)
+  },
+  {
+    path: 'splash',
+    loadChildren: () => import('./pages/splash/splash.module').then( m => m.SplashPageModule)
+  },
+  {
+    path: 'current-address',
+    loadChildren: () => import('./pages/current-address/current-address.module').then( m => m.CurrentAddressPageModule)
+
   }
 
 

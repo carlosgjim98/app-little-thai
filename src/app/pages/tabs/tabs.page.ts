@@ -8,11 +8,13 @@ import { Component } from '@angular/core';
 export class TabsPage {
 
   public pages = [
-    { tab: 'inicio', name: 'Inicio', icon: "assets/icons/inicio.svg" },
-    { tab: 'carta', name: 'Carta', icon: "assets/icons/food-menu2.svg" },
-    { tab: 'points', name: 'Thai puntos', icon: 'calendar' },
-    { tab: 'locals', name: 'Locales', icon: "assets/icons/shop.svg" }, 
-    { tab: 'profile', name: 'Perfil', icon: "assets/icons/profile.svg" }
+
+    { tab: 'inicio', name: 'Inicio', icon: '../../../assets/icons/inicio.svg' },
+    { tab: 'carta', name: 'Carta', icon: '../../../assets/icons/food-menu-svgrepo-com.svg' },
+    { tab: 'thaipuntos', name: 'Thai puntos', icon: '../../../assets/icons/coin.svg' },
+    { tab: 'locales', name: 'Locales', icon: '../../../assets/icons/Trazado46919.svg' },
+    { tab: 'profile', name: 'Perfil', icon: '../../../assets/icons/Trazado46921.svg' }
+
   ];
   
   constructor() {}

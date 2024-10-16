@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_19498" data-name="Rectángulo 19498" width="32" height="32" transform="translate(956 -181)" fill="#b7b7b7"/>
+    </clipPath>
+  </defs>
+  <g id="Enmascarar_grupo_6" data-name="Enmascarar grupo 6" transform="translate(-956 181)" clip-path="url(#clip-path)">
+    <g id="wine_6587252" transform="translate(956 -181)">
+      <path id="Trazado_47025" data-name="Trazado 47025" d="M13.7,14.191h8.435l-3.694-5.9V4.25H13.562V8.295l-3.694,5.9V32H22.132V28.267H13.7Z"/>
+      <path id="Trazado_47026" data-name="Trazado 47026" d="M13.562,0h4.875V2.375H13.562Z"/>
+      <path id="Trazado_47027" data-name="Trazado 47027" d="M15.571,16.128h6.56V26.392h-6.56Z"/>
+      <path id="Trazado_47028" data-name="Trazado 47028" d="M.063,10.54h7.93V14.3H.063Z"/>
+      <path id="Trazado_47029" data-name="Trazado 47029" d="M.063,18.832A3.971,3.971,0,0,0,3.116,22.69v7.435H0V32H7.99V30.125h-3V22.678a3.972,3.972,0,0,0,3-3.846v-2.66H.063Z"/>
+      <g id="Grupo_11323" data-name="Grupo 11323">
+        <path id="Trazado_47030" data-name="Trazado 47030" d="M24.07,18.832a3.971,3.971,0,0,0,3.053,3.858v7.435H24.007V32H32V30.125H29V22.678a3.972,3.972,0,0,0,3-3.846v-2.66H24.07Z"/>
+        <path id="Trazado_47031" data-name="Trazado 47031" d="M24.07,10.54H32V14.3H24.07Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

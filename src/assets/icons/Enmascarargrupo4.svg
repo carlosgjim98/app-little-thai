@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_19494" data-name="Rectángulo 19494" width="32" height="32" transform="translate(644 -181)" fill="#b7b7b7"/>
+    </clipPath>
+  </defs>
+  <g id="Enmascarar_grupo_4" data-name="Enmascarar grupo 4" transform="translate(-644 181)" clip-path="url(#clip-path)">
+    <g id="cake_5376975" transform="translate(644 -181)">
+      <g id="Grupo_11319" data-name="Grupo 11319">
+        <path id="Trazado_47015" data-name="Trazado 47015" d="M7.491,13.364H30.14V18.7H7.491Z"/>
+        <path id="Trazado_47016" data-name="Trazado 47016" d="M5.614,11.487H30.14v-.944a2.815,2.815,0,0,0-2.81-2.811L19,7.73a2.354,2.354,0,0,0-.343-1.786L17.965,4.9a2.368,2.368,0,0,0-3.93,0l-.694,1.046A2.354,2.354,0,0,0,13,7.727l-5.665,0A2.817,2.817,0,0,0,4.679,5.852H4.665a2.816,2.816,0,0,0-2.8,2.811V22.518H5.615V11.487Z"/>
+        <path id="Trazado_47017" data-name="Trazado 47017" d="M7.491,20.578H30.14v1.94H7.491Z"/>
+        <path id="Trazado_47018" data-name="Trazado 47018" d="M4.107,28.149H27.893A4.129,4.129,0,0,0,32,24.395H0A4.129,4.129,0,0,0,4.107,28.149Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

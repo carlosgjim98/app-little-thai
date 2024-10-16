@@ -1,0 +1,134 @@
+ion-content{
+
+.encabezado{
+    background-color: black;
+    padding: 20px;
+    height: 14%;
+    width: 100%;
+
+    .abastos{
+        font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 10pt;
+        text-align: left;
+        margin-top: 12%;
+        color: white;
+    
+
+    .icono{
+        align-items: left;
+        width: 32px;
+        height: 32px;
+        margin-left: -3%;
+        
+        
+
+    }
+
+}
+}
+
+.cuerpo{
+    background-color: white;
+    height: 86%;
+    width: 100%;
+    position: relative;
+    color: black;
+
+
+    ion-toolbar{
+        box-shadow: black;
+        border-color: black;
+        border-width: 1px;
+    }
+
+    .iconos{
+        background-color: white;
+        display: flex;
+        overflow: scroll;
+
+        p{
+          font-family:"MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif ;
+          font-size: 6pt;  
+        }
+
+        ion-icon{
+            
+            font-family:"MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif ;
+            font-size: 8pt;
+            --border-radius: 5pt;
+            width: 25pt;
+            height: 25pt;
+            padding-top: 2%;
+            margin-left: 20%;
+            margin-top: -8%;
+                
+    
+        }
+        
+    }
+
+   
+    .listado{
+        background-color: white;
+        .entrantes{
+            font-family: "MontserratAlternates-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: black;
+        }
+
+        ion-list{
+            margin-top: 10%;
+            margin-bottom: 10%;
+        
+            
+            
+    
+    
+            ion-item{
+                --background:white;
+
+                img{
+                    height: 80px;
+                    width: 100px;
+                    //padding-bottom: 50%;
+                }
+    
+                ion-label{
+                    margin-left: 5%;
+
+                    .plato{
+                        font-family: "MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        font-size: 12pt;
+                        padding-top: 15%;
+                        margin-left: 0%;
+                    }
+
+                    p{
+                        font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        font-size: 7pt;
+                        
+                    }
+
+                    ion-text{
+                        color: black;
+                    }
+                    
+                
+                    
+                
+    
+                
+            
+            }
+            }
+        }
+
+}
+
+
+
+
+
+
+
+}
+}
