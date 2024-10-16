@@ -29,20 +29,14 @@ ion-content{
 
                         .ion-button{
                             justify-content: center;
+                            //width: 20pt;
+                            //min-width: 20pt;
+                            //height: 20pt;
                             --border-radius:5pt ;
                             min-width: 15px;
                             width: 30px;
                             min-height: 15px;
                             height: 30px;
-
-                            .contador{
-                                width: 10px;
-                                height: 10px;
-                                --border-radius:30pt;
-                                ion-badge{
-                                    color: black;
-                                }
-                            }
                             
                            
                         }

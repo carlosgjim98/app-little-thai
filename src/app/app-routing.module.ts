@@ -136,6 +136,14 @@ const routes: Routes = [
   {
     path: 'current-address',
     loadChildren: () => import('./pages/current-address/current-address.module').then( m => m.CurrentAddressPageModule)
+  },
+  {
+    path: 'actual-address',
+    loadChildren: () => import('./pages/actual-address/actual-address.module').then( m => m.ActualAddressPageModule)
+  },
+  {
+    path: 'start-with-address',
+    loadChildren: () => import('./pages/start-with-address/start-with-address.module').then( m => m.StartWithAddressPageModule)
   }
 
 

@@ -1,13 +1,66 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>current-address</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">current-address</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
+  <img class="fondo" src="../../../assets/imgs/Enmascarargrupo3.png" alt="">
+
+  
+
+  
+  
+  <div class="encabezado">
+    
+    <ion-input class="address" clearInput type="text" placeholder="Dirección" >
+      <ion-icon class="icono" slot="start" src="../../../assets/icons/FlechaBoxAmr.svg" routerLink="/inicio"></ion-icon>
+    </ion-input>
+       
+  </div>
+
+
+  <div>
+  <img class="puntero" src="../../../assets/imgs/Grupo11267.png" alt="">
+  </div>
+  
+  <div class="cuerpo">
+    
+    <p class="entrega">Selecciona tu dirección de entrega</p>
+
+    <div class="direccion1">
+      <ion-button color= "primary" style="height: 40px; width: 40px;" >
+        <img src="../../../assets/icons/mappin.svg" alt="">
+      </ion-button>
+      <div class="calle">
+        <p>Calle Siervas de María, 2, 1c</p>
+        <p>11401 Jerez de la Frontera</p>
+      </div>
+    </div>
+
+    <div class="direccion2">
+      <ion-button color= "primary" style="height: 40px; width: 40px;" >
+        <ion-icon src="../../../assets/icons/mappin.svg"></ion-icon>
+      </ion-button>
+      <div class="calle">
+        <p>Calle Colón, 24, 2B</p>
+        <p>46001, Valencia</p> 
+      </div>
+      <img src="../../../assets/icons/Grupo11406.svg" alt="">
+    </div>
+    
+
+    
+    
+    <ion-button routerLink="/inicio">
+      Añadir nueva dirección
+    </ion-button>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
 </ion-content>
