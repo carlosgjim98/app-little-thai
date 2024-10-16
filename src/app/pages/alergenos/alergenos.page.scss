@@ -1,0 +1,61 @@
+.custom-toolbar {
+    --background: #1B1B1B;
+    padding: 10px 15px; 
+   
+  }
+  ion-content {
+    --ion-background-color: #ffffff !important;
+  }
+  ion-list{
+
+    background:transparent !important;
+  }
+  ion-item{
+    --background:transparent !important;
+    margin-top: 15px;
+  }
+
+  .header-container{
+
+    display: flex;
+    align-items: flex-end; 
+    margin-top: 30px;
+    
+  }
+  .icono {
+    width: 30px; 
+    height: 30px; 
+    cursor: pointer; 
+  }
+  ion-title{
+
+    font-family: 'Montserrat Alternates', sans-serif; 
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: -40px;
+    margin-top: 15px;
+  }
+  ion-avatar {
+    
+    ion-icon {
+      width:35px;
+      height: 35px;
+      color: #000; 
+      margin-left: 15px;
+    }
+  }
+    
+    .custom-item {
+      --padding-start: 10px; 
+      --inner-padding-start: 12px;
+      
+    }
+    
+ 
+    
+    ion-label {
+      font-size: 13px !important; 
+      color:  #1F2831 !important; 
+      font-family: 'Montserrat Alternates', sans-serif !important; 
+
+    }

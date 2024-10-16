@@ -139,7 +139,11 @@ const routes: Routes = [
     path: 'current-address',
     loadChildren: () => import('./pages/current-address/current-address.module').then( m => m.CurrentAddressPageModule)
 
+  },  {
+    path: 'alergenos',
+    loadChildren: () => import('./pages/alergenos/alergenos.module').then( m => m.AlergenosPageModule)
   }
+
 
 
 
