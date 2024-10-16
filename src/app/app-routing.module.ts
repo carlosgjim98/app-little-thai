@@ -93,7 +93,54 @@ const routes: Routes = [
   {
     path: 'contact-us',
     loadChildren: () => import('./pages/contact-us/contact-us.module').then( m => m.ContactUsPageModule)
-  },  {
+  },
+  {
+    path: 'verificacion',
+    loadChildren: () => import('./pages/verificacion/verificacion.module').then( m => m.VerificacionPageModule)
+  },
+  {
+    path: 'bienvenida',
+    loadChildren: () => import('./pages/bienvenida/bienvenida.module').then( m => m.BienvenidaPageModule)
+  },
+  {
+    path: 'inicio',
+    loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
+  },
+  {
+    path: 'cart',
+    loadChildren: () => import('./pages/cart/cart.module').then( m => m.CartPageModule)
+  },
+  {
+    path: 'to-home',
+    loadChildren: () => import('./pages/to-home/to-home.module').then( m => m.ToHomePageModule)
+  },
+  {
+    path: 'add-address',
+    loadChildren: () => import('./pages/add-address/add-address.module').then( m => m.AddAddressPageModule)
+  },
+  {
+    path: 'confirm-address',
+    loadChildren: () => import('./pages/confirm-address/confirm-address.module').then( m => m.ConfirmAddressPageModule)
+  },
+  {
+    path: 'qr-scanner',
+    loadChildren: () => import('./pages/qr-scanner/qr-scanner.module').then( m => m.QrScannerPageModule)
+  },
+  {
+
+    path: 'menu-on-table',
+    loadChildren: () => import('./pages/menu-on-table/menu-on-table.module').then( m => m.MenuOnTablePageModule)
+  },
+  {
+    path: 'splash',
+    loadChildren: () => import('./pages/splash/splash.module').then( m => m.SplashPageModule)
+  },
+  {
+    path: 'current-address',
+    loadChildren: () => import('./pages/current-address/current-address.module').then( m => m.CurrentAddressPageModule)
+
+  },
+  {
     path: 'verificacion',
     loadChildren: () => import('./pages/verificacion/verificacion.module').then( m => m.VerificacionPageModule)
   },
@@ -144,7 +191,13 @@ const routes: Routes = [
   {
     path: 'start-with-address',
     loadChildren: () => import('./pages/start-with-address/start-with-address.module').then( m => m.StartWithAddressPageModule)
+  },
+  {
+
+    path: 'alergenos',
+    loadChildren: () => import('./pages/alergenos/alergenos.module').then( m => m.AlergenosPageModule)
   }
+
 
 
 

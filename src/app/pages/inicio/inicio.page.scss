@@ -6,9 +6,20 @@ ion-content{
         margin-top: 10%;
         
 
-        .principal{
-            display: flex;
-            margin-left: 5%;
+
+.cabecera{
+    font-family: "MontserratAlternates-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    height: 22%;
+    width: 100%;
+    padding-left: 5%;
+    margin-bottom: 5%;
+    background-color: #1B1B1B;
+    
+    
+    p{
+        margin-bottom: -5%;
+
+        ion-button{
             
             
             .textos{

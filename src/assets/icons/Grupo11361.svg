@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="42" viewBox="0 0 42 42">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_19534" data-name="Rectángulo 19534" width="26" height="24" rx="3" transform="translate(-0.498 -0.283)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_11361" data-name="Grupo 11361" transform="translate(0 -0.159)">
+    <rect id="Rectángulo_19533" data-name="Rectángulo 19533" width="42" height="42" rx="10" transform="translate(0 0.159)" fill="#f5f993"/>
+    <g id="Enmascarar_grupo_20" data-name="Enmascarar grupo 20" transform="translate(8.498 9.442)" clip-path="url(#clip-path)">
+      <g id="chocolates_1048021" transform="translate(0.368 -0.136)">
+        <path id="Trazado_47069" data-name="Trazado 47069" d="M0,33.492a5.86,5.86,0,1,0,5.885-5.836A5.867,5.867,0,0,0,0,33.492Zm10.262,0a4.4,4.4,0,1,1-4.377-4.377A4.382,4.382,0,0,1,10.262,33.492Zm0,0" transform="translate(0 -15.984)"/>
+        <path id="Trazado_47070" data-name="Trazado 47070" d="M7.029,37.488H8.488a1.461,1.461,0,0,1,1.459-1.459V34.57A2.921,2.921,0,0,0,7.029,37.488Zm0,0" transform="translate(-4.063 -19.98)"/>
+        <path id="Trazado_47071" data-name="Trazado 47071" d="M37.065,27.656a5.836,5.836,0,1,0,5.885,5.836A5.843,5.843,0,0,0,37.065,27.656Zm0,10.213a4.377,4.377,0,1,1,4.426-4.377A4.382,4.382,0,0,1,37.065,37.869Zm0,0" transform="translate(-18.049 -15.984)"/>
+        <path id="Trazado_47072" data-name="Trazado 47072" d="M38.143,37.488H39.6a1.461,1.461,0,0,1,1.459-1.459V34.57A2.921,2.921,0,0,0,38.143,37.488Zm0,0" transform="translate(-22.045 -19.98)"/>
+        <path id="Trazado_47073" data-name="Trazado 47073" d="M27.344,5.836a5.836,5.836,0,1,0-5.836,5.836A5.843,5.843,0,0,0,27.344,5.836Zm-5.836,4.377a4.377,4.377,0,1,1,4.377-4.377A4.382,4.382,0,0,1,21.508,10.213Zm0,0" transform="translate(-9.058)"/>
+        <path id="Trazado_47074" data-name="Trazado 47074" d="M22.586,9.832h1.459A1.461,1.461,0,0,1,25.5,8.373V6.914A2.921,2.921,0,0,0,22.586,9.832Zm0,0" transform="translate(-13.054 -3.996)"/>
+      </g>
+    </g>
+  </g>
+</svg>
