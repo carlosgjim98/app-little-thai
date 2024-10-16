@@ -6,20 +6,9 @@ ion-content{
         margin-top: 10%;
         
 
-
-.cabecera{
-    font-family: "MontserratAlternates-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
-    height: 22%;
-    width: 100%;
-    padding-left: 5%;
-    margin-bottom: 5%;
-    background-color: #1B1B1B;
-    
-    
-    p{
-        margin-bottom: -5%;
-
-        ion-button{
+        .principal{
+            display: flex;
+            margin-left: 5%;
             
             
             .textos{
@@ -38,30 +27,37 @@ ion-content{
                     
                             
 
-                        .ion-button{
+                        ion-button{
                             justify-content: center;
                             --border-radius:5pt ;
                             min-width: 15px;
-                            width: 30px;
+                            width: 90%;
                             min-height: 15px;
-                            height: 30px;
+                            height: 75%;
+                            position: relative;
 
-                            .contador{
-                                width: 10px;
-                                height: 10px;
-                                --border-radius:30pt;
-                                ion-badge{
-                                    color: black;
-                                }
+                            ion-icon{
+                                size: 6pt;
+                                color: black;
+                            }
+
+                            ion-badge{
+                                --background: gray;
+                                width: 17px;
+                                display: flex;
+                                font-size: 10px;
+                                border-radius: 50%;
+                                justify-content: center;
+                                position: absolute;
+                                margin-left: 32px;
+                                margin-bottom: 30px;
+                               
                             }
                             
                            
                         }
                     
-                        ion-icon{
-                            size: 6pt;
-                            color: black;
-                        }
+                        
             } 
              
         }
