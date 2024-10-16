@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { AlergenosPageRoutingModule } from './alergenos-routing.module';
-
+import { RouterModule } from '@angular/router';
 import { AlergenosPage } from './alergenos.page';
 
 @NgModule({
@@ -13,7 +13,8 @@ import { AlergenosPage } from './alergenos.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    AlergenosPageRoutingModule
+    AlergenosPageRoutingModule,
+    RouterModule 
   ],
   declarations: [AlergenosPage]
 })
