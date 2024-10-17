@@ -12,9 +12,13 @@ const routes: Routes = [
         loadChildren: () => import('../inicio/inicio.module').then(m => m.InicioPageModule)
       },
       {
-        path: 'inicio',
-        loadChildren: () => import('../inicio/inicio.module').then(m => m.InicioPageModule)
+        path: 'carta',
+        loadChildren: () => import('../carta/carta.module').then(m => m.CartaPageModule)
       },
+      {
+        path: 'thai-points',
+      loadChildren: () => import('../thai-points/thai-points.module').then( m => m.ThaiPointsPageModule)
+    },
       {
         path: 'inicio',
         loadChildren: () => import('../inicio/inicio.module').then(m => m.InicioPageModule)
@@ -23,10 +27,7 @@ const routes: Routes = [
         path: 'profile',
         loadChildren: () => import('../profile/profile.module').then(m => m.ProfilePageModule)
       },
-      {
-        path: 'carta',
-        loadChildren: () => import('../carta/carta.module').then(m => m.CartaPageModule)
-      },
+    
       {
         path: 'calendar',
         loadChildren: () => import('../calendar/calendar.module').then(m => m.CalendarPageModule)
@@ -40,6 +41,7 @@ const routes: Routes = [
         path: 'profile',
         loadChildren: () => import('../profile/profile.module').then(m => m.ProfilePageModule)
       },
+      
       {
         path: '',
         redirectTo: '/tabs/inicio',
