@@ -2,20 +2,40 @@
   <ion-toolbar class="custom-toolbar">
     <div class="header-content">
       <div class="header-text">
-        <h1 class="title-line1">Descubre aqui</h1>
+        <h1 class="title-line1">Descubre aquí</h1>
         <h1 class="title-line2">nuestros Thai puntos</h1>
       </div>
     </div>
   </ion-toolbar>
 </ion-header>
 
-
 <ion-content [fullscreen]="true">
   <ion-header class="point-indicator">
     <div class="point-header-text">
-    <h2> Actualmente tienes</h2>
-    <h3> 1235</h3>
-    <h3> thai puntos</h3>
-  </div>
+      <h2>Actualmente tienes</h2>
+      <h3>{{ thaiPoints }}</h3> <!-- Muestra los puntos de Thai -->
+      <h4>thai puntos</h4>
+    </div>
   </ion-header>
+
+  <div class="point-section">
+    <ion-card *ngFor="let sauce of getSaucesByCategory('Salsas')" class="sauce-card">
+      <div class="sauce-content">
+        <img [src]="sauce.img" class="sauce-img" />
+        <div class="sauce-details">
+          <ion-card-title>{{ sauce.name }}</ion-card-title> <!-- Título -->
+          <ion-card-subtitle>1 unidad</ion-card-subtitle> <!-- Número de unidades -->
+          <p class="sauce-description">{{ sauce.description }}</p> <!-- Descripción -->
+        </div>
+      </div>
+      
+      <ion-card-content class="card-footer"> <!-- Contenido del pie de tarjeta -->
+        <span class="points">{{ sauce.points }} puntos</span> <!-- Puntos -->
+        <ion-button class="redeem-button" (click)="redeemSauce(sauce)" routerLink="/redeem-sauce">
+          <ion-icon src="/assets/icons/coin.svg" class="coin-icon"></ion-icon>
+          Canjear 
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>

@@ -1,0 +1,71 @@
+.sauce-details {
+    text-align: center; /* Centra el contenido */
+    padding: 16px; /* Espaciado alrededor */
+  }
+  
+  .sauce-img-large {
+    width: 40%; /* Ajusta al ancho completo */
+    height: auto; /* Mantiene la relación de aspecto */
+  }
+
+  h2{
+    color: #141411;
+    font-size: 26px;
+  }
+
+  h3{
+    color: #141411;
+    font-size: 14px;
+  }
+
+  p{
+    color: #141411;
+    font-size: 16px;
+  }
+
+  .condiciones {
+    padding: 16px; /* Espaciado alrededor */
+    background-color: #f9f9f9; /* Color de fondo claro */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-top: -25px;
+    text-align: center; 
+
+  }
+  
+  .condiciones h4 {
+    color: #141411;
+    margin-bottom: 8px; /* Espacio debajo del título */
+    font-size: 12px;
+  }
+  
+  .condiciones p {
+    color: #676763;
+    font-size: 10px;
+    margin: 4px 0; /* Margen entre los párrafos */
+  }
+
+  .button-container {
+    display: flex;             
+    flex-direction: column;     
+    align-items: center;        
+    justify-content: center;    
+    margin-top: 16px;          
+  }
+  
+  .point-button {
+    font-size: 14px;
+    margin: 8px 0;     
+    width: 80%;   
+    min-height: 60px; 
+    border-radius: 0;  
+    border:none; 
+    --background: #141411 !important;
+  }
+
+  .redeem-button {
+    margin: 8px 0;  
+    width: 70%;     
+    --border-radius:40px;     
+    color: #141411;
+    font-size: 14px;
+  }

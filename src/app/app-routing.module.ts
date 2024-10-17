@@ -358,6 +358,14 @@ const routes: Routes = [
   {
     path: 'thai-points',
     loadChildren: () => import('./pages/thai-points/thai-points.module').then( m => m.ThaiPointsPageModule)
+  },
+  {
+    path: 'redeem-sauce',
+    loadChildren: () => import('./pages/redeem-sauce/redeem-sauce.module').then( m => m.RedeemSaucePageModule)
+  },
+  {
+    path: 'my-points',
+    loadChildren: () => import('./pages/my-points/my-points.module').then( m => m.MyPointsPageModule)
   }
 
 
