@@ -27,37 +27,24 @@ ion-content{
                     
                             
 
-                        ion-button{
+                        .ion-button{
                             justify-content: center;
+                            //width: 20pt;
+                            //min-width: 20pt;
+                            //height: 20pt;
                             --border-radius:5pt ;
                             min-width: 15px;
-                            width: 90%;
+                            width: 30px;
                             min-height: 15px;
-                            height: 75%;
-                            position: relative;
-
-                            ion-icon{
-                                size: 6pt;
-                                color: black;
-                            }
-
-                            ion-badge{
-                                --background: gray;
-                                width: 17px;
-                                display: flex;
-                                font-size: 10px;
-                                border-radius: 50%;
-                                justify-content: center;
-                                position: absolute;
-                                margin-left: 32px;
-                                margin-bottom: 30px;
-                               
-                            }
+                            height: 30px;
                             
                            
                         }
                     
-                        
+                        ion-icon{
+                            size: 6pt;
+                            color: black;
+                        }
             } 
              
         }
@@ -86,29 +73,6 @@ ion-content{
         .botones{
             margin-left: 5%;
             padding-top: 3%;
-            display: flex;
-
-            // .modal{
-
-                ion-button{
-                width: 97%;
-                min-height: 30px;
-                height: 36px;
-                --border-radius: 30pt;
-                    ion-icon{
-                        color: black;
-                        font-size: 8pt;
-                    }
-
-                    ion-text{
-                        font-family:"MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif ;
-                        font-size: 8pt;
-                    }
-                }
-
-                
-
-            // }
             
 
             ion-button{
