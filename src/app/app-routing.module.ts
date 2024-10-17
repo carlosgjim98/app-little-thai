@@ -147,7 +147,12 @@ const routes: Routes = [
   {
   path: 'carta',
   loadChildren: () => import('./pages/carta/carta.module').then( m => m.CartaPageModule)
-}
+},
+  {
+    path: 'dish-details/:id',
+    loadChildren: () => import('./pages/dish-details/dish-details.module').then( m => m.DishDetailsPageModule)
+  }
+
 
 
 

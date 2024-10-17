@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-carta',
@@ -6,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carta.page.scss'],
 })
 export class CartaPage implements OnInit {
+  dishId: number;
+  
 
+    public dishes = [
+      { id: 1, name: 'Gambas bites', category: 'Entrantes', img: 'assets/imgs/bolitas-de-gamba-scaled(1).png', description: 'Bolas crujientes de gamba acompañadas de una salsa a elegir.', price: 5.50},
+      { id: 2, name: 'Thai bites', category: 'Entrantes', img: 'assets/imgs/Fotos-Glovo-y-web-nueva-6-600x600.png', description: 'Bocados crujientes de ternera especiada acompañados de 2…', price: 5.50 },
+      { id: 3, name: 'Tempura de gambas', category: 'Entrantes', img: 'assets/imgs/9.TEMPURAGAMBAS.png', description: 'La tempura de gamba, un clásico que nunca falla…', price: 5.50 },
+      { id: 4, name: 'Delicias al vapor', category: 'Entrantes', img: 'assets/imgs/delicias-500x501.png', description: 'Bolas crujientes de gamba acompañadas de una salsa a elegir.',price: 5.50 }
+    ];
   public categories = [
     { name: 'Entrantes', icon: 'assets/icons/soja.svg' },
     { name: 'Especialidades', icon: 'assets/icons/noodles.svg' },
@@ -20,9 +29,17 @@ export class CartaPage implements OnInit {
   ];
 
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.route.paramMap.subscribe(params => {
+      this.dishId = +params.get('id'); // Obtiene el id del plato
+      // Aquí puedes cargar más detalles del plato usando el id
+    });
+    
   }
 
+  getDishesByCategory(category: string) {
+    return this.dishes.filter(dish => dish.category === category);
+  }
 }
