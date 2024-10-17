@@ -151,7 +151,11 @@ const routes: Routes = [
   {
     path: 'dish-details/:id',
     loadChildren: () => import('./pages/dish-details/dish-details.module').then( m => m.DishDetailsPageModule)
+  },  {
+    path: 'thai-points',
+    loadChildren: () => import('./pages/thai-points/thai-points.module').then( m => m.ThaiPointsPageModule)
   }
+
 
 
 

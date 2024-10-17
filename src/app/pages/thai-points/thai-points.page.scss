@@ -1,0 +1,76 @@
+
+
+.custom-toolbar {
+    --background: #1B1B1B;
+    padding: 10px 15px; 
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .header-text {
+    
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  
+  .title-line1 {
+   
+    font-size: 24px;
+    font-family: 'Montserrat Alternates', sans-serif; 
+    font-weight: bold;
+  }
+  
+  .title-line2{
+    margin: 0;
+    margin-top: -15px;
+    font-size: 24px;
+    color: #FAD149; 
+    font-family: 'Montserrat Alternates', sans-serif; 
+    font-weight: bold;
+  }
+  
+  ion-content {
+    --ion-background-color: #ffffff !important;
+    .point-indicator{
+
+        background-color: #FAD149;
+        margin-top: 0px;
+        height: 100px;
+    }
+
+    
+
+    h2{
+
+        font-size: 12px;
+        color: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:0;
+        
+
+    }
+
+    h3{
+
+        font-size: 18px;
+        color: #000000;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:0;
+
+    }
+
+
+
+
+  }
