@@ -5,15 +5,13 @@
         <h1 class="title-line1">Descubre</h1>
         <h1 class="title-line2">nuestra carta</h1>
       </div>
-      <ion-button class="allergens-button"  routerLink="/alergenos">
+      <ion-button class="allergens-button" routerLink="/alergenos">
         <img src="assets/imgs/alergenos.png" alt="Alergenos" class="allergens-img">
         Alérgenos
       </ion-button>
     </div>
   </ion-toolbar>
 </ion-header>
-
-
 
 <ion-content [fullscreen]="true" class="white-background">
 
@@ -33,117 +31,47 @@
       </ion-row>
     </ion-grid>
   </div>
-  
+
+
+
   
   <div class="menu-section">
     <h2>Entrantes</h2>
-    
-    <!-- Primer Plato -->
-    <ion-card class="dish-card">
-      <img src="assets/imgs/bolitas-de-gamba-scaled(1).png" class="dish-img">
+    <ion-card *ngFor="let dish of getDishesByCategory('Entrantes')" class="dish-card">
+      <img [src]="dish.img" class="dish-img" />
       <ion-card-header>
-        <ion-card-title>Gambas bites</ion-card-title>
-        <div class="icons-section">
+        <ion-card-title>{{ dish.name }}</ion-card-title>
+
+  <div class="icons-section">
           <ion-icon src="assets/icons/Grupo11350.svg" class="icon"></ion-icon>
           <ion-icon src="assets/icons/Grupo11351.svg" class="icon"></ion-icon>
           <ion-icon src="assets/icons/Grupo11359.svg" class="icon"></ion-icon>
         </div>
         
-        <div class="price-section">
-          <ion-button shape="round" class="add-button">
-            <ion-icon slot="icon-only" src="assets/icons/add-outline.svg" class="add-icon"></ion-icon>
+      <div class="price-section">
+        <ion-button [routerLink]="['/dish-details', dish.id]" shape="round" class="add-button">
+          <ion-icon slot="icon-only" src="assets/icons/add-outline.svg" class="add-icon"></ion-icon>
         </ion-button>
-        
-          <span class="price">6,95 €</span>
-        </div>
-        <p>Bolas crujientes de gamba acompañadas de una salsa a elegir.</p>
-      </ion-card-header>
-    </ion-card>
-    
-    
-    
+        <span class="price">{{ dish.price }} €</span>
+      </div>
+
+ <p>{{ dish.description }}</p>
+
+</ion-card-header>
+
+  </ion-card>
   
-    <!-- Segundo Plato -->
-       
-      <ion-card class="dish-card">
-        <img src="assets/imgs/Fotos-Glovo-y-web-nueva-6-600x600.png" class="dish-img">
-        <ion-card-header>
-          <ion-card-title>Thai bites</ion-card-title>
-          <div class="icons-section">
-            <ion-icon src="assets/icons/Grupo11350.svg" class="icon"></ion-icon>
-            <ion-icon src="assets/icons/Grupo11351.svg" class="icon"></ion-icon>
-            <ion-icon src="assets/icons/Grupo11359.svg" class="icon"></ion-icon>
-          </div>
-          
-          <div class="price-section">
-            <ion-button shape="round" class="add-button">
-              <ion-icon slot="icon-only" src="assets/icons/add-outline.svg" class="add-icon"></ion-icon>
-          </ion-button>
-          
-            <span class="price">5,95 €</span>
-          </div>
-          <p>Bocados crujientes de ternera especiada acompañados de 2…</p>
-        </ion-card-header>
-      </ion-card>
-
-      <!-- Tercer Plato -->
-
-      <ion-card class="dish-card">
-        <img src="assets/imgs/9.TEMPURAGAMBAS.png" class="dish-img">
-        <ion-card-header>
-          <ion-card-title>Tempura de gambas</ion-card-title>
-          <div class="icons-section">
-            <ion-icon src="assets/icons/Grupo11350.svg" class="icon"></ion-icon>
-            <ion-icon src="assets/icons/Grupo11351.svg" class="icon"></ion-icon>
-            <ion-icon src="assets/icons/Grupo11359.svg" class="icon"></ion-icon>
-          </div>
-          
-          <div class="price-section">
-            <ion-button shape="round" class="add-button">
-              <ion-icon slot="icon-only" src="assets/icons/add-outline.svg" class="add-icon"></ion-icon>
-          </ion-button>
-          
-            <span class="price">5,95 €</span>
-          </div>
-          <p>La tempura de gamba, un clásico que nunca falla…</p>
-        </ion-card-header>
-      </ion-card>
-
-       <!-- Cuarto Plato -->
-       
-       <ion-card class="dish-card">
-        <img src="assets/imgs/delicias-500x501.png" class="dish-img">
-        <ion-card-header>
-          <ion-card-title>Delicias al vapor</ion-card-title>
-          <div class="icons-section">
-            <ion-icon src="assets/icons/Grupo11350.svg" class="icon"></ion-icon>
-            <ion-icon src="assets/icons/Grupo11351.svg" class="icon"></ion-icon>
-            <ion-icon src="assets/icons/Grupo11359.svg" class="icon"></ion-icon>
-          </div>
-          
-          <div class="price-section">
-            <ion-button shape="round" class="add-button">
-              <ion-icon slot="icon-only" src="assets/icons/add-outline.svg" class="add-icon"></ion-icon>
-          </ion-button>
-          
-            <span class="price">6,95 €</span>
-          </div>
-          <p>Bolas crujientes de gamba acompañadas de una salsa a elegir.</p>
-        </ion-card-header>
-      </ion-card>
-
   </div>
-  
 
-  <!-- Carrito  -->
+
+
+
+  <!-- Carrito -->
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-button color="warning" class="fab-button">
-        <ion-icon src="assets/icons/carrito.svg" class="cart-icon"></ion-icon>
-        <ion-badge color="light" class="badge">+99</ion-badge> 
+    <ion-button color="warning" class="fab-button"  routerLink="/cart">
+      <ion-icon src="assets/icons/carrito.svg" class="cart-icon"></ion-icon>
+      <ion-badge color="light" class="badge">+99</ion-badge> 
     </ion-button>
-</ion-fab>
-
-
-
+  </ion-fab>
 
 </ion-content>

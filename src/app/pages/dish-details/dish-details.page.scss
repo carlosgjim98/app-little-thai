@@ -1,0 +1,220 @@
+
+.custom-toolbar {
+    --background: #1B1B1B;
+    padding: 10px 15px; 
+   
+  }
+  ion-content {
+    --ion-background-color: #ffffff !important;
+    font-family: 'Montserrat Alternates', sans-serif !important;
+  }
+  ion-title{
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: -40px;
+    margin-top: 15px;
+  }
+  .header-container{
+
+    display: flex;
+    align-items: flex-end; 
+    margin-top: 30px;
+    
+  }
+  .icono {
+    width: 30px; 
+    height: 30px; 
+    cursor: pointer; 
+  }
+
+  .dish-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+  }
+  
+  .dish-image {
+    width: 60%; 
+    max-width: 400px; 
+    border-radius: 10px; 
+    margin-bottom: 16px; 
+  }
+  
+  .dish-name {
+    font-size: 24px;
+    font-weight:600;
+    margin-top: -20px; 
+    color: #141411;
+    font-family: 'Montserrat Alternates', sans-serif;
+    
+  }
+  
+  .icons-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px; 
+  }
+  
+  .icon {
+    width: 30px; 
+    height: 30px;
+    margin: 0 2px; 
+    color: #141411;
+  }
+  
+  .dish-description {
+    font-size: 18px; 
+    text-align: center;
+    color: #141411;
+    font-family: 'Montserrat Alternates', sans-serif;
+    max-width: 260px;
+  }
+  
+  .allergens {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 13px; 
+    color: #676763;
+    margin-top: 12px; 
+    text-align: center; 
+    max-width: 280px;
+  }
+
+  .extras-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    padding: 16px;
+    margin: 0;
+    width: 100%; 
+  }
+  
+  
+  ion-checkbox {
+  
+  
+    --border-color: gray; // Color del borde gris
+    --border-radius: 0px; // Hacer el checkbox menos redondeado
+    --color: #1B1B1B;
+  }
+ 
+  
+ion-list {
+    background: transparent !important; 
+}
+
+ion-item {
+    --background: transparent !important; 
+    --border-color: #838381;
+    display: flex; 
+    justify-content: space-between;
+  align-items: center; 
+  width: 100%;
+ 
+    
+   
+}
+
+ion-label{
+  white-space: normal;
+  width: auto;
+  
+  min-width: 170px; 
+  
+
+}
+
+
+ion-item-divider {
+    color: #141411; 
+    font-size: 16px;
+    background: transparent; 
+}
+
+
+.price {
+    color: #141411; 
+    font-size: 14px;
+  
+    flex-shrink: 0; /* Evita que se reduzca en el espacio disponible */
+    margin-left: 60px; /* Agregar un margen para espaciarlo del label */
+}
+
+ .name{
+    color: #141411; 
+    font-size: 14px;
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+        overflow: hidden; /* Oculta el desbordamiento si es necesario */
+        text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
+      
+   
+ }
+
+
+
+.badge-obligatorio {
+    margin-left: auto; 
+    margin-right: 0; 
+    padding: 4px 8px; 
+    font-size: 12px; 
+    height: auto; 
+    --border-radius: 10px; 
+    color: #ffffff;
+   
+  }
+  .quantity-text{
+    color: #141411; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+
+  }
+
+  .quantity-selector{
+    color: #141411; 
+    font-weight: bold;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .quantity-controls {
+    display: flex; // Usar flexbox para alinear botones y cantidad
+    justify-content: center; // Centra los botones y el número
+    align-items: center; // Alinea verticalmente
+    margin-top: 0px; // Espaciado entre el texto y los controles
+}
+
+.add-button {
+    width: 20px;   
+    height: 20px;  
+    padding: 0;   
+    border-radius: 50%;  
+    --background: #FAD149;
+    min-width: 20px; 
+    min-height: 20px;
+
+}
+
+.add-icon {
+    font-size: 20px; 
+    color: #ffffff; 
+}
+.quantity {
+    font-size: 16px; // Ajusta el tamaño del texto según sea necesario
+    margin: 0 5px; // Espacio a los lados del número
+}
+  .add-to-order{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .toral-eur{
+
+    font-weight: bold;
+  }

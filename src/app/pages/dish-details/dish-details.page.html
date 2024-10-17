@@ -1,0 +1,135 @@
+<ion-header >
+  <ion-toolbar class="custom-toolbar">
+    <div class="header-container"  routerLink="/carta">
+        <ion-icon class="icono" slot="start" src="../../../assets/icons/FlechaBoxAmr.svg" routerLink="/carta"></ion-icon>
+    <ion-title>{{ dishDetails?.name }}</ion-title>
+  </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="dish-details-container">
+    <!-- Imagen del plato -->
+    <img [src]="dishDetails?.img" alt="{{ dishDetails?.name }}" class="dish-image" />
+
+    <!-- Nombre del plato -->
+    <h2 class="dish-name">{{ dishDetails?.name }}</h2>
+
+    <!-- Sección de iconos -->
+    <div class="icons-section">
+      <ion-icon src="assets/icons/Grupo11350.svg" class="icon"></ion-icon>
+      <ion-icon src="assets/icons/Grupo11351.svg" class="icon"></ion-icon>
+      <ion-icon src="assets/icons/Grupo11359.svg" class="icon"></ion-icon>
+    </div>
+
+    <!-- Descripción del plato -->
+    <p class="dish-description">{{ dishDetails?.description }}</p>
+    <p class="allergens">*Gluten, Crustáceos, Dióxido de azufre y sulfitos, Frutos de cáscara, Huevos, Lácteos, Moluscos, Pescado.</p>
+  </div>
+
+
+
+  <div class="extras-container">
+    <!-- Sección para elegir las salsas -->
+    <ion-list>
+      <ion-item-divider>
+     <ion-label class=name>Elige tus dos salsas</ion-label>
+        <ion-button class="badge-obligatorio" color="medium">Obligatorio</ion-button>
+      </ion-item-divider>
+
+      <!-- Opciones de salsas con ion-checkbox -->
+      <ion-item>
+        <ion-checkbox  slot="start" [(ngModel)]="salsaAjoPimienta"></ion-checkbox>
+     <ion-label class=name>Ajo y pimienta negra</ion-label>
+        <span class="price">0,00 €</span>
+      </ion-item>
+
+      <ion-item>
+        <ion-checkbox slot="start" [(ngModel)]="salsaCurry"></ion-checkbox>
+     <ion-label class=name>Curry</ion-label>
+        <span class="price">0,00 €</span>
+      </ion-item>
+
+      <ion-item>
+        <ion-checkbox slot="start" [(ngModel)]="salsaChen"></ion-checkbox>
+     <ion-label class=name>Salsa Chen</ion-label>
+        <span class="price">0,00 €</span>
+      </ion-item>
+
+      <ion-item>
+        <ion-checkbox slot="start" [(ngModel)]="pimientoRojoDulce"></ion-checkbox>
+     <ion-label class=name>Pimiento rojo dulce</ion-label>
+        <span class="price">0,00 €</span>
+      </ion-item>
+    </ion-list>
+
+    <!-- Sección para extras -->
+    <ion-list>
+      <ion-item-divider>
+     <ion-label class=name>Añade extra de salsa APARTE</ion-label>
+        <ion-button class="badge-obligatorio" color="medium">suplemento</ion-button>
+      </ion-item-divider>
+
+      <!-- Opciones de salsas extra -->
+      <ion-item>
+        <ion-checkbox slot="start" [(ngModel)]="extraAjoPimienta"></ion-checkbox>
+        <ion-label class="name">Ajo y pimienta negra</ion-label>
+        <span class="price">1,00 €</span>
+      </ion-item>
+
+      <ion-item>
+        <ion-checkbox slot="start" [(ngModel)]="extraSalsaChen"></ion-checkbox>
+     <ion-label class=name>Salsa Chen</ion-label>
+        <span class="price">1,00 €</span>
+      </ion-item>
+    </ion-list>
+
+    <!-- Sección adicional -->
+    <ion-item-divider>
+   <ion-label class=name>¿Qué necesitas?</ion-label>
+   <ion-button class="badge-obligatorio" color="medium">Obligatorio</ion-button>
+  </ion-item-divider>
+    
+    
+    <!-- Más opciones según sea necesario -->
+    <ion-item>
+      <ion-checkbox slot="start" [(ngModel)]="necesidadExtra1"></ion-checkbox>
+   <ion-label class=name>Palillos</ion-label>
+      <span class="price">0,00 €</span>
+    </ion-item>
+    
+    <ion-item>
+      <ion-checkbox slot="start" [(ngModel)]="necesidadExtra2"></ion-checkbox>
+   <ion-label class=name>Cubiertos</ion-label>
+      <span class="price">0,00 €</span>
+    </ion-item>
+  </div>
+
+  <p class="quantity-text">¿Cuántas unidades quieres? </p>
+
+  <div class="quantity-selector">
+    <div class="quantity-controls">
+        <ion-button shape="round" class="add-button" (click)="decreaseQuantity()">
+            <ion-icon slot="icon-only" src="assets/icons/remove-outline.svg" class="add-icon"></ion-icon>
+        </ion-button>
+        <span class="quantity">{{ quantity }}</span>
+        <ion-button shape="round" class="add-button" (click)="increaseQuantity()">
+            <ion-icon slot="icon-only" src="assets/icons/add-outline.svg" class="add-icon"></ion-icon>
+        </ion-button>
+    </div>
+</div>
+
+<!-- Mostrando el total -->
+<div class="total-price">
+    <span>Total: {{ total | currency:'EUR':'symbol' }}</span>
+</div>
+
+  
+  <!-- Botón para añadir al pedido -->
+  <div class="add-to-order">
+    <ion-button class="order-button" color="warning" >
+      <ion-icon src="assets/icons/add-circle.svg"></ion-icon>
+      Añadir al pedido <span class="toral-eur"> ·{{ total }} €</span>
+    </ion-button>
+  </div>
+</ion-content>
