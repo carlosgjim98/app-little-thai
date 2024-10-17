@@ -12,6 +12,7 @@ import { AppLoadingComponent } from './app-loading/app-loading.component';
 import { AppNotificationItemComponent } from './app-notification-item/app-notification-item.component';
 import { AppRatingComponent } from './app-rating/app-rating.component';
 import { ErrorViewComponent } from './error-view/error-view.component';
+import { AppHeaderComponent } from './app-header/app-header.component';
 
 const COMPONENTS = [
   AppChatItemComponent,
@@ -22,6 +23,7 @@ const COMPONENTS = [
   AppRatingComponent,
   AppNotificationItemComponent,
   ErrorViewComponent,
+  AppHeaderComponent,
 ];
 
 @NgModule({
