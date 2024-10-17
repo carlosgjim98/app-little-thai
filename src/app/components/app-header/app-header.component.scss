@@ -1,0 +1,25 @@
+.custom-toolbar {
+    --background: #1B1B1B;
+    padding: 10px 15px; 
+   
+  }
+  ion-title{
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: -40px;
+    margin-top: 15px;
+  }
+  .header-container{
+
+    display: flex;
+    align-items: flex-end; 
+    margin-top: 30px;
+    
+  }
+  .icono {
+    width: 30px; 
+    height: 30px; 
+    cursor: pointer; 
+  }

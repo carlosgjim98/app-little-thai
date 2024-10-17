@@ -1,13 +1,10 @@
-<ion-header >
-  <ion-toolbar class="custom-toolbar">
-    <div class="header-container"  routerLink="/carta">
-        <ion-icon class="icono" slot="start" src="../../../assets/icons/FlechaBoxAmr.svg" routerLink="/carta"></ion-icon>
-    <ion-title>{{ dishDetails?.name }}</ion-title>
-  </div>
-  </ion-toolbar>
-</ion-header>
+
+
+<app-header title="{{ dishDetails?.name }}"></app-header>
+
 
 <ion-content [fullscreen]="true">
+
   <div class="dish-details-container">
     <!-- Imagen del plato -->
     <img [src]="dishDetails?.img" alt="{{ dishDetails?.name }}" class="dish-image" />
