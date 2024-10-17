@@ -58,6 +58,9 @@ ion-content{
         width: 80%;
         padding-top: 5%;
         display: flex;
+        overflow-x: auto;             
+        white-space: nowrap;          
+        //padding: 10px 0;    
 
         .imagen1{
             background-color: #FAD149;
