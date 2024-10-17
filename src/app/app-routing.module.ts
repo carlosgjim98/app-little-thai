@@ -200,7 +200,11 @@ const routes: Routes = [
   {
   path: 'carta',
   loadChildren: () => import('./pages/carta/carta.module').then( m => m.CartaPageModule)
-}
+},  {
+    path: 'restaurant-selection',
+    loadChildren: () => import('./pages/restaurant-selection/restaurant-selection.module').then( m => m.RestaurantSelectionPageModule)
+  }
+
 
 
 

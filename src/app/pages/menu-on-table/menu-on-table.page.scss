@@ -1,37 +1,37 @@
 ion-content{
 
-.encabezado{
-    background-color: black;
-    padding: 20px;
-    height: 14%;
-    width: 100%;
-    display: flex;
+    .encabezado{
+        background-color: black;
+        padding: 20px;
+        height: 14%;
+        width: 100%;
+        display: flex;
 
-    img{
+        img{
         margin-top: 13%;
         height: 30px;
         width: 30px;
 
-    }
+        }
 
-    p{
+        p{
         font-family: "MontserratAlternates-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
         color: white;
         font-size: 10pt;
         padding-top: 12%;
         padding-left: 3%;
-    }
+        }
     
-    }
+        }
 
-    .iconos{
+     .iconos{
             display: flex;
 
 
             
             .especialidades{
 
-            ion-button{
+             ion-button{
                 justify-content: center;
                 --border-radius:5pt ;
                 min-width: 15px;
@@ -61,44 +61,46 @@ ion-content{
 
 
     .cuerpo{
-    background-color: white;
-    height: 86%;
-    width: 100%;
-    position: relative;
-    color: black;
-
-
-    ion-toolbar{
-        box-shadow: black;
-        border-color: black;
-        border-width: 1px;
-    }
-
-    .iconos{
         background-color: white;
-        display: flex;
-        overflow: scroll;
+        height: 86%;
+        width: 100%;
+        position: relative;
+        color: black;
 
-        p{
-          font-family:"MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif ;
-          font-size: 6pt;  
+
+        ion-toolbar{
+            box-shadow: black;
+            border-color: black;
+            border-width: 1px;
         }
 
-        ion-icon{
+        .iconos{
+            background-color: white;
+            display: flex;
+            overflow: scroll;
+
             
-            font-family:"MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif ;
-            font-size: 8pt;
-            --border-radius: 5pt;
-            width: 25pt;
-            height: 25pt;
-            padding-top: 2%;
-            margin-left: 20%;
-            margin-top: -8%;
+
+            ion-icon{
                 
-    
-        }
+                font-family:"MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif ;
+                font-size: 8pt;
+                --border-radius: 5pt;
+                width: 25pt;
+                height: 25pt;
+                padding-top: 2%;
+                margin-left: 20%;
+                margin-top: -8%;
+                    
         
-    }
+            }
+
+            p{
+                font-family:"MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif ;
+                font-size: 6pt;  
+                }
+        
+        }
 
    
     .listado{

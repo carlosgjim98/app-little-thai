@@ -36,20 +36,25 @@
     </ion-item>
   
     <div class="botones">
-      <ion-button color= "primary" >
-        <ion-icon slot="start" src="../../../assets/icons/scooter.svg"></ion-icon>
-        <ion-text color="secondary"  routerLink="/to-home">A domicilio</ion-text>
-     </ion-button>
+      
 
-      <ion-button color= "primary" >
-        <ion-icon slot="start" src="../../../assets/icons/ramen.svg"></ion-icon>
-        <ion-text color="secondary" routerLink="/login">Recogida</ion-text>
-      </ion-button>
+        
+        <ion-button  id="open-modal" expand="block" color= "primary" >
+          <ion-icon slot="start" src="../../../assets/icons/scooter.svg"></ion-icon>
+          <ion-text color="secondary" >A domicilio</ion-text>
+        </ion-button>
+        
+        
+        
+        <ion-button color= "primary" >
+          <ion-icon slot="start" src="../../../assets/icons/ramen.svg"></ion-icon>
+          <ion-text color="secondary" routerLink="/restaurant-selection">Recogida</ion-text>
+        </ion-button>
 
-      <ion-button color= "primary" >
-        <ion-icon slot="start" src="../../../assets/icons/QR.svg"></ion-icon>
-        <ion-text color="secondary" routerLink="/qr-scanner">En mesa</ion-text>
-      </ion-button>
+        <ion-button color= "primary" >
+          <ion-icon slot="start" src="../../../assets/icons/QR.svg"></ion-icon>
+          <ion-text color="secondary" routerLink="/qr-scanner">En mesa</ion-text>
+        </ion-button>
     </div>
 
   
@@ -106,3 +111,26 @@
 
 
 </ion-content>
+
+        <ion-modal  id="modal-inicio" class="modal-inicio" trigger="open-modal" [initialBreakpoint]="1" [breakpoints]="[0, 1]">
+          <ng-template>
+            <div class="content">
+              <img class="imagen" src="../../../assets/imgs/Grupo11405.png" alt="">
+          
+              <p class="ups">¡Ups!</p>
+              <p>Para poder realizar el pedido, necesitamos</p>
+              <p>saber cuál es tu dirección de entrega</p>
+          
+          
+          
+              <ion-item class="direccion" lines="none">
+                <ion-input clearInput type="text" placeholder="Ej. Calle Colón, 24, Valencia" routerLink="/add-address">
+                  <ion-icon slot="start" src="../../../assets/icons/mapPin2.svg"></ion-icon>
+                </ion-input>
+              </ion-item>
+          
+              <ion-button class="boton" shape="round" expand="block" type="button" (click)="modal.dismiss()"><img src="../../../assets/icons/ramen.svg" alt="" > Confirmar Pedido</ion-button>
+          
+            </div>
+          </ng-template>
+        </ion-modal>
