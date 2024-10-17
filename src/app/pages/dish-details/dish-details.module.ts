@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { DishDetailsPageRoutingModule } from './dish-details-routing.module';
-
+import { ComponentsModule } from 'src/app/components/components.module';
 import { DishDetailsPage } from './dish-details.page';
 
 @NgModule({
@@ -13,7 +13,9 @@ import { DishDetailsPage } from './dish-details.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    DishDetailsPageRoutingModule
+    DishDetailsPageRoutingModule,
+    ComponentsModule
+
   ],
   declarations: [DishDetailsPage]
 })

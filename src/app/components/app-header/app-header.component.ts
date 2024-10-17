@@ -6,8 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./app-header.component.scss'],
 })
 export class AppHeaderComponent  implements OnInit {
-
-
+  
+  @Input() title: string = '';
   @Input() chatName: string;
   constructor() { }
 
