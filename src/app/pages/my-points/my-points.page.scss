@@ -1,0 +1,108 @@
+.point-header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .point-indicator {
+    background-color: #FAD149;
+    margin-top: 0px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+  }
+  
+  
+  .point-header-text h2,
+  .point-header-text h3,
+  .point-header-text h4 {
+    margin: 0;
+    padding: 0; 
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 12px;
+    color: #000000;
+  }
+  
+  h3 {
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  h4 {
+    font-size: 18px;
+    color: #000000;
+  }
+  
+  h1 {
+    font-size: 18px;
+    color: #000000;
+  }
+  
+  ion-label{
+    --color: #000000;
+  }
+
+  .points-record {
+    margin: 20px 10px; /* Espaciado alrededor del historial */
+  }
+  
+  .points-record h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 18px; /* Espacio debajo del título */
+  }
+  
+  .item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+   
+  }
+  
+  .item-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .item-info {
+    flex-grow: 1;
+  }
+  
+  .item-info ion-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+  }
+  
+  .item-info p {
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #676763;
+  }
+  
+  .item-points {
+    font-size: 12px;
+    color: #676763;
+    margin-left: 60px;
+  }
+  
+ 
+  ion-item {
+    --padding-start: 0;
+    --inner-padding-end: 0;
+    --border-color: #e0e0e0;
+    --min-height: 60px; /* Asegura altura mínima */
+  }
+  
+  ion-list {
+    padding: 0;
+  }

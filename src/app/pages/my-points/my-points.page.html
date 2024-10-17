@@ -1,0 +1,29 @@
+<app-header title="Mis puntos"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header class="point-indicator">
+    <div class="point-header-text">
+      <h2>Actualmente tienes</h2>
+      <h3>{{ thaiPoints }}</h3> <!-- Muestra los puntos de Thai -->
+      <h4>thai puntos</h4>
+    </div>
+  </ion-header>
+
+  <div class="points-record"> 
+    <h1>Historial de puntos</h1>
+    <ion-list>
+      <ion-item *ngFor="let item of pointsHistory" lines="none">
+        <div class="item-container">
+          <img [src]="item.img" alt="Imagen de producto" class="item-img">
+          <div class="item-info">
+            <ion-label lines="none">{{ item.name }}</ion-label>
+            <p>{{ item.units }} unidad</p>
+          </div>
+          <div class="item-points">
+            - {{ item.points }} puntos
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </div> 
+</ion-content>

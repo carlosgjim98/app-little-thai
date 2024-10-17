@@ -1,7 +1,9 @@
 <ion-header>
   <ion-toolbar class="custom-toolbar">
-    <div class="header-container" routerLink="/carta">
-      <ion-icon class="icono" slot="start" src="../../../assets/icons/FlechaBoxAmr.svg" routerLink="/carta"></ion-icon>
+    <div class="header-container" >
+      <ion-button class="back-button" (click)="goBack()">
+      <ion-icon class="icono" slot="start" src="../../../assets/icons/FlechaBoxAmr.svg" ></ion-icon>
+    </ion-button>
       <ion-title>{{ title }}</ion-title>
     </div>
   </ion-toolbar>
