@@ -370,7 +370,9 @@ const routes: Routes = [
   {
     path: 'restaurant-pickup',
     loadChildren: () => import('./pages/restaurant-pickup/restaurant-pickup.module').then( m => m.RestaurantPickupPageModule)
-  },  {
+  },
+  {
+
     path: 'my-order',
     loadChildren: () => import('./pages/my-order/my-order.module').then( m => m.MyOrderPageModule)
   },
@@ -388,7 +390,16 @@ const routes: Routes = [
   },
   {
     path: 'order-on-the-way',
-    loadChildren: () => import('./pages/order-on-the-way/order-on-the-way.module').then( m => m.OrderOnTheWayPageModule)
+    loadChildren: () => import('./pages/order-on-the-way/order-on-the-way.module').then( m => m.OrderOnTheWayPageModule)},
+  {
+
+    path: 'restaurant-pickup',
+    loadChildren: () => import('./pages/restaurant-pickup/restaurant-pickup.module').then( m => m.RestaurantPickupPageModule)
+  },
+  {
+    path: 'to-home-menu',
+    loadChildren: () => import('./pages/to-home-menu/to-home-menu.module').then( m => m.ToHomeMenuPageModule)
+
   }
 
 
