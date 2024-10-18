@@ -366,7 +366,11 @@ const routes: Routes = [
   {
     path: 'my-points',
     loadChildren: () => import('./pages/my-points/my-points.module').then( m => m.MyPointsPageModule)
+  },  {
+    path: 'restaurant-pickup',
+    loadChildren: () => import('./pages/restaurant-pickup/restaurant-pickup.module').then( m => m.RestaurantPickupPageModule)
   }
+
 
 
 
