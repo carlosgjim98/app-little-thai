@@ -366,7 +366,42 @@ const routes: Routes = [
   {
     path: 'my-points',
     loadChildren: () => import('./pages/my-points/my-points.module').then( m => m.MyPointsPageModule)
-  },  {
+  },
+  {
+    path: 'restaurant-pickup',
+    loadChildren: () => import('./pages/restaurant-pickup/restaurant-pickup.module').then( m => m.RestaurantPickupPageModule)
+  },
+  {
+
+    path: 'my-order',
+    loadChildren: () => import('./pages/my-order/my-order.module').then( m => m.MyOrderPageModule)
+  },
+  {
+    path: 'order-info',
+    loadChildren: () => import('./pages/order-info/order-info.module').then( m => m.OrderInfoPageModule)
+  },
+  {
+    path: 'order-delivered',
+    loadChildren: () => import('./pages/order-delivered/order-delivered.module').then( m => m.OrderDeliveredPageModule)
+  },
+  {
+    path: 'order-cooking',
+    loadChildren: () => import('./pages/order-cooking/order-cooking.module').then( m => m.OrderCookingPageModule)
+  },
+  {
+    path: 'order-on-the-way',
+    loadChildren: () => import('./pages/order-on-the-way/order-on-the-way.module').then( m => m.OrderOnTheWayPageModule)},
+  {
+
+    path: 'restaurant-pickup',
+    loadChildren: () => import('./pages/restaurant-pickup/restaurant-pickup.module').then( m => m.RestaurantPickupPageModule)
+  },
+  {
+    path: 'to-home-menu',
+    loadChildren: () => import('./pages/to-home-menu/to-home-menu.module').then( m => m.ToHomeMenuPageModule)
+
+  },
+  {
     path: 'restaurant-pickup',
     loadChildren: () => import('./pages/restaurant-pickup/restaurant-pickup.module').then( m => m.RestaurantPickupPageModule)
   },
@@ -377,7 +412,11 @@ const routes: Routes = [
   {
     path: 'notifications',
     loadChildren: () => import('./pages/notifications/notifications.module').then( m => m.NotificationsPageModule)
+    path: 'account-settings',
+    loadChildren: () => import('./pages/account-settings/account-settings.module').then( m => m.AccountSettingsPageModule)
   }
+
+
 
 
 

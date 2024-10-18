@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { TermsPageRoutingModule } from './terms-routing.module';
+import { AccountSettingsPageRoutingModule } from './account-settings-routing.module';
 import { ComponentsModule } from 'src/app/components/components.module';
-import { TermsPage } from './terms.page';
+import { AccountSettingsPage } from './account-settings.page';
 
 @NgModule({
   imports: [
@@ -14,8 +14,8 @@ import { TermsPage } from './terms.page';
     FormsModule,
     IonicModule,
     ComponentsModule,
-    TermsPageRoutingModule
+    AccountSettingsPageRoutingModule
   ],
-  declarations: [TermsPage]
+  declarations: [AccountSettingsPage]
 })
-export class TermsPageModule {}
+export class AccountSettingsPageModule {}

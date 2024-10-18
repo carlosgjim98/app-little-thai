@@ -1,0 +1,70 @@
+ion-segment {
+   
+    ion-segment-button {
+      --color: #000; // Color del texto de los botones de segmento
+      font-weight: bold;
+      font-size: 14px;
+      --background: #fff; // Fondo blanco de los botones
+      --background-checked: #fff; // Fondo blanco cuando está seleccionado
+      height: 50px;
+  
+      font-weight: bold; // Fuente en negrita para los botones
+      border-radius: 0; // Sin bordes redondeados
+      border-bottom: 2px solid transparent; // Línea inferior de los botones
+      &.segment-button-checked {
+        border-bottom: 5px solid #FAD149; // Línea inferior amarilla para el botón seleccionado
+        --ion-color-step-350: transparent;
+      }
+    }
+  }
+  
+  ion-card {
+    margin: 15px 10px; // Márgenes para el card
+    border-radius: 10px; // Bordes redondeados de la tarjeta
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Sombra sutil alrededor del card
+    --background: transparent !important;
+  
+    ion-item {
+
+        .noodle-button{
+        --background: #1B1B1B;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        }
+      ion-icon {
+        color: #FAD149; 
+        font-size: 20px; 
+        margin-left: 5px;
+      }
+      
+    }
+  
+
+    .order-details {
+        display: flex; 
+        flex-direction: column; 
+        align-items: flex-start; 
+        margin-left: 0px; 
+      }
+      
+      .order-status {
+        margin: 0; 
+        font-weight: 500;
+        font-size: 14px; 
+        color: #141411; 
+      }
+      
+      .order-info {
+        margin: 0; 
+        font-size: 12px;
+        color: #141411; 
+      }
+      
+      .arrow-icon{
+
+       height: 10px;
+       width: 10px;
+      }
+  }
+ 

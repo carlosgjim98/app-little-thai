@@ -4,18 +4,18 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { TermsPageRoutingModule } from './terms-routing.module';
+import { OrderOnTheWayPageRoutingModule } from './order-on-the-way-routing.module';
 import { ComponentsModule } from 'src/app/components/components.module';
-import { TermsPage } from './terms.page';
+import { OrderOnTheWayPage } from './order-on-the-way.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ComponentsModule,
-    TermsPageRoutingModule
+    OrderOnTheWayPageRoutingModule,
+    ComponentsModule 
   ],
-  declarations: [TermsPage]
+  declarations: [OrderOnTheWayPage]
 })
-export class TermsPageModule {}
+export class OrderOnTheWayPageModule {}

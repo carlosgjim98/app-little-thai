@@ -9,6 +9,7 @@ export class AppHeaderComponent  implements OnInit {
   
   @Input() title: string = '';
   @Input() chatName: string;
+  @Input() rightIcon: string = ''; // Nombre del ícono adicional
   constructor(private location: Location) {}
 
   goBack() {

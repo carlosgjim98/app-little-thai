@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { PrivacyPolicyPageRoutingModule } from './privacy-policy-routing.module';
-
+import { ComponentsModule } from 'src/app/components/components.module';
 import { PrivacyPolicyPage } from './privacy-policy.page';
 
 @NgModule({
@@ -13,7 +13,8 @@ import { PrivacyPolicyPage } from './privacy-policy.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    PrivacyPolicyPageRoutingModule
+    PrivacyPolicyPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [PrivacyPolicyPage]
 })

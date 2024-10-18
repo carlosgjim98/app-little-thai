@@ -3,19 +3,19 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
-
-import { TermsPageRoutingModule } from './terms-routing.module';
 import { ComponentsModule } from 'src/app/components/components.module';
-import { TermsPage } from './terms.page';
+import { MyOrderPageRoutingModule } from './my-order-routing.module';
+
+import { MyOrderPage } from './my-order.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ComponentsModule,
-    TermsPageRoutingModule
+    MyOrderPageRoutingModule,
+    ComponentsModule 
   ],
-  declarations: [TermsPage]
+  declarations: [MyOrderPage]
 })
-export class TermsPageModule {}
+export class MyOrderPageModule {}
