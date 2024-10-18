@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
-
+import { ComponentsModule } from 'src/app/components/components.module';
 import { CartPageRoutingModule } from './cart-routing.module';
 
 import { CartPage } from './cart.page';
@@ -13,7 +13,8 @@ import { CartPage } from './cart.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    CartPageRoutingModule
+    CartPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [CartPage]
 })

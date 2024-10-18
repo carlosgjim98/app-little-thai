@@ -69,6 +69,7 @@ ion-toolbar{
     padding: 10px 15px; 
 
     ion-buttons{
+        
         ion-icon{
             font-size: 32px;
         }
@@ -88,6 +89,7 @@ ion-button{
     --border-radius: var(--app-border-radius);
     height: 48px;
     text-transform: none;
+    
 }
 
 // ESTILOS PARA ITEMS Y INPUTS

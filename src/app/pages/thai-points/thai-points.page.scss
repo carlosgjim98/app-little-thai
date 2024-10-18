@@ -131,7 +131,7 @@ ion-card-subtitle {
 .card-footer {
   display: flex; /* Para alinear puntos y botón */
   align-items: center; /* Centra verticalmente los elementos */
-  width: 270px;
+  
   justify-content: center;
   margin-left: 100px;
 
@@ -145,13 +145,15 @@ white-space: nowrap;
 }
 .redeem-button{
   color: #000000;
-  font-size: 12px;
+  font-size: 15px;
   margin-left: 40px;
-  height: 10px !important; 
+  height: 20px !important; 
   width: 50% !important;
   border: none !important; 
   box-shadow: none; 
   --border-radius: 60px; 
   display: inline-flex;
+  min-height: unset; 
+  margin-bottom: 15px;
 }
 

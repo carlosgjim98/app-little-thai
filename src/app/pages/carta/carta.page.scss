@@ -51,9 +51,9 @@
     font-size: 12px;
     line-height: 1;
     width:120px ;
-    max-height: 1px;
+    height: 28px;
     overflow: hidden;
-    
+    min-height: unset; 
   }
   
   .allergens-img {

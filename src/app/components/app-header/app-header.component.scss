@@ -1,29 +1,45 @@
 .custom-toolbar {
     --background: #1B1B1B;
     padding: 10px 15px; 
+    
    
   }
-  ion-title{
-
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    margin-left: -40px;
-    margin-top: 15px;
-  }
-  .header-container{
-
+  .custom-header {
     display: flex;
-    align-items: flex-end; 
-    margin-top: 30px;
-    
+    align-items: center;
+    height: 100%;
+    padding: 0 15px;
   }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   
+  }
+  
+  .back-button {
+    width: 35px; /* Ajusta el ancho del botón */
+    height: 35px; /* Ajusta la altura del botón */
+    min-height: unset; 
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left:-30px;
+  }
+  
   .icono {
-    width: 30px; 
-    height: 30px; 
-    cursor: pointer; 
+    font-size: 10px; /* Ajusta el tamaño del ícono */
+    color: #ffffff; /* Asegura que el color del ícono sea el correcto */
+    margin-left:2px;
   }
-
-  .back-button{
-    --background: transparent;
+  
+  .header-title {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 40px;
   }
