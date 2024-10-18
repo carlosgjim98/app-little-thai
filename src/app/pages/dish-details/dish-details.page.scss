@@ -181,13 +181,23 @@ ion-item-divider {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 40px;
 
   }
+
+ 
   .quantity-controls {
-    display: flex; // Usar flexbox para alinear botones y cantidad
-    justify-content: center; // Centra los botones y el número
-    align-items: center; // Alinea verticalmente
-    margin-top: 0px; // Espaciado entre el texto y los controles
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    
+  
+}
+
+
+.total-price{
+
+  margin-bottom: 40px;
 }
 
 .add-button {
@@ -202,20 +212,38 @@ ion-item-divider {
 }
 
 .add-icon {
-    font-size: 20px; 
+    font-size: 30px; 
     color: #ffffff; 
 }
 .quantity {
-    font-size: 16px; // Ajusta el tamaño del texto según sea necesario
-    margin: 0 5px; // Espacio a los lados del número
+    font-size: 26px; 
+    margin: 0 10px; 
 }
-  .add-to-order{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  .toral-eur{
+.add-to-order {
+  position: fixed;
+  bottom: 20px; 
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; 
+  padding: 10px;
+}
 
-    font-weight: bold;
-  }
+.toral-eur {
+  font-weight: bold;
+  margin-left:8px;
+
+}
+
+.order-button {
+  width: 90%;
+  --border-radius: 40px;
+  display: block;
+ 
+}
+
+.add-circle{
+  margin-right:10px;
+}

@@ -1,10 +1,13 @@
 <ion-header>
   <ion-toolbar class="custom-toolbar">
-    <div class="header-container" >
-      <ion-button class="back-button" (click)="goBack()">
-      <ion-icon class="icono" slot="start" src="../../../assets/icons/FlechaBoxAmr.svg" ></ion-icon>
-    </ion-button>
-      <ion-title>{{ title }}</ion-title>
+    <div class="custom-header">
+      <div class="header-content">
+        <ion-button class="back-button" fill="solid" color="warning" (click)="goBack()">
+          <ion-icon class="icono" slot="start" src="../../../assets/icons/arrow-forward.svg"></ion-icon>
+        </ion-button>
+        <span class="header-title">{{ title }}</span>
+      </div>
     </div>
   </ion-toolbar>
-</ion-header>
+</ion-header> 
+    
