@@ -1,6 +1,95 @@
-ion-avatar{
-    width: 125px;
-    height: 125px;
-    margin:0 auto;
-    margin-bottom: 10px;
+.header{
+    background-color: #1B1B1B;
+
+}
+.top-image{
+    display: flex;
+}
+.plane{
+    height: 121pt;
+  margin-left: 30%;
+  margin-top: 15%;
+  margin-bottom: -5%;
+}
+.fab-button {
+    position: relative; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 335%;
+    width: 55px;
+}
+.cart-icon {
+   
+    color: #ffffff; 
+    min-width: 32px; 
+    min-height: 32px; 
+}
+.badge {
+    position: absolute; 
+    margin-top: -20px;
+    margin-left: 30px;
+    background-color: white; 
+    color: black; 
+    border-radius: 50%; 
+    width: 21px;
+    height: 21px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-size: 9px; 
+    font-family: 'DM Sans', sans-serif;
+ 
+}
+
+.name{
+    text-align: center;
+}
+.btn-points{
+  margin-left: 30%;
+  --border-radius: 25pt;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.content{
+    --background: #1B1B1B !important;
+}
+
+.box{
+    border-radius: 25pt 25pt 0pt 0pt;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+
+}
+.list-content{
+    width: 90%;
+    height: 90%;
+    padding-top: 5%;
+    margin-left: 5%;
+}
+
+
+.buttons{
+    width: 25pt;
+    height: 25pt;
+    color: "primary";
+}
+.icon{
+    
+    height: 10pt;
+    color: black;
+}
+.text-list{
+    color: black;
+    font-weight: Medium;
+    padding-left: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.arrow{
+    
+    height: 10pt;
 }
