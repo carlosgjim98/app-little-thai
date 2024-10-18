@@ -1,6 +1,6 @@
 .brush-button {
-    width: 35px; /* Ajusta el ancho del botón */
-    height: 35px; /* Ajusta la altura del botón */
+    width: 35px; 
+    height: 35px;
     min-height: unset; 
     padding: 0;
     display: flex;
@@ -12,7 +12,54 @@
   }
   
   .icono {
-    font-size: 10px; /* Ajusta el tamaño del ícono */
-    color: #ffffff; /* Asegura que el color del ícono sea el correcto */
+    font-size: 10px; 
+    color: #ffffff; 
     margin-left:2px;
   }
+
+  ion-content {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .notification-card {
+    
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+   margin: 20px;
+  overflow: visible; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+   
+   
+  
+  }
+  
+  .notification-title {
+    font-size: 12px;
+    
+    color: #141411;
+    margin: 0;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .notification-action {
+    font-size: 12px;
+    font-weight: bold;
+    color: #141411;
+    margin-top: 5px;
+  }
+  
+  .notification-time {
+    font-size: 12px;
+    color: #898984;
+    margin-top: 10px;
+  }
+  
