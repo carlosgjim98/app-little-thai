@@ -6,8 +6,10 @@
           <ion-icon class="icono" slot="start" src="../../../assets/icons/arrow-back.svg"></ion-icon>
         </ion-button>
         <span class="header-title">{{ title }}</span>
+
+        <!-- Aquí se inserta el contenido adicional (botones, íconos) -->
+        <ng-content></ng-content>
       </div>
     </div>
   </ion-toolbar>
-</ion-header> 
-    
+</ion-header>

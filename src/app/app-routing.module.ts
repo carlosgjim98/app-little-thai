@@ -400,7 +400,11 @@ const routes: Routes = [
     path: 'to-home-menu',
     loadChildren: () => import('./pages/to-home-menu/to-home-menu.module').then( m => m.ToHomeMenuPageModule)
 
+  },  {
+    path: 'account-settings',
+    loadChildren: () => import('./pages/account-settings/account-settings.module').then( m => m.AccountSettingsPageModule)
   }
+
 
 
 
