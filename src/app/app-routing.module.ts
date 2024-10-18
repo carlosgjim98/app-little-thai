@@ -369,6 +369,10 @@ const routes: Routes = [
   },  {
     path: 'restaurant-pickup',
     loadChildren: () => import('./pages/restaurant-pickup/restaurant-pickup.module').then( m => m.RestaurantPickupPageModule)
+  },
+  {
+    path: 'to-home-menu',
+    loadChildren: () => import('./pages/to-home-menu/to-home-menu.module').then( m => m.ToHomeMenuPageModule)
   }
 
 

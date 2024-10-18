@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-to-home',
-  templateUrl: './to-home.page.html',
-  styleUrls: ['./to-home.page.scss'],
+  selector: 'app-to-home-menu',
+  templateUrl: './to-home-menu.page.html',
+  styleUrls: ['./to-home-menu.page.scss'],
 })
-export class ToHomePage implements OnInit {
+export class ToHomeMenuPage implements OnInit {
 
   dishId: number;
   
@@ -28,6 +28,8 @@ public categories = [
   { name: 'Cervezas', icon: 'assets/icons/Enmascarargrupo7.svg' },
   { name: 'Vinos', icon: 'assets/icons/Enmascarargrupo8.svg' },
 ];
+
+
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
@@ -35,8 +37,10 @@ public categories = [
       this.dishId = +params.get('id'); // Obtiene el id del plato
       // Aquí puedes cargar más detalles del plato usando el id
     });
+    
   }
   getDishesByCategory(category: string) {
     return this.dishes.filter(dish => dish.category === category);
   }
+
 }

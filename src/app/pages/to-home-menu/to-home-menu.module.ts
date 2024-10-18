@@ -5,18 +5,18 @@ import { ComponentsModule } from 'src/app/components/components.module';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ToHomePageRoutingModule } from './to-home-routing.module';
+import { ToHomeMenuPageRoutingModule } from './to-home-menu-routing.module';
 
-import { ToHomePage } from './to-home.page';
+import { ToHomeMenuPage } from './to-home-menu.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ToHomePageRoutingModule,
+    ToHomeMenuPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [ToHomePage]
+  declarations: [ToHomeMenuPage]
 })
-export class ToHomePageModule {}
+export class ToHomeMenuPageModule {}
