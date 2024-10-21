@@ -14,7 +14,7 @@
     
     <ion-button class="btn-points" routerLink="/my-points">
       
-      <p>1235 Puntos <ion-icon class="arrow" src="../../../assets/icons/Iconionic-ios-arrow-forward.svg"></ion-icon></p>
+      <p>1235 Puntos <ion-icon  slot="end"  class="arrow" src="../../../assets/icons/Iconionic-ios-arrow-forward.svg"></ion-icon></p>
       
     </ion-button>
   </div>
@@ -26,29 +26,21 @@
   <div class="box">
     <div class="list-content">
     <ion-list class="list1">
-      <ion-item >
-        <ion-button class="buttons" routerLink="/set-up-account">
+      <ion-item routerLink="/set-up-account">
+        <ion-button class="buttons" >
           <ion-icon class="icon" src="../../../assets/icons/settings3.svg"></ion-icon>
         </ion-button>
-        <ion-label class="text-list">
-          
-          Configurar mi cuenta
-          
-        </ion-label>
-        <ion-icon class="arrow" src="../../../assets/icons/Iconionic-ios-arrow-forward.svg"></ion-icon>
+        <ion-label class="text-list">Configurar mi cuenta</ion-label>
+        <ion-icon slot="end" class="arrow" src="../../../assets/icons/Iconionic-ios-arrow-forward.svg" style="margin-left: auto;"></ion-icon>
       </ion-item>
 
       <ion-item routerLink="/my-order">
-        <ion-button class="buttons">
-          <ion-icon class="icon" src="../../../assets/icons/restaurant.svg"></ion-icon>
-        </ion-button>
-        <ion-label class="text-list">
-          
-          Mis pedidos
-          
-        </ion-label>
-        <ion-icon class="arrow" src="../../../assets/icons/Iconionic-ios-arrow-forward.svg"></ion-icon>
-      </ion-item>
+          <ion-button class="buttons" routerLink="/set-up-account">
+            <ion-icon class="icon" src="../../../assets/icons/restaurant.svg"></ion-icon>
+          </ion-button>
+          <ion-label class="text-list">Mis pedidos</ion-label>
+          <ion-icon slot="end" class="arrow" src="../../../assets/icons/Iconionic-ios-arrow-forward.svg" style="margin-left: auto;"></ion-icon>
+        </ion-item>
 
       <ion-item routerLink="/my-cards">
         <ion-button class="buttons">
@@ -59,7 +51,7 @@
           Mis tarjetas
           
         </ion-label>
-        <ion-icon class="arrow" src="../../../assets/icons/Iconionic-ios-arrow-forward.svg"></ion-icon>
+        <ion-icon  slot="end"  class="arrow" src="../../../assets/icons/Iconionic-ios-arrow-forward.svg"></ion-icon>
       </ion-item>
 
       <ion-item routerLink="/addresses">
@@ -71,7 +63,7 @@
           Direcciones de entrega
           
         </ion-label>
-        <ion-icon class="arrow" src="../../../assets/icons/Iconionic-ios-arrow-forward.svg"></ion-icon>
+        <ion-icon  slot="end"  class="arrow" src="../../../assets/icons/Iconionic-ios-arrow-forward.svg"></ion-icon>
       </ion-item>
 
       <ion-item routerLink="/privacy-policy">
@@ -83,7 +75,7 @@
           Política de privacidad
           
         </ion-label>
-        <ion-icon class="arrow" src="../../../assets/icons/Iconionic-ios-arrow-forward.svg"></ion-icon>
+        <ion-icon  slot="end"  class="arrow" src="../../../assets/icons/Iconionic-ios-arrow-forward.svg"></ion-icon>
       </ion-item>
 
       <ion-item routerLink="/terms">
@@ -95,31 +87,23 @@
           Condiciones generales de venta
           
         </ion-label>
-        <ion-icon class="arrow" src="../../../assets/icons/Iconionic-ios-arrow-forward.svg"></ion-icon>
+        <ion-icon  slot="end"  class="arrow" src="../../../assets/icons/Iconionic-ios-arrow-forward.svg"></ion-icon>
       </ion-item>
 
       <ion-item routerLink="/contact-us">
         <ion-button class="buttons">
           <ion-icon class="icon" src="../../../assets/icons/information.svg"></ion-icon>
         </ion-button>
-        <ion-label class="text-list">
-          
-          Contacta con nosotros
-          
-        </ion-label>
-        <ion-icon class="arrow" src="../../../assets/icons/Iconionic-ios-arrow-forward.svg"></ion-icon>
+        <ion-label class="text-list">Contacta con nosotros</ion-label>
+        <ion-icon  slot="end"  class="arrow" src="../../../assets/icons/Iconionic-ios-arrow-forward.svg"></ion-icon>
       </ion-item>
 
-      <ion-item>
+      <ion-item lines="none" routerLink="/login">
         <ion-button class="buttons">
-          <ion-icon class="icon" src="../../../assets/icons/logoutcircle.svg"></ion-icon>
+          <ion-icon  class="icon" src="../../../assets/icons/logoutcircle.svg"></ion-icon>
         </ion-button>
-        <ion-label class="text-list">
-          
-          Salir de la cuenta
-          
-        </ion-label>
-        <ion-icon class="arrow" src="../../../assets/icons/Iconionic-ios-arrow-forward.svg"></ion-icon>
+        <ion-label class="text-list"> Salir de la cuenta</ion-label>
+        <ion-icon  slot="end" class="arrow" src="../../../assets/icons/Iconionic-ios-arrow-forward.svg"></ion-icon>
       </ion-item>
 
 
