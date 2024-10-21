@@ -1,40 +1,44 @@
-ion-content{
-    //background-size: cover;
-    //--background:url('/assets/imgs/base-background.jpg');
+
     
-.titulo{
+    
+.head{
 
-    background-color: black;
-    padding: 20px;
-    height: 15%;
+    background-color: #1B1B1B;
     width: 100%;
+    height: 20%;
+}
 
-    .img-logo{
-        align-items: center;
-        width: 90px;
-        height: 90px;
-        margin-left: 35%;
-        margin-top: 8%;
-    }
+.img-logo{
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    margin-left: 35%;
+    margin-top: 15%;
+}
 
-  //margin-top: 15%;
-  //margin-left: 35%;
-  //height: 30%;
+
+.body{
+    height: 80%;
+    width: 100%;
+    --background: #1B1B1B !important;
+    
 
 }
 
-.fondo2{
+.content{
     background-color: white;
-    border-radius: 30pt 30pt 0pt 0pt;
-    height: 85%;
-    margin-top: 10%;
-    position: relative;
+    border-radius: 25pt 25pt 0pt 0pt;
+    height: 100%;
+    width: 100%;
+    margin-top: -6%;
+    
+    
+}
 
     .login{
         font-family: "MontserratAlternates-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
         text-align: center;
         color: black;
-        //margin-top: 20%;
         padding-top: 8%;
         font-size: 27px;
     }
@@ -45,26 +49,27 @@ ion-content{
         width: 90%;
         margin-left: 5%;
         --background: white;
-        color: black;
+        color: #1B1B1B;
         border: 1px solid black;
         border-radius: 30px;
         margin-bottom: 5%;
-        //margin-top: 10%;
+        font-size: 10pt;
         padding-left: 3%;
-        ion-input{
+        
         font-family: "MontserratAlternates-Regular",  Arial, "Helvetica Neue", Helvetica, sans-serif;
-        }
+        
     }
 
     .contraseña{
         width: 90%;
         margin-left: 5%;
         --background: white;
-        color: black;
+        color: #72808B;
         border: 1px solid black;
         border-radius: 30px;
         padding-left: 3%;
-        
+        font-family: "MontserratAlternates-Regular",  Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 10pt;
     }
 
     .recordarpass{
@@ -98,10 +103,9 @@ ion-content{
         
        
     }
-}
 
 
 
 
 
-}
+

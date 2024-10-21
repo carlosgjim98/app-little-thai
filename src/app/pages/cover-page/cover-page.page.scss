@@ -28,18 +28,20 @@ ion-content{
       }
 
       
-      .boton{ 
+       
         
-        ion-button{
-            width: 90%;
-            height: 10%;
-            --border-radius: 29pt;
-            margin-left: 5%;
-            font-family: MontserratAlternates-Medium;
-            font-size: 12pt;
-            margin-top: 7%;
+        .button{
+          --background: #FAD149;
+          color: #141411;
+          font-size: 11pt;
+          --border-radius: 50px;
+          width: 90%;
+          height: 55px;
+          margin-left: 5%;
+          margin-top: 5%;
+          font-family: "MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif;
           }
-      }
+      
     
       
       

@@ -1,16 +1,21 @@
-<ion-content  >
-  <div class="titulo">
+<ion-header class="head">
   <img class="img-logo" src="assets/imgs/LitlleThai.png" alt="">
-  </div>
+
+</ion-header>
+
+
+<ion-content class="body" >
+  
   
 
-  <div class="fondo2">
+  <div class="content">
+
     <p class="login">Login</p>
 
-    <form *ngIf="form" [formGroup]="form" (ngSubmit)="submitForm()">
+    
       
       <ion-item class="correo" lines="none">
-        <ion-input clearInput type="text" placeholder="{{'LOGIN.USER' | translate }}" formControlName="email">
+        <ion-input clearInput type="text" placeholder="correo@prueba.com" formControlName="email">
           <ion-icon slot="start" src="../../../assets/icons/email.svg"></ion-icon>
         </ion-input>
       </ion-item>
@@ -18,7 +23,7 @@
       <ion-item  class="contraseña" lines="none">
 
         <ion-input clearInput type="password" placeholder="{{'LOGIN.PASSWORD' | translate }}" formControlName="password">
-          <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+          <ion-icon slot="start" src="../../../assets/icons/password.svg"></ion-icon>
           <ion-input-password-toggle ></ion-input-password-toggle>
         </ion-input>
       </ion-item>
@@ -26,7 +31,7 @@
       <p class="recordarpass"><u routerLink="/forgot-password">He olvidado mi contraseña</u></p>
 
       <ion-button class="boton" shape="round" expand="block" type="button" routerLink="/bienvenida">Entrar</ion-button>
-      <!--{{'LOGIN.SIGNUP' | translate }}-->
+      
       
 
 
@@ -36,7 +41,7 @@
 
 
 
-    </form>
+   
 
 
 
