@@ -416,7 +416,11 @@ const routes: Routes = [
   {
     path: 'account-settings',
     loadChildren: () => import('./pages/account-settings/account-settings.module').then( m => m.AccountSettingsPageModule)
+  },  {
+    path: 'set-up-account',
+    loadChildren: () => import('./pages/set-up-account/set-up-account.module').then( m => m.SetUpAccountPageModule)
   }
+
 
 
 
