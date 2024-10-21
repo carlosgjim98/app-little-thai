@@ -1,8 +1,28 @@
-ion-header{
-    ion-toolbar{
-        ion-title{
-            font-size: 16px; 
-            padding: 0;
-        }
-    }
+.body{
+    align-items: center;
+}
+
+div{
+    color: #141411;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.title{
+    font-family: "MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.text{
+    font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #676763;
+}
+
+.tel{
+    font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-bottom: -4%;
+}
+
+.tel-number{
+    font-family: "MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 21pt;
 }
