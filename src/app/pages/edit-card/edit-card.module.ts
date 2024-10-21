@@ -1,23 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ContactUsPageRoutingModule } from './contact-us-routing.module';
+import { EditCardPageRoutingModule } from './edit-card-routing.module';
 
-import { ContactUsPage } from './contact-us.page';
+import { EditCardPage } from './edit-card.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ReactiveFormsModule,
-    ContactUsPageRoutingModule,
+    EditCardPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [ContactUsPage]
+  declarations: [EditCardPage]
 })
-export class ContactUsPageModule {}
+export class EditCardPageModule {}

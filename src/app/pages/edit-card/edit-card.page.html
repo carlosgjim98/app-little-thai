@@ -1,0 +1,41 @@
+<app-header title="Mis tarjetas">
+  <ion-button fill="solid" color="warning" class="edit-button">
+    <ion-icon slot="icon-only" src="../../../assets/icons/check.svg"></ion-icon>
+  </ion-button>
+</app-header>
+
+<ion-content class="body" >
+
+  <ion-card>
+    <ion-item lines="none">
+      <ion-button class="card-button">
+        <ion-icon class="card" src="../../../assets/icons/Trazado47082.svg" slot="start"></ion-icon>
+      </ion-button>
+      <ion-card-content>
+        <div>
+          <p class="visa">VISA</p>
+          <p class="card-info">Terminada en 0000</p>
+        </div>
+     </ion-card-content>
+      <ion-icon class="pen" src="../../../assets/icons/edit.svg" slot="end"></ion-icon> 
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item lines="none">
+      <ion-button class="card-button">
+        <ion-icon class="card" src="../../../assets/icons/Trazado47082.svg" slot="start"></ion-icon>
+      </ion-button>
+      <ion-card-content>
+        <div>
+          <p class="visa">VISA</p>
+          <p class="card-info">Terminada en 0000</p>
+        </div>
+     </ion-card-content>
+     <ion-icon class="pen" src="../../../assets/icons/edit.svg" slot="end"></ion-icon>
+    </ion-item>
+  </ion-card>
+
+  <ion-button class="add-card" shape="round" expand="block" type="button" routerLink="/add-new-card">Añadir tarjeta</ion-button>
+  
+</ion-content>
