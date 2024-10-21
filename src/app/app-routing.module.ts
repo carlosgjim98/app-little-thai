@@ -419,6 +419,10 @@ const routes: Routes = [
   },  {
     path: 'set-up-account',
     loadChildren: () => import('./pages/set-up-account/set-up-account.module').then( m => m.SetUpAccountPageModule)
+  },
+  {
+    path: 'addresses',
+    loadChildren: () => import('./pages/addresses/addresses.module').then( m => m.AddressesPageModule)
   }
 
 

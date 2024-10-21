@@ -1,0 +1,96 @@
+.edit-button {
+    width: 35px; 
+    height: 35px;
+    min-height: unset; 
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 90px;
+    
+  }
+  
+  .icono {
+    font-size: 10px; 
+    color: #ffffff; 
+    margin-left:2px;
+  }
+
+  ion-content {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+
+  ion-card {
+    margin: 15px 10px; // Márgenes para el card
+    border-radius: 10px; // Bordes redondeados de la tarjeta
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Sombra sutil alrededor del card
+    --background: transparent !important;
+  
+    ion-item {
+
+        .address-button{
+        --background: #1B1B1B;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        }
+      ion-icon {
+        color: #FAD149; 
+        font-size: 20px; 
+        margin-left: 5px;
+      }
+      
+    }
+  
+
+    .order-details {
+        display: flex; 
+        flex-direction: column; 
+        align-items: flex-start; 
+        margin-left: 0px; 
+      }
+      
+      .order-street {
+        margin: 0; 
+        font-weight: 500;
+        font-size: 14px; 
+        color: #141411; 
+      }
+      
+      .order-info {
+        margin: 0; 
+        font-size: 12px;
+        color: #141411; 
+      }
+      
+      .tick-icon{
+
+       height: 30px;
+       width: 30px;
+     
+      }
+  }
+
+  .add-address-button {
+    margin-top:450px;
+    display: flex; 
+    justify-content: center; 
+    
+  }
+ 
+  .add-adress {
+    width: 90%; 
+    height: 60px; 
+    color: #141411; 
+    font-size: 16px;
+    font-weight: medium;
+    --border-radius: 50px; 
+    font-size: 16px; 
+  }

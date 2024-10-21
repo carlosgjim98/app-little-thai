@@ -5,7 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { AccountSettingsPageRoutingModule } from './account-settings-routing.module';
+
 import { ComponentsModule } from 'src/app/components/components.module';
+
 import { AccountSettingsPage } from './account-settings.page';
 
 @NgModule({
