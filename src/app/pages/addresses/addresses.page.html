@@ -1,0 +1,44 @@
+<app-header title="Direcciones de entrega">
+  <ion-button fill="solid" color="warning" class="edit-button">
+    <ion-icon slot="icon-only" src="../../../assets/icons/edit.svg"></ion-icon>
+  </ion-button>
+</app-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card >
+    <ion-item lines="none">
+      <ion-button class="address-button">
+        <ion-icon src="assets/icons/map-pin.svg" slot="start"></ion-icon>
+      </ion-button>
+      <ion-card-content>
+        <div class="order-details">
+          <p class="order-street">Calle Siervas de María, 2, 1C </p>
+          <p class="order-info">11401 Jerez de la Frontera</p>
+        </div>
+     </ion-card-content>
+      <ion-icon src="assets/icons/checkmark-circle.svg" slot="end" class="tick-icon"></ion-icon> <!-- Icono de tick -->
+    </ion-item>
+  </ion-card>
+
+
+  <ion-card >
+    <ion-item lines="none">
+      <ion-button class="address-button">
+        <ion-icon src="assets/icons/map-pin.svg" slot="start"></ion-icon>
+      </ion-button>
+      <ion-card-content>
+        <div class="order-details">
+          <p class="order-street">Calle Colón, 24, 2, B  </p>
+          <p class="order-info">46001, Valencia</p>
+        </div>
+     </ion-card-content>
+      
+    </ion-item>
+  </ion-card>
+
+  <div class="add-address-button">
+    <ion-button class="add-adress">Añadir dirección</ion-button>
+  </div>
+
+</ion-content>

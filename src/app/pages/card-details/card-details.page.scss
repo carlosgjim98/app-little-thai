@@ -7,7 +7,7 @@
 .card-name {
 
     width: 90%;
-    height: 50px;
+    height: 60px;
     margin-left: 5%;
     --background: white;  
     border: 1px solid #141411;
@@ -19,6 +19,30 @@
         
 
 }
+
+.card-name ion-input .input-wrapper {
+    font-size: 10px; 
+  }
+
+.card-name ion-input {
+    margin-top: 5px; 
+    color: #141411;
+    font-size: 15px; 
+   
+    
+  }
+  
+  .card-name ion-label {
+    margin-top: -10px; 
+   
+  }
+
+  .close-icon{
+
+    height: 20px;
+    width: 20px;
+
+  }
 
 .title{
     font-size: 6pt;
@@ -34,7 +58,7 @@
 
 .card-details{
     width: 90%;
-    height: 50px;
+    height: 60px;
     margin-left: 5%;
     color:#72808B;
     border: 1px solid #141411;
@@ -65,7 +89,7 @@
     width: 90%;
     height: 50px;
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 3%;
     font-family: "MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif;
 
 }

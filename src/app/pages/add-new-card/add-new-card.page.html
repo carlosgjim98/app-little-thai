@@ -3,8 +3,10 @@
 <ion-content class="body">
 
   <ion-list class="details" lines="none">
+ 
   <ion-item class="card-name" lines="none">
-    <ion-input label="Titular de la tarjeta" label-placement="stacked" clear-input="true" placeholder="Nombre del titular" value="Juan Galván"></ion-input>
+    <ion-input label="Titular de la tarjeta" placeholder="Nombre del titular" value="Juan Galván" labelPlacement="floating"></ion-input>
+    <ion-icon slot="end"  src="assets/icons/close.svg" class="close-icon"></ion-icon> 
   </ion-item>
 
   <ion-item class="card-details" lines="none">
@@ -22,7 +24,8 @@
 </ion-list>
 
 <ion-button class="save-button" shape="round">Añadir tarjeta</ion-button>
-
+<!-- 
+<ion-button class="delete-button" shape="round">Eliminar tarjeta</ion-button> -->
 
   
 </ion-content>
