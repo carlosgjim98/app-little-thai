@@ -427,6 +427,14 @@ const routes: Routes = [
   {
     path: 'edit-card',
     loadChildren: () => import('./pages/edit-card/edit-card.module').then( m => m.EditCardPageModule)
+  },
+  {
+    path: 'card-details',
+    loadChildren: () => import('./pages/card-details/card-details.module').then( m => m.CardDetailsPageModule)
+  },
+  {
+    path: 'add-new-card',
+    loadChildren: () => import('./pages/add-new-card/add-new-card.module').then( m => m.AddNewCardPageModule)
   }
 
 
