@@ -417,14 +417,25 @@ const routes: Routes = [
     path: 'account-settings',
     loadChildren: () => import('./pages/account-settings/account-settings.module').then( m => m.AccountSettingsPageModule)
   },
+  
   {
     path: 'set-up-account',
     loadChildren: () => import('./pages/set-up-account/set-up-account.module').then( m => m.SetUpAccountPageModule)
-  }
+  },
+{
+  path: 'addresses',
+  loadChildren: () => import('./pages/addresses/addresses.module').then( m => m.AddressesPageModule)
+},
 
+{
+  path: 'my-cards',
+  loadChildren: () => import('./pages/my-cards/my-cards.module').then( m => m.MyCardsPageModule)
+},
 
-
-
+{
+  path: 'add-new-card',
+  loadChildren: () => import('./pages/add-new-card/add-new-card.module').then( m => m.AddNewCardPageModule)
+},
 
 
 
