@@ -1,18 +1,12 @@
+
+<app-header title="Confirmar dirección"></app-header>
+
+
 <ion-content [fullscreen]="true">
 
   <img class="fondo" src="../../../assets/imgs/Enmascarargrupo3.png" alt="">
 
   
-
-  
-  
-  <div class="encabezado">
-    
-    <ion-input class="address" clearInput type="text" placeholder="Confirmar dirección" >
-      <ion-icon class="icono" slot="start" src="../../../assets/icons/FlechaBoxAmr.svg" routerLink="/inicio"></ion-icon>
-    </ion-input>
-       
-  </div>
 
 
   <div>
@@ -21,7 +15,7 @@
   
   <div class="cuerpo">
     
-    <p>Confirma tu dirección de entrega</p>
+    <p routerLink="/to-home-menu">Confirma tu dirección de entrega</p>
 
     <ion-input class="address2" clearInput typea="text" placeholder="Calle Colón, 24 · 2, B · 46001, Valencia" >
     <ion-icon slot="start" src="../../../assets/icons/mapPin2.svg"></ion-icon>    
