@@ -1,59 +1,52 @@
+<app-header title="Añadir dirección"></app-header>
+
+
 <ion-content>
-  <div class="encabezado">
-    
-    <ion-input class="address" clearInput type="text" placeholder="Añadir dirección" >
-      <ion-icon class="icono" slot="start" src="../../../assets/icons/FlechaBoxAmr.svg" routerLink="/inicio"></ion-icon>
-    </ion-input>
-      
-
-    
-  </div>
-
-
+  
   <div class="cuerpo">
 
-    
+    <ion-list class="details" lines="none">
     <ion-item class="calle" lines="none">
-      <ion-title class="titulo">Tipo de vía</ion-title>
-      <ion-input class="calle" clearInput type="text" placeholder="Calle" >
-      </ion-input>
+      <ion-input label="Tipo de vía" placeholder="Calle" value="Calle" labelPlacement="floating"></ion-input>
+      <ion-icon slot="end"  src="assets/icons/close.svg" class="close-icon"></ion-icon> 
     </ion-item>
     
 
     <ion-item class="mismoItem" lines="none">   
-      <ion-input clearInput type="text" placeholder="Nombre de la vía" >
+      <ion-input class="name" clearInput type="text" placeholder="Nombre de la vía" >
       </ion-input>
     </ion-item>
 
     <ion-item class="mismoItem" lines="none">   
-      <ion-input clearInput type="text" placeholder="Número de la vía" >
+      <ion-input class="name" clearInput type="text" placeholder="Número de la vía" >
       </ion-input>
     </ion-item>
 
     <ion-item class="mismoItem" lines="none">   
-      <ion-input clearInput type="text" placeholder="Puerta" >
+      <ion-input class="name" clearInput type="text" placeholder="Puerta" >
       </ion-input>
     </ion-item>
 
     <ion-item class="mismoItem" lines="none">   
-      <ion-input clearInput type="text" placeholder="Piso" >
+      <ion-input class="name" clearInput type="text" placeholder="Piso" >
       </ion-input>
     </ion-item>
 
     <ion-item class="mismoItem" lines="none">   
-      <ion-input clearInput type="text" placeholder="Bloque/Escalera" >
+      <ion-input class="name" clearInput type="text" placeholder="Bloque/Escalera" >
       </ion-input>
     </ion-item>
 
     <ion-item class="mismoItem" lines="none">   
-      <ion-input clearInput type="text" placeholder="Código Postal" >
+      <ion-input class="name" clearInput type="text" placeholder="Código Postal" >
       </ion-input>
     </ion-item>
 
     <ion-item class="mismoItem" lines="none">   
-      <ion-input clearInput type="text" placeholder="Ciudad" >
+      <ion-input class="name" clearInput type="text" placeholder="Ciudad" >
       </ion-input>
     </ion-item>
+  </ion-list>
 
     <ion-button class="boton" shape="round" expand="block" type="button" routerLink="/confirm-address">Guardar cambios</ion-button>
 

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 import { IonicModule } from '@ionic/angular';
 
@@ -13,7 +14,8 @@ import { AddAddressPage } from './add-address.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    AddAddressPageRoutingModule
+    AddAddressPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [AddAddressPage]
 })
