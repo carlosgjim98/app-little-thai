@@ -446,6 +446,20 @@ const routes: Routes = [
   path: 'edit-card',
   loadChildren: () => import('./pages/edit-card/edit-card.module').then( m => m.EditCardPageModule)
 },
+  {
+    path: 'locals',
+    loadChildren: () => import('./pages/locals/locals.module').then( m => m.LocalsPageModule)
+  },  {
+    path: 'locals-filter',
+    loadChildren: () => import('./pages/locals-filter/locals-filter.module').then( m => m.LocalsFilterPageModule)
+  },
+  {
+    path: 'locals-list',
+    loadChildren: () => import('./pages/locals-list/locals-list.module').then( m => m.LocalsListPageModule)
+  },
+
+ 
+
  
  
  

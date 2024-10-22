@@ -41,6 +41,10 @@ const routes: Routes = [
         path: 'profile',
         loadChildren: () => import('../profile/profile.module').then(m => m.ProfilePageModule)
       },
+    {
+      path: 'locals',
+      loadChildren: () => import('../locals/locals.module').then(m => m.LocalsPageModule)
+    },
       
       {
         path: '',
