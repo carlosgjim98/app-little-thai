@@ -98,8 +98,49 @@
 
 
 
-    
-
-
-
 }
+
+ion-content{
+
+    --background:#FAD868 ;
+     }
+     .search-bar {
+       background: white;
+       border-radius: 50px; 
+       margin: 20px;
+      
+     }
+     
+     
+     ion-input {
+       --placeholder-color: #9A9587;
+       font-size: 15px;
+       color: #9A9587; 
+     }
+     
+     ion-icon {
+       width: 18px;
+       height: 18px;
+    
+     }
+   
+     .button-container {
+       display: flex;
+       justify-content: center; 
+       align-items: center; 
+       position: fixed;
+       bottom: 50px; 
+       width: 100%; 
+     }
+     
+     .custom-button {
+       --background: #000000; 
+       color: white; 
+       width: 200px; 
+       height: 40px;
+       margin: 20px;
+       --border-radius:30px;
+       font-size: 16px;
+       min-height: unset;
+     }
+     

@@ -1,7 +1,13 @@
 <app-header title="Restaurantes"></app-header>
 
 <ion-content [fullscreen]="true">
- 
+  <div class=" search-bar">
+    <ion-item class="lupa" lines="none">
+      <ion-input clearInput type="text" placeholder="Busca tu restaurante" >
+         <ion-icon slot="start" src="../../../assets/icons/lupa.svg"></ion-icon>
+      </ion-input>
+    </ion-item>
+  </div>
   <div class="background-container">
     <img class="fondo" src="../../../assets/imgs/Enmascarargrupo3.png" alt="">
     <div class="puntero-container">
