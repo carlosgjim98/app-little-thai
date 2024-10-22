@@ -1,13 +1,17 @@
-<ion-content  >
-  <div class="titulo">
-  <img class="img-logo" src="assets/imgs/LitlleThai.png" alt="">
-  </div>
+<ion-header class="head">
   
+    <img class="img-logo" src="assets/imgs/LitlleThai.png" alt="">
+    
+</ion-header>
 
+
+<ion-content class="body" >
+  
   <div class="fondo2">
+
     <p class="login">Registro</p>
 
-    <form *ngIf="form" [formGroup]="form" (ngSubmit)="submitForm()">
+    <!-- <form *ngIf="form" [formGroup]="form" (ngSubmit)="submitForm()"> -->
       
       <ion-item class="telefono" lines="none">
         <ion-input clearInput type="text" placeholder="Teléfono" >
@@ -52,12 +56,13 @@
       </ion-item>
 
       <ion-item class="cajoncheck" lines="none">
+
         <ion-checkbox slot="start" class="check" aria-checked="false">
           
         </ion-checkbox>
-        <div>
-        <p>He leido y acepto la <u routerLink="/privacy-policy">Política de Privacidad</u></p>
-        <p>y <u routerLink="/terms">los Términos y Condiciones de Venta</u></p>
+        <div class="terms">
+        <p style="font-size: 10pt;">He leido y acepto la <u routerLink="/privacy-policy">Política de Privacidad</u></p>
+        <p style="font-size: 10pt;">y <u routerLink="/terms">los Términos y Condiciones de Venta</u></p>
         </div>
       </ion-item>
 
@@ -72,7 +77,7 @@
 
 
 
-    </form>
+    <!-- </form> -->
 
 
 

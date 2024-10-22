@@ -1,37 +1,37 @@
-ion-content{
-    //<ion-back-button  src="../../../assets/icons/FlechaBoxAmr.svg" routerLink="/login"><p>Recordar contraseña</p></ion-back-button>
-/*<ion-buttons  slot="start">
-
-<ion-back-button  src="../../../assets/icons/FlechaBoxAmr.svg" routerLink="/login"></ion-back-button>
-</ion-buttons>*/
-
-
-.titulo{
-    background-color: black;
-    padding: 20px;
-    height: 15%;
-    width: 100%;
-    //margin-top: 15%;
-    //margin-left: 35%;
-    //height: 30%;
-    .img-logo{
-        align-items: center;
-        width: 50px;
-        height: 50px;
-        margin-left: 40%;
-        margin-top: 20%;
-    }
-    
+.head{
+  background-color: #1B1B1B;
+  height: 15%;
+  width: 100%;
+}
   
+  .img-logo{
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      margin-left: 40%;
+      margin-top: 15%;
   }
+  
+
+
+
+.body{
+  --background: #1B1B1B !important;
+  height: 85%;
+  width: 100%;
+
+
+}
+
+  
   
   .fondo2{
       background-color: white;
-      border-radius: 30pt 30pt 0pt 0pt;
-      height: 85%;
+      border-radius: 25pt 25pt 0pt 0pt;
+      height: 100%;
       width: 100%;
-      margin-top: 10%;
-      position: relative;
+      margin-top: -6%;
+      //position: relative;
 
       form{
         ion-item{
@@ -73,11 +73,12 @@ ion-content{
         width: 90%;
         margin-left: 5%;
         --background: white;
-        color: black;
-        border: 1px solid black;
+        color: #141411;
+        border: 1px solid #141411;
         border-radius: 30px;
         padding-left: 3%;
         margin-bottom: 5%;
+        font-size: 10pt;
         
        } 
 
@@ -85,11 +86,12 @@ ion-content{
         width: 90%;
         margin-left: 5%;
         --background: white;
-        color: black;
-        border: 1px solid black;
+        color: #72808B;
+        border: 1px solid #72808B;
         border-radius: 30px;
         padding-left: 3%;
         margin-bottom: 5%;
+        font-size: 10pt;
         
        }
 
@@ -97,13 +99,14 @@ ion-content{
         width: 90%;
         margin-left: 5%;
         --background: white;
-        color: black;
-        border: 1px solid black;
+        color: #72808B;
+        border: 1px solid #72808B;
         border-radius: 30px;
         padding-left: 3%;
         margin-bottom: 5%;
         font-family: "MontserratAlternates-Regular",  Arial, "Helvetica Neue", Helvetica, sans-serif;
-       }
+        font-size: 10pt;
+      }
 
 
       
@@ -114,27 +117,28 @@ ion-content{
           width: 90%;
           margin-left: 5%;
           --background: white;
-          color: black;
-          border: 1px solid black;
+          color: #72808B;
+          border: 1px solid #72808B;
           border-radius: 30px;
           margin-bottom: 5%;
           //margin-top: 10%;
           padding-left: 3%;
           ion-input{
           font-family:"MontserratAlternates-Regular",  Arial, "Helvetica Neue", Helvetica, sans-serif;
-          }
+          font-size: 10pt;
+        }
       }
   
       .contraseña{       
           width: 90%;
           margin-left: 5%;
           --background: white;
-          color: black;
-          border: 1px solid black;
+          color: #72808B;
+          border: 1px solid #72808B;
           border-radius: 30px;
           padding-left: 3%;
           margin-bottom: 5%;
-          
+          font-size: 10pt;
           
           
       }
@@ -143,28 +147,46 @@ ion-content{
         width: 90%;
         margin-left: 5%;
         --background: white;
-        color: black;
-        border: 1px solid black;
+        color: #72808B;
+        border: 1px solid #72808B;
         border-radius: 30px;
         padding-left: 3%;
         font-family: "MontserratAlternates-Bold",  Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 10pt;
       }
 
       .cajoncheck{
         --background: white;
         margin-left: 12%;
         margin-top: 5%;
+        color:#2E2D2E;
+
+        u{
+          font-family: "MontserratAlternates-Bold",  Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+
 
 
       .check{
-        --checkbox-background-checked: black;
-        --checboox-border-ckecked: black;
-        --border-radius: 0pt;
+        --checkbox-background-checked: #141411;
         margin-right: 2%;
-        --size: 12pt;
+        --size: 25px;
+        --border-radius: 0px; /* Cuadrado */
+        --border-color: #ccc;
+        --background: transparent;
+        --border-width: 2px;
+        --border-color-checked: #141411; /* Color de borde cuando está seleccionado */
+          
         
         
         
+      }
+
+      .terms{
+        color: #2E2D2E;
+        p{
+          font-size: 10pt;
+        }
       }
 
       
@@ -197,4 +219,4 @@ ion-content{
   
   
   
-  }
+  
