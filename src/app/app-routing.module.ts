@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-
+ 
 const routes: Routes = [
   {
     path: '',
@@ -38,9 +38,9 @@ const routes: Routes = [
     path: 'interior-chat/:chat_id',
     loadChildren: () => import('./pages/interior-chat/interior-chat.module').then( m => m.InteriorChatPageModule)
   },
-  { 
-    path: 'interior-chat/:id_chat/:nombre_chat/:ultimo_mensaje', 
-    //canActivate: [AuthGuard], 
+  {
+    path: 'interior-chat/:id_chat/:nombre_chat/:ultimo_mensaje',
+    //canActivate: [AuthGuard],
     loadChildren: () => import('./pages/interior-chat/interior-chat.module').then(m => m.InteriorChatPageModule) },
   {
     path: 'login',
@@ -127,7 +127,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/qr-scanner/qr-scanner.module').then( m => m.QrScannerPageModule)
   },
   {
-
+ 
     path: 'menu-on-table',
     loadChildren: () => import('./pages/menu-on-table/menu-on-table.module').then( m => m.MenuOnTablePageModule)
   },
@@ -138,7 +138,7 @@ const routes: Routes = [
   {
     path: 'current-address',
     loadChildren: () => import('./pages/current-address/current-address.module').then( m => m.CurrentAddressPageModule)
-
+ 
   },
   {
     path: 'verificacion',
@@ -193,7 +193,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/start-with-address/start-with-address.module').then( m => m.StartWithAddressPageModule)
   },
   {
-
+ 
     path: 'alergenos',
     loadChildren: () => import('./pages/alergenos/alergenos.module').then( m => m.AlergenosPageModule)
   },
@@ -241,9 +241,9 @@ const routes: Routes = [
     path: 'interior-chat/:chat_id',
     loadChildren: () => import('./pages/interior-chat/interior-chat.module').then( m => m.InteriorChatPageModule)
   },
-  { 
-    path: 'interior-chat/:id_chat/:nombre_chat/:ultimo_mensaje', 
-    //canActivate: [AuthGuard], 
+  {
+    path: 'interior-chat/:id_chat/:nombre_chat/:ultimo_mensaje',
+    //canActivate: [AuthGuard],
     loadChildren: () => import('./pages/interior-chat/interior-chat.module').then(m => m.InteriorChatPageModule) },
   {
     path: 'login',
@@ -330,7 +330,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/qr-scanner/qr-scanner.module').then( m => m.QrScannerPageModule)
   },
   {
-
+ 
     path: 'menu-on-table',
     loadChildren: () => import('./pages/menu-on-table/menu-on-table.module').then( m => m.MenuOnTablePageModule)
   },
@@ -341,7 +341,7 @@ const routes: Routes = [
   {
     path: 'current-address',
     loadChildren: () => import('./pages/current-address/current-address.module').then( m => m.CurrentAddressPageModule)
-
+ 
   },
   {
     path: 'alergenos',
@@ -372,7 +372,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/restaurant-pickup/restaurant-pickup.module').then( m => m.RestaurantPickupPageModule)
   },
   {
-
+ 
     path: 'my-order',
     loadChildren: () => import('./pages/my-order/my-order.module').then( m => m.MyOrderPageModule)
   },
@@ -392,14 +392,14 @@ const routes: Routes = [
     path: 'order-on-the-way',
     loadChildren: () => import('./pages/order-on-the-way/order-on-the-way.module').then( m => m.OrderOnTheWayPageModule)},
   {
-
+ 
     path: 'restaurant-pickup',
     loadChildren: () => import('./pages/restaurant-pickup/restaurant-pickup.module').then( m => m.RestaurantPickupPageModule)
   },
   {
     path: 'to-home-menu',
     loadChildren: () => import('./pages/to-home-menu/to-home-menu.module').then( m => m.ToHomeMenuPageModule)
-
+ 
   },
   {
     path: 'restaurant-pickup',
@@ -417,7 +417,7 @@ const routes: Routes = [
     path: 'account-settings',
     loadChildren: () => import('./pages/account-settings/account-settings.module').then( m => m.AccountSettingsPageModule)
   },
-  
+ 
   {
     path: 'set-up-account',
     loadChildren: () => import('./pages/set-up-account/set-up-account.module').then( m => m.SetUpAccountPageModule)
@@ -426,35 +426,35 @@ const routes: Routes = [
   path: 'addresses',
   loadChildren: () => import('./pages/addresses/addresses.module').then( m => m.AddressesPageModule)
 },
-
+ 
 {
   path: 'my-cards',
   loadChildren: () => import('./pages/my-cards/my-cards.module').then( m => m.MyCardsPageModule)
 },
-
+ 
 {
   path: 'add-new-card',
   loadChildren: () => import('./pages/add-new-card/add-new-card.module').then( m => m.AddNewCardPageModule)
 },
-
+ 
 {
   path: 'card-details',
   loadChildren: () => import('./pages/card-details/card-details.module').then( m => m.CardDetailsPageModule)
 },
-
+ 
 {
   path: 'edit-card',
   loadChildren: () => import('./pages/edit-card/edit-card.module').then( m => m.EditCardPageModule)
 },
-
-
-
-
-
-
-
-  
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 ];
 @NgModule({
   imports: [
@@ -463,3 +463,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
+ 

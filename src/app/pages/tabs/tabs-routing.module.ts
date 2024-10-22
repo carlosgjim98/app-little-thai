@@ -20,8 +20,8 @@ const routes: Routes = [
       loadChildren: () => import('../thai-points/thai-points.module').then( m => m.ThaiPointsPageModule)
     },
       {
-        path: 'inicio',
-        loadChildren: () => import('../inicio/inicio.module').then(m => m.InicioPageModule)
+        path: 'start-with-address',
+        loadChildren: () => import('../start-with-address/start-with-address.module').then(m => m.StartWithAddressPageModule)
       },
       {
         path: 'profile',

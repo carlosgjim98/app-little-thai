@@ -1,80 +1,66 @@
 
-<ion-content [fullscreen]="true">
-
-  <div class="cabecera">
-
-
+<ion-header class="cabecera">
+  <div class="principal">
+    <div class="textos">
+      <p class="saludo">Hola <span class="nombre">Juan</span>,</p>
+      <p class="pregunta">¿qué te apetece pedir hoy?</p>
+    </div>
     
-    <div class="principal">
-      <div class="textos">
-      <p>Holo <span>Juan</span>,</p>
-      <p class="que">¿qué te apetece pedir hoy?</p>
-      </div>
-      <div class="carrito">
-      <ion-button color= "primary" >
-        
-        <ion-icon src="../../../assets/icons/Trazado46917.svg"></ion-icon>
-        
-        <ion-badge slot="end">99</ion-badge>
-      
+    <div class="carrito">
+      <ion-button  class="carrito-btn">
+        <ion-icon class="carrito-icon" src="../../../assets/icons/Trazado46917.svg" slot="icon-only"></ion-icon>
+        <ion-badge color="light" class="badge" slot="end">+99</ion-badge>
       </ion-button>
     </div>
-
-    </div>
-
-    
-
-    <p class="añade">
-      Añade tu dirección <img src="../../../assets/icons/flechaAbajoAmar.svg" width="10px">
-    </p>
-
-
-    <ion-item class="lupa" lines="none">
-      <ion-input clearInput type="text" placeholder="Buscar" >
-         <ion-icon slot="start" src="../../../assets/icons/lupa.svg"></ion-icon>
-      </ion-input>
-    </ion-item>
-  
-    <div class="botones">
-      
-
-        
-        <ion-button  id="open-modal" expand="block" color= "primary" >
-          <ion-icon slot="start" src="../../../assets/icons/scooter.svg"></ion-icon>
-          <ion-text color="secondary" >A domicilio</ion-text>
-        </ion-button>
-        
-        
-        
-        <ion-button color= "primary" >
-          <ion-icon slot="start" src="../../../assets/icons/ramen.svg"></ion-icon>
-          <ion-text color="secondary" routerLink="/restaurant-selection">Recogida</ion-text>
-        </ion-button>
-
-        <ion-button color= "primary" >
-          <ion-icon slot="start" src="../../../assets/icons/QR.svg"></ion-icon>
-          <ion-text color="secondary" routerLink="/qr-scanner">En mesa</ion-text>
-        </ion-button>
-    </div>
-
-  
-
   </div>
 
+  <p class="añade"  routerLink="/add-address">
+    Añade tu dirección <img src="../../../assets/icons/flechaAbajoAmar.svg" width="10px">
+  </p>
 
-  <div class="cuerpo">
-      
 
+  <ion-item class="lupa" lines="none">
+    <ion-input clearInput type="text" placeholder="Buscar" >
+       <ion-icon slot="start" src="../../../assets/icons/lupa.svg"></ion-icon>
+    </ion-input>
+  </ion-item>
+
+  <div class="botones">
     
 
-      <div style="padding-top: 0%;" class="contenedor1">
+      
+      <ion-button  id="open-modal" expand="block" color= "primary" >
+        <ion-icon slot="start" src="../../../assets/icons/scooter.svg"></ion-icon>
+        <ion-text color="secondary" >A domicilio</ion-text>
+      </ion-button>
+      
+      
+      
+      <ion-button color= "primary" >
+        <ion-icon slot="start" src="../../../assets/icons/ramen.svg"></ion-icon>
+        <ion-text color="secondary" routerLink="/restaurant-selection">Recogida</ion-text>
+      </ion-button>
+
+      <ion-button color= "primary" >
+        <ion-icon slot="start" src="../../../assets/icons/QR.svg"></ion-icon>
+        <ion-text color="secondary" routerLink="/qr-scanner">En mesa</ion-text>
+      </ion-button>
+  </div>
+
+</ion-header>
+
+<ion-content [fullscreen]="true" class="cuerpo">
+
+ <div class="content">
+
+      <div  class="contenedor1">
         
         <img src="../../../assets/imgs/Rectángulo19455.png" alt="">
         <p class="miercoles">Miércoles Thai</p>
         <p>¡Rompe con tu rutina semanal y disfruta de nuestras</p>
         <p>delicias tailandesas por un precio espectacular!</p>
 
-        <ion-button color="secondary">
+        <ion-button class="oferta-button">
           
           <ion-text>Sólo para ti por <span>6,95€</span> </ion-text>
         </ion-button>
@@ -83,7 +69,7 @@
         
         
 
-    <p>¡Descubre nuestras promociones!</p>
+    <p class="promotion-text">¡Descubre nuestras promociones!</p>
 
 
 
@@ -92,23 +78,11 @@
       <img src="../../../assets/imgs/Rectángulo19506.png" alt="">
 
       <p class="salsa">Prueba nuestra salsa</p>
-      <p>Descubre las Curiosidades de Nuestra Salsa Picante:</p>
+      <p class="salsa-text">Descubre las Curiosidades de Nuestra Salsa Picante:</p>
 
     </div>
-    
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
+  
 
 </ion-content>
 
@@ -124,12 +98,12 @@
           
           
               <ion-item class="direccion" lines="none">
-                <ion-input clearInput type="text" placeholder="Ej. Calle Colón, 24, Valencia" routerLink="/add-address">
+                <ion-input clearInput type="text" placeholder="Ej. Calle Colón, 24, Valencia" routerLink="/add-address" (click)="closeModal()">
                   <ion-icon slot="start" src="../../../assets/icons/mapPin2.svg"></ion-icon>
                 </ion-input>
               </ion-item>
           
-              <ion-button class="boton" shape="round" expand="block" type="button" (click)="modal.dismiss()"><img src="../../../assets/icons/ramen.svg" alt="" > Confirmar Pedido</ion-button>
+              <ion-button class="boton" shape="round" expand="block" type="button" ><img src="../../../assets/icons/ramen.svg" alt="" > Confirmar Pedido</ion-button>
           
             </div>
           </ng-template>
