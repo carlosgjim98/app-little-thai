@@ -9,6 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class DishDetailsPage implements OnInit {
   dishId: number;
   dishDetails: any;
+  
 
   // Salsas
   salsaAjoPimienta: boolean = false;

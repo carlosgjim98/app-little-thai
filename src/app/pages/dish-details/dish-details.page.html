@@ -38,24 +38,62 @@
       <ion-item>
         <ion-checkbox  slot="start" [(ngModel)]="salsaAjoPimienta"></ion-checkbox>
      <ion-label class=name>Ajo y pimienta negra</ion-label>
+
+     <div class="buttons-quantity" *ngIf="salsaAjoPimienta">
+     <ion-button shape="round" class="add-button" >
+      <ion-icon slot="icon-only" src="assets/icons/remove-outline.svg" class="add-icon"></ion-icon>
+  </ion-button>
+  <span >1</span>
+  <ion-button shape="round" class="add-button" >
+      <ion-icon slot="icon-only" src="assets/icons/add-outline.svg" class="add-icon"></ion-icon>
+        </ion-button>
+      </div>
+
         <span class="price">0,00 €</span>
       </ion-item>
 
       <ion-item>
         <ion-checkbox slot="start" [(ngModel)]="salsaCurry"></ion-checkbox>
      <ion-label class=name>Curry</ion-label>
+     <div class="buttons-quantity" *ngIf="salsaCurry">
+      <ion-button shape="round" class="add-button" >
+       <ion-icon slot="icon-only" src="assets/icons/remove-outline.svg" class="add-icon"></ion-icon>
+   </ion-button>
+   <span >1</span>
+   <ion-button shape="round" class="add-button" >
+       <ion-icon slot="icon-only" src="assets/icons/add-outline.svg" class="add-icon"></ion-icon>
+         </ion-button>
+       </div>
         <span class="price">0,00 €</span>
       </ion-item>
 
       <ion-item>
         <ion-checkbox slot="start" [(ngModel)]="salsaChen"></ion-checkbox>
      <ion-label class=name>Salsa Chen</ion-label>
+     <div class="buttons-quantity" *ngIf="salsaChen">
+      <ion-button shape="round" class="add-button" >
+       <ion-icon slot="icon-only" src="assets/icons/remove-outline.svg" class="add-icon"></ion-icon>
+   </ion-button>
+   <span >1</span>
+   <ion-button shape="round" class="add-button" >
+       <ion-icon slot="icon-only" src="assets/icons/add-outline.svg" class="add-icon"></ion-icon>
+         </ion-button>
+       </div>
         <span class="price">0,00 €</span>
       </ion-item>
 
       <ion-item>
         <ion-checkbox slot="start" [(ngModel)]="pimientoRojoDulce"></ion-checkbox>
      <ion-label class=name>Pimiento rojo dulce</ion-label>
+     <div class="buttons-quantity" *ngIf="pimientoRojoDulce">
+      <ion-button shape="round" class="add-button" >
+       <ion-icon slot="icon-only" src="assets/icons/remove-outline.svg" class="add-icon"></ion-icon>
+   </ion-button>
+   <span >1</span>
+   <ion-button shape="round" class="add-button" >
+       <ion-icon slot="icon-only" src="assets/icons/add-outline.svg" class="add-icon"></ion-icon>
+         </ion-button>
+       </div>
         <span class="price">0,00 €</span>
       </ion-item>
     </ion-list>
@@ -71,12 +109,30 @@
       <ion-item>
         <ion-checkbox slot="start" [(ngModel)]="extraAjoPimienta"></ion-checkbox>
         <ion-label class="name">Ajo y pimienta negra</ion-label>
+        <div class="buttons-quantity" *ngIf="extraAjoPimienta">
+          <ion-button shape="round" class="add-button" >
+           <ion-icon slot="icon-only" src="assets/icons/remove-outline.svg" class="add-icon"></ion-icon>
+       </ion-button>
+       <span >1</span>
+       <ion-button shape="round" class="add-button" >
+           <ion-icon slot="icon-only" src="assets/icons/add-outline.svg" class="add-icon"></ion-icon>
+             </ion-button>
+           </div>
         <span class="price">1,00 €</span>
       </ion-item>
 
       <ion-item>
         <ion-checkbox slot="start" [(ngModel)]="extraSalsaChen"></ion-checkbox>
      <ion-label class=name>Salsa Chen</ion-label>
+     <div class="buttons-quantity" *ngIf="extraSalsaChen">
+      <ion-button shape="round" class="add-button" >
+       <ion-icon slot="icon-only" src="assets/icons/remove-outline.svg" class="add-icon"></ion-icon>
+   </ion-button>
+   <span >1</span>
+   <ion-button shape="round" class="add-button" >
+       <ion-icon slot="icon-only" src="assets/icons/add-outline.svg" class="add-icon"></ion-icon>
+         </ion-button>
+       </div>
         <span class="price">1,00 €</span>
       </ion-item>
     </ion-list>
