@@ -1,169 +1,268 @@
-ion-content{
+.custom-toolbar {
+    --background: #1B1B1B;
+    padding: 10px 15px; 
 
-    .encabezado{
-        background-color: black;
-        padding: 20px;
-        height: 14%;
-        width: 100%;
-        display: flex;
-
-        img{
-        margin-top: 13%;
-        height: 30px;
-        width: 30px;
-
-        }
-
-        p{
-        font-family: "MontserratAlternates-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
-        color: white;
+    p{
         font-size: 10pt;
-        padding-top: 12%;
-        padding-left: 3%;
-        }
+    }
     
-        }
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 0%;
+    padding-top: 5%;
+    align-items: flex-end;
 
-     .iconos{
-            display: flex;
-
-
-            
-            .especialidades{
-
-             ion-button{
-                justify-content: center;
-                --border-radius:5pt ;
-                min-width: 15px;
-                width: 30px;
-                min-height: 15px;
-                height: 30px;   
-
-                ion-icon{
-                    size: 6pt;
-                    color: black;
-                }
-            }
-            p{
-                font-family: "MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif;
-                font-size: 4pt;
-            }
-
-            }
-            
-            
-
-
-
-
+    .allergens-img{
+        margin-bottom: 1%;
     }
 
-
-
-    .cuerpo{
-        background-color: white;
-        height: 86%;
-        width: 100%;
-        position: relative;
-        color: black;
-
-
-        ion-toolbar{
-            box-shadow: black;
-            border-color: black;
-            border-width: 1px;
-        }
-
-        .iconos{
-            background-color: white;
-            display: flex;
-            overflow: scroll;
-
-            
-
-            ion-icon{
-                
-                font-family:"MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif ;
-                font-size: 8pt;
-                --border-radius: 5pt;
-                width: 25pt;
-                height: 25pt;
-                padding-top: 2%;
-                margin-left: 20%;
-                margin-top: -8%;
-                    
-        
-            }
-
-            p{
-                font-family:"MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif ;
-                font-size: 6pt;  
-                }
-        
-        }
-
+  }
+  
+  .header-text {
+    
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: -10px;
+    margin-bottom: -20px;
+  }
+  
+  
+  .title-line1 {
    
-    .listado{
-        background-color: white;
-        .entrantes{
-            font-family: "MontserratAlternates-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
-            color: black;
+    font-size: 24px;
+    font-family: 'Montserrat Alternates', sans-serif; 
+    font-weight: bold;
+  }
+  
+  .title-line2 {
+    margin: 0;
+    margin-top: -15px;
+    font-size: 24px;
+    color: #FAD149; 
+    font-family: 'Montserrat Alternates', sans-serif; 
+    font-weight: bold;
+  }
+  
+
+  
+  .allergens-button {
+    --background: #FAD149;
+    --color: black;
+    --border-radius: 60px;
+    //margin-bottom: -25px;
+    margin-right: -10px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1;
+    width:120px ;
+    max-height: 1px;
+    overflow: hidden;
+    
+  }
+  
+  .allergens-img {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+  }
+
+  .white-background {
+    --background: #ffffff; 
+  }
+  
+ 
+  
+  .scrollable-categories {
+    display: flex;                  
+    overflow-x: auto;             
+    white-space: nowrap;          
+    padding: 10px 0;              
+  }
+  
+  .category-item {
+    display: flex;                 
+    flex-direction: column;        
+    align-items: center;          
+    margin-right: 10px;           
+  }
+  
+  .category-button {
+             
+    display: flex;                 
+    justify-content: center;       
+    align-items: center;          
+    width: 60px;                 
+    height: 60px;   
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);               
+  }
+  
+  .category-icon {
+    font-size: 28px;              
+    color: #141411;
+   
+  }
+  
+  .category-text {
+    margin-top: 5px;              
+    font-size: 10px;              
+    color: #141411;   
+    font-family: 'Montserrat Alternates', sans-serif;             
+  }
+  
+  .category-button{
+
+    background-color: #FAD149;
+    border-radius: 10px;
+  }
+  
+  
+  .menu-section {
+    ion-card {
+      --background: transparent;
+      padding: 0;
+    }
+  
+    h2 {
+      margin-left: 20px;
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #141411;
+      font-family: 'Montserrat Alternates', sans-serif;
+      font-weight: bold;
+    }
+  
+    ion-card-title {
+      --color: #141411;
+      font-family: 'Montserrat Alternates', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    ion-card-header {
+      display: flex;
+      flex-direction: column; 
+      align-items: flex-start; 
+      p{
+        color:#676763;
+        font-family: 'Montserrat Alternates', sans-serif;
+    }
+
+    }
+  
+    .dish-card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 15px;
+     
+      
+      
+    }
+  
+    .dish-img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      margin-right: 15px;
+      margin-bottom:40px;
+    }
+  
+
+    .price-section {
+      display: flex;
+      align-items: center;
+     margin-top: 15px;
+   
+  
+    .price {
+       color: #141411;
+       font-family: 'Montserrat Alternates', sans-serif;
+       font-style: medium;
+      font-size: 16px;
+      margin-left: 5px;
+      
+    }
+  
+    .add-button {
+        width: 20px;   
+        height: 20px;  
+        padding: 0;   
+        border-radius: 50%;  
+        --background: #FAD149;
+        min-width: 20px; 
+        min-height: 20px;
+    
+    }
+    
+    .add-icon {
+        font-size: 20px; 
+        color: #ffffff; 
+    }
+}
+
+    .icons-section {
+        display: flex;
+        gap: 5px;
+        margin-top: 10px;
+        .icon{
+
+            height: 20px;
+            width: 20px;
+            color: #141411;
         }
+      }
+  }
+  
+  .fab-button {
+    position: relative; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 12px; 
+    width: 60px; 
+    height: 60px; 
+    padding: 0; 
+}
 
-        ion-list{
-            margin-top: 10%;
-            margin-bottom: 10%;
-        
-            
-            
-    
-    
-            ion-item{
-                --background:white;
+.cart-icon {
+    font-size: 24px; 
+}
 
-                img{
-                    height: 80px;
-                    width: 100px;
-                    //padding-bottom: 50%;
-                }
-    
-                ion-label{
-                    margin-left: 5%;
+.fab-button {
+    position: relative; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
 
-                    .plato{
-                        font-family: "MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif;
-                        font-size: 12pt;
-                        padding-top: 15%;
-                        margin-left: 0%;
-                    }
-
-                    p{
-                        font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
-                        font-size: 7pt;
-                        
-                    }
-
-                    ion-text{
-                        color: black;
-                    }
-                    
-                
-                    
-                
-    
-                
-            
-            }
-            }
-        }
-
+.cart-icon {
+   
+    color: #ffffff; 
+    min-width: 32px; 
+    min-height: 32px; 
 }
 
 
-
-
-
-
-
-    }
+.badge {
+    position: absolute; 
+    margin-top: -20px;
+    margin-left: 30px;
+    background-color: white; 
+    color: black; 
+    border-radius: 50%; 
+    width: 21px;
+    height: 21px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-size: 9px; 
+    font-family: 'DM Sans', sans-serif;
+ 
 }
