@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-to-home-menu',
@@ -30,7 +31,11 @@ public categories = [
 ];
 
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private location: Location) { }
+
+  goBack() {
+    this.location.back(); // Navega a la página anterior
+  }
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {

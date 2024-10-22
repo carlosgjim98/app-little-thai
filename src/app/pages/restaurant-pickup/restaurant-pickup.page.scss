@@ -4,6 +4,7 @@
 
     p{
         font-size: 10pt;
+        font-family: "MontserratAlternates-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
     }
     
   }
@@ -16,6 +17,10 @@
     padding-bottom: 0%;
     padding-top: 5%;
     align-items: flex-end;
+
+    .allergens-button{
+      font-family: "MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
 
     .allergens-img{
         margin-bottom: 1%;

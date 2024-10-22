@@ -445,7 +445,15 @@ const routes: Routes = [
 {
   path: 'edit-card',
   loadChildren: () => import('./pages/edit-card/edit-card.module').then( m => m.EditCardPageModule)
-},
+},  {
+    path: 'reduced-price-menu',
+    loadChildren: () => import('./pages/reduced-price-menu/reduced-price-menu.module').then( m => m.ReducedPriceMenuPageModule)
+  },
+  {
+    path: 'confirmation-pickup-restaurant',
+    loadChildren: () => import('./pages/confirmation-pickup-restaurant/confirmation-pickup-restaurant.module').then( m => m.ConfirmationPickupRestaurantPageModule)
+  },
+
  
  
  

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-menu-on-table',
@@ -29,7 +30,11 @@ public categories = [
   { name: 'Vinos', icon: 'assets/icons/Enmascarargrupo8.svg' },
 ];
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private location: Location) { }
+
+  goBack() {
+    this.location.back(); // Navega a la página anterior
+  }
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {

@@ -3,11 +3,12 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
 @Component({
-  selector: 'app-restaurant-pickup',
-  templateUrl: './restaurant-pickup.page.html',
-  styleUrls: ['./restaurant-pickup.page.scss'],
+  selector: 'app-reduced-price-menu',
+  templateUrl: './reduced-price-menu.page.html',
+  styleUrls: ['./reduced-price-menu.page.scss'],
 })
-export class RestaurantPickupPage implements OnInit {
+export class ReducedPriceMenuPage implements OnInit {
+
   dishId: number;
   
 
@@ -29,9 +30,7 @@ public categories = [
   { name: 'Vinos', icon: 'assets/icons/Enmascarargrupo8.svg' },
 ];
 
-
-
-  constructor(private route: ActivatedRoute, private location: Location ) { }
+  constructor(private route: ActivatedRoute, private location: Location) { }
 
   goBack() {
     this.location.back(); // Navega a la página anterior
@@ -43,6 +42,7 @@ public categories = [
       // Aquí puedes cargar más detalles del plato usando el id
     });
   }
+
   getDishesByCategory(category: string) {
     return this.dishes.filter(dish => dish.category === category);
   }
