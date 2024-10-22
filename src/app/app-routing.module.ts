@@ -445,7 +445,8 @@ const routes: Routes = [
 {
   path: 'edit-card',
   loadChildren: () => import('./pages/edit-card/edit-card.module').then( m => m.EditCardPageModule)
-},  {
+},
+  {
     path: 'reduced-price-menu',
     loadChildren: () => import('./pages/reduced-price-menu/reduced-price-menu.module').then( m => m.ReducedPriceMenuPageModule)
   },
@@ -453,6 +454,23 @@ const routes: Routes = [
     path: 'confirmation-pickup-restaurant',
     loadChildren: () => import('./pages/confirmation-pickup-restaurant/confirmation-pickup-restaurant.module').then( m => m.ConfirmationPickupRestaurantPageModule)
   },
+
+ 
+ 
+  {
+    path: 'locals',
+    loadChildren: () => import('./pages/locals/locals.module').then( m => m.LocalsPageModule)
+  },
+  {
+    path: 'locals-filter',
+    loadChildren: () => import('./pages/locals-filter/locals-filter.module').then( m => m.LocalsFilterPageModule)
+  },
+  {
+    path: 'locals-list',
+    loadChildren: () => import('./pages/locals-list/locals-list.module').then( m => m.LocalsListPageModule)
+  },
+
+ 
 
  
  

@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar class="custom-toolbar">
+    <div class="custom-header">
+      <div class="header-content">
+        <h1 class="header-title">Consulta todos</h1>
+        <h2 class="header-title">Nuestros locales</h2>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class=" search-bar">
+  <ion-item class="lupa" lines="none">
+    <ion-input clearInput type="text" placeholder="Busca tu restaurante" >
+       <ion-icon slot="start" src="../../../assets/icons/lupa.svg"></ion-icon>
+    </ion-input>
+  </ion-item>
+</div>
+  
+  <div class="background-container">
+    <img class="fondo" src="../../../assets/imgs/Enmascarargrupo3.png" alt="">
+
+    <div class="puntero-container">
+      <img class="puntero" src="../../../assets/imgs/Grupo11267.png" alt="" >
+      <img class="puntero2" src="../../../assets/imgs/Grupo11267.png" alt="" >
+      <img class="puntero3" src="../../../assets/imgs/Grupo11267.png" alt="" routerLink="/locals-filter">
+      <img class="puntero4" src="../../../assets/imgs/Grupo11267.png" alt="" >
+      <img class="puntero5" src="../../../assets/imgs/Grupo11267.png" alt="" >
+      <img class="puntero6" src="../../../assets/imgs/Grupo11267.png" alt="" >
+      <img class="puntero7" src="../../../assets/imgs/Grupo11267.png" alt="" >
+      <img class="puntero8" src="../../../assets/imgs/Grupo11267.png" alt="" >
+      <img class="puntero9" src="../../../assets/imgs/Grupo11267.png" alt="" >
+    </div>
+  
+  </div>
+
+  <div class="button-container" routerLink="/locals-list">
+    <ion-button class="custom-button">Ver listado completo</ion-button>
+  </div>
+
+</ion-content>

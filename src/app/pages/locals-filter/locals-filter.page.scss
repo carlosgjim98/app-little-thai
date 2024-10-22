@@ -1,0 +1,146 @@
+.background-container {
+    position: relative; 
+  }
+  .fondo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    margin-bottom: -75%;
+    filter: grayscale(100%);
+    
+}
+
+.puntero-container {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+  }
+  
+  .puntero3{
+    position: absolute; 
+    width: 60px; 
+    height: auto; 
+    top: 70%; 
+    left: 60%;
+  }
+  
+ 
+  
+  .imagen{
+    background-color: #FAD149;
+    margin: 20px;
+    border-radius: 10pt;
+    position: fixed;
+    width: 90%;
+   bottom:10px ;
+   
+    
+    img{
+
+        width: 100%;
+    }
+    .mercado{
+        font-family: "MontserratAlternates-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        color: black;
+        padding-left: 5%;
+    }
+
+    h1{
+     font-size: 18px;
+    }
+    p{
+        font-family: "MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        color: black;
+        padding-left: 5%;
+        font-size: 10pt;
+        white-space: break-spaces;
+
+        ion-icon{
+            color: black;
+        }
+    }
+}
+
+.botones{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+   margin-top: 10px;
+    display: flex;
+    margin-bottom: 20px;
+   
+    
+
+    
+
+        ion-button{
+            width: 30%;
+            min-height: 30px;
+            height: 34px;
+            --border-radius: 30pt;
+            --background:white;
+    
+      
+            ion-icon{
+                color: black;
+                font-size:12px;
+            }
+
+            ion-text{
+               
+                font-size: 10px;
+            }
+        }
+
+
+
+}
+
+ion-content{
+
+    --background:#FAD868 ;
+     }
+     .search-bar {
+       background: white;
+       border-radius: 50px; 
+       margin: 20px;
+      
+     }
+     
+     
+     ion-input {
+       --placeholder-color: #9A9587;
+       font-size: 15px;
+       color: #9A9587; 
+     }
+     
+     ion-icon {
+       width: 18px;
+       height: 18px;
+    
+     }
+   
+     .button-container {
+       display: flex;
+       justify-content: center; 
+       align-items: center; 
+       position: fixed;
+       bottom: 50px; 
+       width: 100%; 
+     }
+     
+     .custom-button {
+       --background: #000000; 
+       color: white; 
+       width: 200px; 
+       height: 40px;
+       margin: 20px;
+       --border-radius:30px;
+       font-size: 16px;
+       min-height: unset;
+     }
+     
