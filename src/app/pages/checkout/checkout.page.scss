@@ -1,0 +1,100 @@
+.body{
+    
+
+}
+
+.list{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.item{
+    margin-top: 5%;
+}
+
+.bites{
+    margin-left: 5%;
+}
+
+p{
+    color: black;
+    padding-left: 5%;
+}
+
+.dish{
+    font-family: "MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.extra{
+    font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 7pt;
+    margin-top: 5%;
+    
+}
+
+.price{
+    display: flex;
+    padding-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.u-price{
+    font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.icon{
+    padding-left: 5%;
+}
+
+.total-price{
+    padding-left: 45%;
+    font-family: "MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.full-input-item {
+    height: 100px; /* Establece la altura del ion-item, puedes ajustar este valor según lo necesites */
+    width: 100%;   /* Asegura que el ion-item ocupe todo el ancho */
+  }
+  
+  .custom-input {
+    width: 100%;                /* El input ocupa todo el ancho del ion-item */
+    height: 80px;               /* El input ocupa todo el alto del ion-item */
+    border: 1px solid black;     /* Borde negro de 1px */
+    border-radius: 10px;         /* Borde redondeado */
+    padding: 10px;               /* Espacio interno para el texto */
+    box-sizing: border-box;      /* Asegura que el padding no sobresalga del borde */
+    font-size: 10px; 
+    margin-bottom: 15px;            /* Tamaño del texto */
+    color: #141411;
+    text-align: left;
+    vertical-align: top;
+}
+  
+  .custom-input input {
+    height: 100%;               /* Asegura que el campo de texto ocupe el 100% de la altura */
+  }
+
+.custom-checkbox ion-checkbox {
+    --border-radius: 5px;        /* Hace que los checkboxes sean cuadrados */
+    --size: 24px;                /* Tamaño del checkbox */
+    --border-width: 1px;         /* Grosor del borde */
+    --border-color: #CECECD;       /* Color del borde en estado no seleccionado */
+    --background: white;         /* Fondo del checkbox cuando no está seleccionado */
+  }
+  
+  .custom-checkbox ion-checkbox:checked {
+    --background: yellow;        /* Fondo amarillo cuando el checkbox está seleccionado */
+    --checkmark-color: white;    /* Color del checkmark en blanco */
+  }
+
+  .pay-online{
+    font-family: "MontserratAlternates-SemiBold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+
+  .custom-checkbox ion-label{
+    color: black;
+    font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    
+}
+  
