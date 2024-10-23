@@ -1,22 +1,32 @@
 <ion-content>
-  
-  
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
 
-  
-  <body>
-  <img class="fondo" src="../../../assets/imgs/Grupo11435.png" alt="">
-  <div  routerLink="/login" class="img-logo">
-      <img class="logo" src="assets/imgs/Capa 2.png" width="50%" >
+      <div class="swiper-slide slider1">
+        <!-- Contenido de la primera página -->
+        <img class="image" src="../../../assets/imgs/Capa1.png" alt="" >
+      </div>
+
+      <div class="swiper-slide slider2">
+        <img class="fondo" src="../../../assets/imgs/Grupo11435.png" alt="Fondo" class="fondo">
+        
+        <div routerLink="/login" class="img-logo">
+          <img class="logo" src="assets/imgs/Capa 2.png" width="50%" alt="Logo 2">
+        </div>
+
+        <div class="texto">
+          <p>¿Tienes hambre?</p>
+          <p><ion-text color="primary">Pide Thai,</ion-text> te lo llevamos</p>
+        </div>
+
+        <div class="boton" routerLink="/login">
+          <ion-button class="button" shape="round">Pide por esa boquita</ion-button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Pagination if needed -->
+    <div class="swiper-pagination"></div>
   </div>
-  <div class="texto">
-    <p>¿Tienes hambre?</p>
-    <p><ion-text color="primary">Pide Thai,</ion-text> te lo llevamos</p>
-
-</div>
-<div class="boton" routerLink="/login">
-<ion-button class="button" shape="round">Pide por esa boquita</ion-button>
-</div>
-</body> 
-
 </ion-content>
-
