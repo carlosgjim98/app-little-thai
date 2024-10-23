@@ -1,79 +1,53 @@
 <app-header title="Carrito"></app-header>
 
 <ion-content>
-  
   <div class="cuerpo">
 
-    <div>
+    <!-- Primer ítem en el carrito -->
     <ion-list>
-      <ion-item>
-        <img src="../../../assets/imgs/bolitas-de-gamba-scaled(1).png" alt="">
-        <ion-label >
-          
-          <p class="plato">Gambas bites</p>
-          <p class="extra">Salca Curry, Salsa Chon</p>
-          
-          
-            <ion-icon src="../../../assets/icons/symbNegative.svg"></ion-icon>
-            <ion-text>  3  </ion-text>
-            <ion-icon src="../../../assets/icons/symbPositive.svg"></ion-icon>
-            <ion-text class="precio" >  20,85€  </ion-text>
-          
-          
-          
-          
-        </ion-label>
-      </ion-item>
-    </ion-list>
-
-
-    <ion-list lines="none">
-      <ion-item>
-        <img src="../../../assets/imgs/delicias-500x501.png" alt="">
-       <ion-label >
-          
-          <p class="plato">Delicias al vapor</p>
-          <p class="extra">Con Palillos</p>
-
-          <div>
-            <ion-icon slot="icon-only" src="../../../assets/icons/symbNegative.svg"></ion-icon>
-            <ion-text>  3  </ion-text>
-            <ion-icon slot="icon-only" src="../../../assets/icons/symbPositive.svg"></ion-icon>
-            <ion-text class="precio" >  7,50€  </ion-text>
+      <ion-item lines="none" class="item-carrito">
+        <img src="../../../assets/imgs/bolitas-de-gamba-scaled(1).png" alt="Gambas bites" class="producto-imagen">
+        <ion-label>
+          <div class="detalle-producto">
+            <p class="plato">Gambas bites</p>
+            <p class="extra">Salsa Curry, Salsa Chon</p>
           </div>
-          
-          
+          <div class="modificar-cantidad">
+            <ion-icon src="../../../assets/icons/symbNegative.svg"></ion-icon>
+            <ion-text>3</ion-text>
+            <ion-icon src="../../../assets/icons/symbPositive.svg"></ion-icon>
+            <ion-text class="precio">20,85€</ion-text>
+          </div>
         </ion-label>
       </ion-item>
     </ion-list>
-    </div>
 
-    <div>
-    <ion-button class="boton" shape="round" expand="block" type="button"><img src="../../../assets/icons/noodles_7735908.png" alt=""> Confirmar Pedido</ion-button>
+    <!-- Segundo ítem en el carrito -->
+    <ion-list>
+      <ion-item lines="none" class="item-carrito">
+        <img src="../../../assets/imgs/delicias-500x501.png" alt="Delicias al vapor" class="producto-imagen">
+        <ion-label>
+          <div class="detalle-producto">
+            <p class="plato">Delicias al vapor</p>
+            <p class="extra">Con Palillos</p>
+          </div>
+          <div class="modificar-cantidad">
+            <ion-icon src="../../../assets/icons/symbNegative.svg"></ion-icon>
+            <ion-text>3</ion-text>
+            <ion-icon src="../../../assets/icons/symbPositive.svg"></ion-icon>
+            <ion-text class="precio">7,50€</ion-text>
+          </div>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+
+    <!-- Botón de Confirmar Pedido -->
+    <div class="confirmar-pedido">
+      <ion-button class="boton" shape="round" expand="block" type="button">
+        <img src="../../../assets/icons/noodles_7735908.png" alt="Noodles icon" class="icono-confirmar">
+        Confirmar Pedido
+      </ion-button>
     </div>
 
   </div>
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </ion-content>
