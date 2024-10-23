@@ -13,10 +13,10 @@ export class ReducedPriceMenuPage implements OnInit {
   
 
   public dishes = [
-    { id: 1, name: 'Gambas bites', category: 'Entrantes', img: 'assets/imgs/bolitas-de-gamba-scaled(1).png', description: 'Bolas crujientes de gamba acompañadas de una salsa a elegir.', price: 6.95},
-    { id: 2, name: 'Thai bites', category: 'Entrantes', img: 'assets/imgs/Fotos-Glovo-y-web-nueva-6-600x600.png', description: 'Bocados crujientes de ternera especiada acompañados de 2…', price: 5.95 },
-    { id: 3, name: 'Tempura de gambas', category: 'Entrantes', img: 'assets/imgs/9.TEMPURAGAMBAS.png', description: 'La tempura de gamba, un clásico que nunca falla…', price: 5.95 },
-    { id: 4, name: 'Delicias al vapor', category: 'Entrantes', img: 'assets/imgs/delicias-500x501.png', description: 'Bolas crujientes de gamba acompañadas de una salsa a elegir.',price: 5.50 }
+    { id: 1, name: 'Gambas bites', category: 'Entrantes', img: 'assets/imgs/bolitas-de-gamba-scaled(1).png', description: 'Bolas crujientes de gamba acompañadas de una salsa a elegir.', originalPrice: 9.95,  discountedPrice: 6.95 },
+    { id: 2, name: 'Thai bites', category: 'Entrantes', img: 'assets/imgs/Fotos-Glovo-y-web-nueva-6-600x600.png', description: 'Bocados crujientes de ternera especiada acompañados de 2…', originalPrice: 9.95,  discountedPrice: 6.95 },
+    { id: 3, name: 'Tempura de gambas', category: 'Entrantes', img: 'assets/imgs/9.TEMPURAGAMBAS.png', description: 'La tempura de gamba, un clásico que nunca falla…', originalPrice: 9.95,  discountedPrice: 6.95 },
+    { id: 4, name: 'Delicias al vapor', category: 'Entrantes', img: 'assets/imgs/delicias-500x501.png', description: 'Bolas crujientes de gamba acompañadas de una salsa a elegir.',originalPrice: 9.95,  discountedPrice: 6.95 }
   ];
 public categories = [
   { name: 'Entrantes', icon: 'assets/icons/soja.svg' },
