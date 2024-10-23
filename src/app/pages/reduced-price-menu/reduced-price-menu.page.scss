@@ -1,85 +1,79 @@
+
 .custom-toolbar {
-    --background: #1B1B1B;
-    padding: 10px 15px; 
+  --background: #1B1B1B;
+  padding: 10px 15px; 
+}
 
-    p{
-        font-size: 10pt;
-        font-family: "MontserratAlternates-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
-        margin-right: 35%;
-        margin-bottom: 3%;
-      }
-    
-  }
-  
-  .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding-bottom: 0%;
-    padding-top: 5%;
-    align-items: flex-end;
-
-    .allergens-img{
-        margin-bottom: 1%;
-    }
-
-  }
-  
-  .header-text {
-    
-    display: flex;
-    flex-direction: column;
-    color: white;
-    margin-left: -10px;
-    margin-bottom: -20px;
-  }
-  
-  
-  .title-line1 {
-   
-    font-size: 24px;
-    font-family: 'Montserrat Alternates', sans-serif; 
-    font-weight: bold;
-  }
-  
-  .title-line2 {
-    margin: 0;
-    margin-top: -15px;
-    font-size: 24px;
-    color: #FAD149; 
-    font-family: 'Montserrat Alternates', sans-serif; 
-    font-weight: bold;
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.back-button {
+  width: 35px; /* Ajusta el ancho del botón */
+  height: 35px; /* Ajusta la altura del botón */
+  min-height: unset; 
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: -10px;
+  color: #FAD149;
+}
+ 
+  .icono {
+    font-size: 10px; /* Ajusta el tamaño del ícono */
+    color: #ffffff; /* Asegura que el color del ícono sea el correcto */
+    margin-left:2px;
   }
   
 
+.header-text {
   
-  .allergens-button {
-    --background: #FAD149;
-    --color: black;
-    --border-radius: 60px;
-    //margin-bottom: -25px;
-    margin-right: -10px;
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    line-height: 1;
-    width:120px ;
-    max-height: 1px;
-    overflow: hidden;
-    
-  }
-  
-  .allergens-img {
-    width: 10px;
-    height: 10px;
-    margin-right: 5px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin-left: -30px;
+  margin-bottom: -20px;
+}
 
-  .white-background {
-    --background: #ffffff; 
-  }
-  
+
+.title-line1 {
+ 
+  font-size: 16px;
+  font-family: 'Montserrat Alternates', sans-serif; 
+  font-weight: bold;
+}
+
+
+
+
+
+.allergens-button {
+  --background: #FAD149;
+  --color: black;
+  --border-radius: 60px;
+  margin-bottom: -25px;
+  margin-right: -10px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1;
+  width:120px ;
+  height: 28px;
+  overflow: hidden;
+  min-height: unset; 
+}
+
+.allergens-img {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
  
   
   .scrollable-categories {
@@ -184,13 +178,20 @@
      margin-top: 15px;
    
   
-    .price {
-       color: #141411;
+    .original-price {
+      text-decoration: line-through;
+       color: #FAD149;
        font-family: 'Montserrat Alternates', sans-serif;
        font-style: medium;
       font-size: 16px;
       margin-left: 5px;
       
+    }
+    .discounted-price {
+      color: #141411; /* Color del precio reducido */
+     
+      font-size: 16px;
+      margin-left: 15px;
     }
   
     .add-button {

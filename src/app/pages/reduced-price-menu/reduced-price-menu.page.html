@@ -1,10 +1,13 @@
+
 <ion-header>
   <ion-toolbar class="custom-toolbar">
     <div class="header-content">
-      
-        <img src="../../../assets/icons/FlechaBoxAmr.svg"  alt="" (click)="goBack()">
-        <p> Miércoles Thai</p>
-      
+      <ion-button class="back-button" fill="solid"  (click)="goBack()">
+        <ion-icon class="icono" slot="start" src="../../../assets/icons/arrow-back.svg"></ion-icon>
+      </ion-button>
+      <div class="header-text">
+        <h1 class="title-line1">Miércoles de Thai</h1>
+      </div>
       
       <ion-button class="allergens-button" routerLink="/alergenos">
         <img src="assets/imgs/alergenos.png" alt="Alergenos" class="allergens-img">
@@ -49,20 +52,23 @@
           <ion-icon src="assets/icons/Grupo11359.svg" class="icon"></ion-icon>
         </div>
         
-      <div class="price-section">
+       <!-- Precio original tachado y precio reducido -->
+       <div class="price-section">
         <ion-button [routerLink]="['/dish-details', dish.id]" shape="round" class="add-button">
           <ion-icon slot="icon-only" src="assets/icons/add-outline.svg" class="add-icon"></ion-icon>
         </ion-button>
-        <span class="price">{{ dish.price }} €</span>
+  
+        <!-- Precio original tachado y precio reducido -->
+        <div class="price">
+          <span class="original-price">{{ dish.originalPrice }} €</span>
+          <span class="discounted-price">{{ dish.discountedPrice }} €</span>
+        </div>
       </div>
 
- <p>{{ dish.description }}</p>
-
-</ion-card-header>
-
+      <p>{{ dish.description }}</p>
+    </ion-card-header>
   </ion-card>
-  
-  </div>
+</div>
 
 
 
