@@ -1,7 +1,4 @@
-.body{
-    
 
-}
 
 .list{
     margin-top: 10%;
@@ -53,8 +50,17 @@ p{
 }
 
 .full-input-item {
-    height: 100px; /* Establece la altura del ion-item, puedes ajustar este valor según lo necesites */
+    height: 150px; /* Establece la altura del ion-item, puedes ajustar este valor según lo necesites */
     width: 100%;   /* Asegura que el ion-item ocupe todo el ancho */
+  }
+
+  .area{
+    margin-left: 5%;
+    margin-bottom: 10px;
+    color: #141411;
+    font-size: 10pt;
+    font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    
   }
   
   .custom-input {
@@ -75,26 +81,94 @@ p{
     height: 100%;               /* Asegura que el campo de texto ocupe el 100% de la altura */
   }
 
-.custom-checkbox ion-checkbox {
-    --border-radius: 5px;        /* Hace que los checkboxes sean cuadrados */
-    --size: 24px;                /* Tamaño del checkbox */
-    --border-width: 1px;         /* Grosor del borde */
-    --border-color: #CECECD;       /* Color del borde en estado no seleccionado */
-    --background: white;         /* Fondo del checkbox cuando no está seleccionado */
-  }
+// .custom-checkbox ion-checkbox {
+//     --border-radius: 5px;        /* Hace que los checkboxes sean cuadrados */
+//     --size: 24px;                /* Tamaño del checkbox */
+//     --border-width: 1px;         /* Grosor del borde */
+//     --border-color: #CECECD;       /* Color del borde en estado no seleccionado */
+//     --background: white;         /* Fondo del checkbox cuando no está seleccionado */
+//   }
   
-  .custom-checkbox ion-checkbox:checked {
-    --background: yellow;        /* Fondo amarillo cuando el checkbox está seleccionado */
-    --checkmark-color: white;    /* Color del checkmark en blanco */
-  }
+//   .custom-checkbox ion-checkbox:checked {
+//     --background: yellow;        /* Fondo amarillo cuando el checkbox está seleccionado */
+//     --checkmark-color: white;    /* Color del checkmark en blanco */
+//   }
 
-  .pay-online{
-    font-family: "MontserratAlternates-SemiBold", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  }
+//   .pay-online{
+//     font-family: "MontserratAlternates-SemiBold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+//     color: #141411;
+//   }
 
-  .custom-checkbox ion-label{
-    color: black;
-    font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+//   .custom-checkbox ion-label{
+//     color: black;
+//     font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
     
-}
+// }
   
+.check-boxes{
+  display: flex;
+  flex-direction: column;
+}
+
+.check-text{
+  display: flex;
+  justify-content: start;
+  margin-left: 5%;
+  align-items: center;
+  
+}
+
+
+ion-checkbox{
+     --border-radius: 5px;        /* Hace que los checkboxes sean cuadrados */
+     --size: 24px;                /* Tamaño del checkbox */
+     --border-width: 1px;         /* Grosor del borde */
+     --border-color: #CECECD;       /* Color del borde en estado no seleccionado */
+     --background: white; 
+  //    padding-left: 7%;
+  // padding-right: 45%;
+  // margin-left: 0%;
+  // padding-bottom: 2%;
+  // font-size: 12pt;
+  // color: #141411;
+
+}
+
+.pay-card{
+  font-family: "MontserratAlternates-semiBold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12pt;
+  color: #141411;
+}
+.pay-dat{
+  font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12pt;
+  color: #141411;
+
+}
+.pay-cash{
+  font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12pt;
+  color: #141411;
+
+}
+.black-button{
+  --background: #141411;
+  width: 90%;
+  height: 50px;
+  --border-radius: 30pt;
+  margin-left: 5%;
+  color: white;
+}
+
+span{
+  font-family: "MontserratAlternates-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.yellow-button{
+  --background: #FAD868;
+  width: 90%;
+  height: 50px;
+  --border-radius: 30pt;
+  margin-left: 5%;
+  color: #141411;
+}
