@@ -468,7 +468,15 @@ const routes: Routes = [
   {
     path: 'locals-list',
     loadChildren: () => import('./pages/locals-list/locals-list.module').then( m => m.LocalsListPageModule)
+  },  {
+    path: 'confirmation-pickup-delivery',
+    loadChildren: () => import('./pages/confirmation-pickup-delivery/confirmation-pickup-delivery.module').then( m => m.ConfirmationPickupDeliveryPageModule)
   },
+  {
+    path: 'checkout',
+    loadChildren: () => import('./pages/checkout/checkout.module').then( m => m.CheckoutPageModule)
+  },
+
 
  
 
