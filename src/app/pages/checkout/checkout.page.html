@@ -66,31 +66,36 @@
       
 
     <ion-item class="full-input-item">
-      <ion-input placeholder="Añade un comentario" class="custom-input"></ion-input>
+      <ion-textarea class="area" style="border: 1px solid #676763; height: 130px; width: 90%; border-radius: 5pt;"
+      placeholder="Añade un comentario">
+
+      </ion-textarea>
     </ion-item>
 
 
   </ion-list>
-  <div>
+  <div class="check-boxes">
   <p>Elige tu método de pago</p>
-  <ion-item class="custom-checkbox" lines="none">
-    <ion-checkbox slot="start"></ion-checkbox>
-    <ion-label class="pay-online">Pago con tarjeta online</ion-label>
-  </ion-item>
+
+  <div class="check-text">
+  <ion-checkbox class="pay-card" ></ion-checkbox>
+  <p>Pago con tarjeta online</p>
+  </div>
   
-  <ion-item class="custom-checkbox" lines="none">
-    <ion-checkbox slot="start"></ion-checkbox>
-    <ion-label>Pago con datáfono</ion-label>
-  </ion-item>
-  
-  <ion-item class="custom-checkbox" lines="none">
-    <ion-checkbox slot="start"></ion-checkbox>
-    <ion-label>Pago en efectivo</ion-label>
-  </ion-item>
- </div>
+  <div class="check-text">
+  <ion-checkbox class="pay-dat" ></ion-checkbox>
+  <p>Pago con datáfono</p>
+  </div>
 
+  <div class="check-text">
+  <ion-checkbox class="pay-cash" ></ion-checkbox>
+  <p>Pago en efectivo</p>
+  </div>
+  </div>
 
+  <ion-button class="black-button">Total: <span> 40,87€</span></ion-button>
 
+  <ion-button class="yellow-button" shape="round" expand="block" type="button"><img src="../../../assets/icons/noodles_7735908.png" alt=""> Confirmar Pedido</ion-button>
 
 
 
