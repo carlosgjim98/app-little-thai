@@ -1,9 +1,28 @@
+
+
+
 <ion-tabs>
 
-  <ion-tab-bar slot="bottom" >
-    <ion-tab-button [tab]="p.tab" *ngFor="let p of pages">
-      <ion-icon [src]="p.icon"></ion-icon>
-      <ion-label>{{p.name}}</ion-label>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="inicio">
+      <ion-icon src="../../../assets/icons/inicio.svg"></ion-icon>
+      <ion-label>Inicio</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="carta">
+      <ion-icon src="../../../assets/icons/food-menu-svgrepo-com.svg"></ion-icon>
+      <ion-label>Carta</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="thai-points">
+      <ion-icon class="thai-icon" src="../../../assets/icons/coin.svg"></ion-icon>
+      <ion-label>Thai puntos</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="locals">
+      <ion-icon src="../../../assets/icons/Trazado46919.svg"></ion-icon>
+      <ion-label>Locales</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="profile">
+      <ion-icon src="../../../assets/icons/Trazado46921.svg"></ion-icon>
+      <ion-label>Perfil</ion-label>
     </ion-tab-button>
   </ion-tab-bar>
 
