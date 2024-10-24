@@ -95,8 +95,8 @@
   ion-checkbox {
   
   
-    --border-color: gray; // Color del borde gris
-    --border-radius: 0px; // Hacer el checkbox menos redondeado
+    --border-color: #CECECD; // Color del borde gris
+    --border-radius: 5px; // Hacer el checkbox menos redondeado
     --color: #1B1B1B;
   }
  
@@ -112,9 +112,17 @@ ion-item {
    
   align-items: center; 
   width: 100%;
+
  
     
    
+}
+
+hr{
+  background: #E8E8E8;
+  margin: 0;
+  width: 91.5%;
+  margin-left: 2.5%;
 }
 
 ion-label{
@@ -129,6 +137,7 @@ ion-item-divider {
     color: #141411; 
     font-size: 16px;
     background: transparent; 
+    
 }
 
 
@@ -149,6 +158,11 @@ ion-item-divider {
       
    
  }
+ .counter{
+  color: #676763;
+  font-family: "MontserratAlternates-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12px;
+}
 
 
 
@@ -255,4 +269,11 @@ ion-item-divider {
 .buttons-quantity span {
   font-size: 14px; /* Tamaño de letra del span */
   color: black; /* Color del texto del span */
+}
+
+.divider-one{
+  margin-bottom: -2%;
+}
+.divider-two{
+  margin-bottom: 3%;
 }

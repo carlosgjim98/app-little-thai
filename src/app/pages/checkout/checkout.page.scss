@@ -6,7 +6,9 @@
 }
 .item{
     margin-top: 5%;
+    
 }
+
 
 .bites{
     margin-left: 5%;
@@ -171,4 +173,22 @@ span{
   --border-radius: 30pt;
   margin-left: 5%;
   color: #141411;
+}
+
+ion-item{
+  --border-color:#E8E8E8;
+}
+
+.pay-method{
+  font-family: "MontserratAlternates-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.noddles{
+  margin-right: 2%;
+}
+
+.pay-card-online{
+  font-family: "MontserratAlternates-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+span{
+  margin-left: 5px;
 }

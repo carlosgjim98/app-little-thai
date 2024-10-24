@@ -29,13 +29,20 @@
   <div class="extras-container">
     <!-- Sección para elegir las salsas -->
     <ion-list>
-      <ion-item-divider>
+      <ion-item-divider class="divider-one">
      <ion-label class=name>Elige tus dos salsas</ion-label>
         <ion-button class="badge-obligatorio" color="medium">Obligatorio</ion-button>
+        
       </ion-item-divider>
+      <ion-item-divider class="divider-two">
+        <ion-label class=counter>0/2</ion-label>
+           
+           
+         </ion-item-divider>
+      
 
       <!-- Opciones de salsas con ion-checkbox -->
-      <ion-item>
+      <ion-item lines="none">
         <ion-checkbox  slot="start" [(ngModel)]="salsaAjoPimienta"></ion-checkbox>
      <ion-label class=name>Ajo y pimienta negra</ion-label>
 
@@ -51,8 +58,9 @@
 
         <span class="price">0,00 €</span>
       </ion-item>
+      <hr>
 
-      <ion-item>
+      <ion-item lines="none">
         <ion-checkbox slot="start" [(ngModel)]="salsaCurry"></ion-checkbox>
      <ion-label class=name>Curry</ion-label>
      <div class="buttons-quantity" *ngIf="salsaCurry">
@@ -66,8 +74,8 @@
        </div>
         <span class="price">0,00 €</span>
       </ion-item>
-
-      <ion-item>
+      <hr>
+      <ion-item lines="none">
         <ion-checkbox slot="start" [(ngModel)]="salsaChen"></ion-checkbox>
      <ion-label class=name>Salsa Chen</ion-label>
      <div class="buttons-quantity" *ngIf="salsaChen">
@@ -81,8 +89,8 @@
        </div>
         <span class="price">0,00 €</span>
       </ion-item>
-
-      <ion-item>
+      <hr>
+      <ion-item lines="none">
         <ion-checkbox slot="start" [(ngModel)]="pimientoRojoDulce"></ion-checkbox>
      <ion-label class=name>Pimiento rojo dulce</ion-label>
      <div class="buttons-quantity" *ngIf="pimientoRojoDulce">
@@ -96,6 +104,7 @@
        </div>
         <span class="price">0,00 €</span>
       </ion-item>
+      <hr>
     </ion-list>
 
     <!-- Sección para extras -->
@@ -106,7 +115,7 @@
       </ion-item-divider>
 
       <!-- Opciones de salsas extra -->
-      <ion-item>
+      <ion-item lines="none">
         <ion-checkbox slot="start" [(ngModel)]="extraAjoPimienta"></ion-checkbox>
         <ion-label class="name">Ajo y pimienta negra</ion-label>
         <div class="buttons-quantity" *ngIf="extraAjoPimienta">
@@ -120,8 +129,8 @@
            </div>
         <span class="price">1,00 €</span>
       </ion-item>
-
-      <ion-item>
+      <hr>
+      <ion-item lines="none">
         <ion-checkbox slot="start" [(ngModel)]="extraSalsaChen"></ion-checkbox>
      <ion-label class=name>Salsa Chen</ion-label>
      <div class="buttons-quantity" *ngIf="extraSalsaChen">
@@ -135,6 +144,7 @@
        </div>
         <span class="price">1,00 €</span>
       </ion-item>
+      <hr>
     </ion-list>
 
     <!-- Sección adicional -->
@@ -145,17 +155,18 @@
     
     
     <!-- Más opciones según sea necesario -->
-    <ion-item>
+    <ion-item lines="none">
       <ion-checkbox slot="start" [(ngModel)]="necesidadExtra1"></ion-checkbox>
    <ion-label class=name>Palillos</ion-label>
       <span class="price">0,00 €</span>
     </ion-item>
-    
-    <ion-item>
+    <hr>
+    <ion-item lines="none">
       <ion-checkbox slot="start" [(ngModel)]="necesidadExtra2"></ion-checkbox>
    <ion-label class=name>Cubiertos</ion-label>
       <span class="price">0,00 €</span>
     </ion-item>
+    <hr>
   </div>
 
   <p class="quantity-text">¿Cuántas unidades quieres? </p>
@@ -182,7 +193,7 @@
   <div class="add-to-order">
     <ion-button class="order-button" color="warning" >
       <ion-icon class="add-circle" src="assets/icons/add-circle.svg"></ion-icon>
-      Añadir al pedido <span class="toral-eur"> ·{{ total }} €</span>
+      Añadir al pedido <span class="toral-eur"> · {{ total }} €</span>
     </ion-button>
   </div>
 </ion-content>
