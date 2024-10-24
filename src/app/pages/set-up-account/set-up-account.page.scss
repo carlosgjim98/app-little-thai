@@ -1,22 +1,21 @@
 .top-image {
-    display: flex;              /* Activa el modelo flexbox */
-    justify-content: center;    /* Centra horizontalmente */
-    align-items: center;        /* Centra verticalmente */
-    
-  }
-  
-  .plane {
-    max-width: 100%;           
-    height: auto;      
-    width: 120px;     
-    margin-top: 30px;   
-  }
-  
-.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plane {
+    max-width: 100%;
+    height: auto;
+    width: 120px;
+    margin-top: 30px;
+}
+
+.body {
     margin-top: 5%;
 }
 
-.sameItem{
+.sameItem {
     width: 90%;
     margin-left: 5%;
     --background: white;
@@ -27,7 +26,12 @@
     margin-bottom: 3%;
 }
 
-.safe{
+
+
+
+
+
+.safe {
     --border-radius: 50pt;
     text-align: center;
     color: black;
@@ -38,7 +42,7 @@
     height: 80px;
 }
 
-.eliminate{
+.eliminate {
     --border-radius: 50pt;
     text-align: center;
     color: white;
@@ -49,10 +53,15 @@
     padding-top: 5%;
     --background: #1B1B1B;
     height: 80px;
-    
 }
-.icono{
 
+.icono {
     height: 12px;
     width: 12px;
+    color: #888888; 
+    
+}
+
+ion-item:focus-within ion-icon {
+    color: #000000; /* Cambia el color del ícono a negro cuando el campo está en foco */
 }
