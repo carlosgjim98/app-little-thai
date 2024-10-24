@@ -6,11 +6,14 @@
   .sauce-img-large {
     width: 40%; /* Ajusta al ancho completo */
     height: auto; /* Mantiene la relación de aspecto */
+    margin-top: 20px;
   }
 
   h2{
     color: #141411;
+    font-weight: 500;
     font-size: 26px;
+    margin-top: 60px;
   }
 
   h3{
@@ -20,7 +23,7 @@
 
   p{
     color: #141411;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .condiciones {
@@ -34,37 +37,56 @@
   
   .condiciones h4 {
     color: #141411;
-    margin-bottom: 8px; /* Espacio debajo del título */
-    font-size: 12px;
+    margin-bottom: 14px; /* Espacio debajo del título */
+    font-size: 14px;
+    font-weight: medium;
+    
   }
   
   .condiciones p {
+    
     color: #676763;
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: medium;
     margin: 4px 0; /* Margen entre los párrafos */
-  }
-
-  .button-container {
-    display: flex;             
+    display: flex;
     flex-direction: column;     
     align-items: center;        
     justify-content: center;    
-    margin-top: 16px;          
+  }
+
+  .points-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 15px; /* Añade espacio entre los elementos */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    margin-top: 30px;
   }
   
-  .point-button {
-    font-size: 14px;
-    margin: 8px 0;     
-    width: 80%;   
-    min-height: 60px; 
-    border-radius: 0;  
-    border:none; 
-    --background: #141411 !important;
+  .points {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    background-color: #1B1B1B; /* Fondo negro */
+    color: white; /* Texto en blanco */
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%; /* Ocupa todo el ancho */
+    height: 70px; /* Ajusta la altura */
+    border-radius: 8px; /* Bordes redondeados */
+    text-align: center;
+    padding: 0; /* Elimina el padding por defecto */
+    box-sizing: border-box;
   }
+  
+    
+  
 
   .redeem-button {
     margin: 8px 0;  
-    width: 70%;     
+    width: 95%;
+    height: 55px;     
     --border-radius:40px;     
     color: #141411;
     font-size: 14px;

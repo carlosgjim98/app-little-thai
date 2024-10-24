@@ -11,7 +11,7 @@ export class ThaiPointsPage implements OnInit {
   sauces = [
     {
       id: 1,
-      name: 'Sala Chili dulce',
+      name: 'Salsa Chili dulce',
       description: 'De origen tailandés, esta salsa tiene un sabor dulce-salado ligeramente picante.',
       points: 100,
       img: 'assets/imgs/salsa-chili-dulce@2x.png',

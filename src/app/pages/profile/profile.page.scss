@@ -3,11 +3,11 @@
 
 }
 .top-image{
-    display: flex;
+    text-align: center;
 }
 .plane{
-    height: 121pt;
-  margin-left: 30%;
+    display: inline-block; 
+    height: 120px;
   margin-top: 15%;
   margin-bottom: -5%;
 }
@@ -17,13 +17,14 @@
     align-items: center; 
     justify-content: center; 
     margin-bottom: 335%;
-    width: 55px;
+    width: 50px;
+    height: 50px;
 }
 .cart-icon {
    
     color: #ffffff; 
-    min-width: 32px; 
-    min-height: 32px; 
+    min-width: 30px; 
+    min-height: 30px; 
 }
 .badge {
     position: absolute; 
@@ -44,14 +45,19 @@
 
 .name{
     text-align: center;
+    font-size: 18px;
+    font-weight: bold;
 }
-.btn-points{
-  margin-left: 30%;
-  --border-radius: 25pt;
-  color: black;
-  font-weight: bold;
-  margin-bottom: 5%;
+.btn-points {
+    display: block;         
+    text-align: center;      
+    margin: 0 auto 5%;      
+    --border-radius: 25pt;
+    color: black;
+    font-weight: bold;
+    width: 40%;
 }
+
 
 .content{
     --background: #1B1B1B !important;
@@ -79,7 +85,8 @@
 }
 .icon{
     
-    height: 10pt;
+    height: 16px;
+    width: 16px;
     color: black;
 }
 .text-list{
@@ -95,9 +102,17 @@ ion-item {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
+    --ion-item-border-color: #b3b1b1; 
   }
 .arrow{
     
     height: 10pt;
+    margin-right: -30px;
+    color: #292E2C;
     
+}
+
+.arrow2{  
+    height: 8pt;
+color: #292E2C;
 }

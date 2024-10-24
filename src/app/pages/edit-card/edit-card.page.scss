@@ -1,3 +1,7 @@
+ion-content{
+  --background: #F2F2F2;
+}
+
 .edit-button{
     width: 35px; 
     height: 35px;
@@ -17,7 +21,7 @@
 ion-card {
     margin: 15px 10px; // Márgenes para el card
     border-radius: 10px; // Bordes redondeados de la tarjeta
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Sombra sutil alrededor del card
+   
     --background: transparent !important;
   
     ion-item {
