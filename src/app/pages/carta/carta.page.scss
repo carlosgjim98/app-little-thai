@@ -44,16 +44,16 @@
     --background: #FAD149;
     --color: black;
     --border-radius: 60px;
-    margin-bottom: -25px;
+    //margin-bottom: -25px;
     margin-right: -10px;
     display: flex;
     align-items: center;
     font-size: 12px;
     line-height: 1;
     width:120px ;
-    height: 28px;
+    max-height: 1px;
     overflow: hidden;
-    min-height: unset; 
+    font-family: "MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif;
   }
   
   .allergens-img {
