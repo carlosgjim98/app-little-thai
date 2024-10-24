@@ -10,13 +10,23 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header class="point-indicator">
-    <div class="point-header-text">
-      <h2>Actualmente tienes</h2>
-      <h3>{{ thaiPoints }}</h3> <!-- Muestra los puntos de Thai -->
-      <h4>thai puntos</h4>
-    </div>
-  </ion-header>
+ 
+    <!-- Icono de la flecha -->
+   
+      <ion-header class="point-indicator">
+        <div class="point-header-text">
+          <h2>Actualmente tienes</h2>
+          <h3>{{ thaiPoints }}</h3> <!-- Muestra los puntos de Thai -->
+          <h4>thai puntos</h4>
+        </div>
+        <!-- Icono de la flecha -->
+        <ion-icon src="assets/icons/arrow-forward.svg"  routerLink="/my-points" class="arrow-icon"></ion-icon>
+      </ion-header>
+   
+    
+ 
+
+
 
   <div class="point-section">
     <ion-card *ngFor="let sauce of getSaucesByCategory('Salsas')" class="sauce-card">

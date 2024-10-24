@@ -21,13 +21,20 @@ h1{
  font-weight: bold;
 }
 p{
-    
+    font-family: "MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: black;
     padding-left: 5%;
-    font-size: 10pt;
+    font-size: 14px;
+    white-space: break-spaces;
+    margin-bottom: -4px;
 
     ion-icon{
         color: black;
+        height: 12px;
+        width: 12px;
+        vertical-align: middle; 
+        display: inline-block;  
+        margin-right: 5px;   
     }
 }
 
@@ -53,12 +60,18 @@ margin-left:10px;
   
         ion-icon{
             color: black;
-            font-size:12px;
+            height: 13px;
+            width: 13px;
+            vertical-align: middle; 
+            display: inline-block;  
+            margin-bottom: 2px;
+            
         }
 
         ion-text{
            
-            font-size: 10px;
+            font-size: 12px;
+            white-space: nowrap;
         }
     }
 

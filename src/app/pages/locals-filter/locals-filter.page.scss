@@ -1,6 +1,17 @@
+
+ion-content{
+
+    --background:#FAD149 ;
+     }
 .background-container {
-    position: relative; 
+  position: relative; 
+  overflow-y: hidden !important;
+    width: 100%; /* Asegúrate de que el contenedor ocupe todo el ancho */
+    height: 90%; /* Asegúrate de que el contenedor ocupe todo el ancho */
+
+    
   }
+  
   .fondo{
     position: relative;
     width: 100%;
@@ -10,7 +21,9 @@
     margin-bottom: -75%;
     filter: grayscale(100%);
     
-}
+  }
+    
+
 
 .puntero-container {
     position: absolute; 
@@ -24,7 +37,7 @@
     position: absolute; 
     width: 60px; 
     height: auto; 
-    top: 70%; 
+    top: 30%; 
     left: 60%;
   }
   
@@ -56,11 +69,18 @@
         font-family: "MontserratAlternates-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif;
         color: black;
         padding-left: 5%;
-        font-size: 10pt;
+        font-size: 14px;
         white-space: break-spaces;
+        margin-bottom: -4px;
 
         ion-icon{
             color: black;
+            height: 12px;
+            width: 12px;
+            vertical-align: middle; 
+            display: inline-block;  
+            margin-right: 5px;  
+            
         }
     }
 }
@@ -87,12 +107,17 @@
       
             ion-icon{
                 color: black;
-                font-size:12px;
+                height: 10px;
+                width: 10px;
+                vertical-align: middle; 
+                display: inline-block;  
+                margin-bottom: 2px;
             }
 
             ion-text{
                
-                font-size: 10px;
+                font-size: 12px;
+                white-space: nowrap;
             }
         }
 
@@ -100,10 +125,7 @@
 
 }
 
-ion-content{
 
-    --background:#FAD868 ;
-     }
      .search-bar {
        background: white;
        border-radius: 50px; 
@@ -116,6 +138,7 @@ ion-content{
        --placeholder-color: #9A9587;
        font-size: 15px;
        color: #9A9587; 
+       margin-left: 15px;
      }
      
      ion-icon {
@@ -143,4 +166,4 @@ ion-content{
        font-size: 16px;
        min-height: unset;
      }
-     
+    

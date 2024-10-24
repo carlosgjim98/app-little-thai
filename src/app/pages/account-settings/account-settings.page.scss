@@ -1,19 +1,23 @@
+app-header {
+  position: relative; 
+}
 .brush-button {
-    width: 35px; 
-    height: 35px;
-    min-height: unset; 
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-    margin-left: 90px;
-    
-  }
+  width: 35px;
+  height: 35px;
+  min-height: unset;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50px; 
+  right: 10px; 
+}
   
   .icono {
-    font-size: 10px; 
-    color: #ffffff; 
+    height: 25px;
+    width: 25px;
+    
     margin-left:2px;
   }
 
@@ -30,36 +34,36 @@
     border: 1px solid #3f3f3f;
     border-radius: 10px;
     margin-top: 25px;
-    padding: 20px;
-   margin: 23px;
-   overflow: visible; 
-   text-overflow: ellipsis;
-   white-space: nowrap;
+    padding: 10px;
+     margin: 23px;
+    overflow: visible; 
+  
    
    
   
   }
-  
+  .notification-card p {
+   
+}
   .notification-title {
-    font-size: 12px;
-    
+    font-size: 15px;
+    margin: 0; 
+    padding: 0; 
     color: #141411;
-    margin: 0;
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis;
+   
   }
   
   .notification-action {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
     color: #141411;
-    margin-top: 5px;
+    margin: 0; 
+    padding: 0; 
   }
   
   .notification-time {
-    font-size: 12px;
+    font-size: 15px;
     color: #898984;
-    margin-top: 10px;
+   
   }
   

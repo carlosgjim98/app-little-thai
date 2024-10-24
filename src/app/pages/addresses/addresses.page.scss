@@ -1,14 +1,19 @@
+
+app-header {
+  position: relative; /* Necesario para posicionar elementos hijos de manera absoluta */
+}
+
 .edit-button {
-    width: 35px; 
-    height: 35px;
-    min-height: unset; 
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-    margin-left: 90px;
-    
+  width: 35px;
+  height: 35px;
+  min-height: unset;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50px; /* Ajusta la altura según tu diseño */
+  right: 10px; /* Pegado al margen derecho */
   }
   
   .icono {
@@ -30,19 +35,26 @@
   ion-card {
     margin: 15px 10px; // Márgenes para el card
     border-radius: 10px; // Bordes redondeados de la tarjeta
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Sombra sutil alrededor del card
+   
     --background: transparent !important;
   
     ion-item {
 
         .address-button{
-        --background: #1B1B1B;
+        --background: #FAD149;
         align-items: center;
         justify-content: center;
         display: flex;
         }
+
+        .pin-icon{
+        color: #141411;
+        height: 25px;
+        width: 25px;
+
+        }
       ion-icon {
-        color: #FAD149; 
+        
         font-size: 20px; 
         margin-left: 5px;
       }

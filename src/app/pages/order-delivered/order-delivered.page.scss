@@ -41,7 +41,6 @@ img{
     background-color: #fff;
     border-radius: 20px;
     padding: 10px 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-top: -25px;
     height: 60%;
     z-index: 1;
@@ -118,8 +117,9 @@ img{
     background-color: #ffcc00;
     text-align: center;
     padding: 20px 0;
-    margin-top: -70px; /* Ajusta el margen según sea necesario */
+    margin-top: -120px; /* Ajusta el margen según sea necesario */
     width: 100%; /* Asegúrate de que ocupe todo el ancho */
+    height: 120px;
     box-sizing: border-box; /* Esto asegura que el padding se incluya en el ancho total */
     position: relative; /* Asegúrate de que el z-index funcione */
     z-index: 2; /* Asegúrate de que este valor sea mayor que el de delivery-info-card */
