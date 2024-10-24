@@ -4,7 +4,12 @@ ion-label{
 }
 ion-tab-bar{
     --background: #FFE48B;
+    height: 75px;
 }
+ion-tab-button{
+    margin-bottom: 20px;
+}
+
 ion-tab-button{
     --color:#88895E;
     --color-selected:#1D1D1B;
